@@ -7,6 +7,7 @@ dist/
 # Editor
 .vscode/
 .vim/
+.idea
 
 # VitePress
 docs/.vitepress/cache/
@@ -17,3 +18,4 @@ coverage/
 
 # Misc
 .DS_Store
+.vercel
