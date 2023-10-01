@@ -1,0 +1,3 @@
+{
+  "devCommand": "vitepress dev --port $PORT --open"
+}

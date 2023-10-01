@@ -3,7 +3,23 @@ title: sort-array-includes
 description: ESLint Plugin Perfectionist rule which enforce sorted array values if the `includes` method is immediately called after the array is created
 ---
 
+<script setup lang="ts">
+import TextareaEslint from '../.vitepress/theme/components/textarea-eslint.vue'
+import CodeEditor from '../.vitepress/theme/components/code-editor.vue'
+
+const initialText = `if ([
+'maintainer',
+'admin',
+'developer',
+'owner',
+'observer'
+].includes(user.role)) {}
+`;
+</script>
+
 # sort-array-includes
+
+<CodeEditor rule="sort-array-includes" :text="initialText" />
 
 💼 This rule is enabled in the following [configs](/configs/): `recommended-alphabetical`, `recommended-line-length`, `recommended-natural`.
 
