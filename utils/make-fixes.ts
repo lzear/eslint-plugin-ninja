@@ -1,10 +1,10 @@
 import type { TSESTree } from '@typescript-eslint/types'
 import type { TSESLint } from '@typescript-eslint/utils'
 
-import type { PartitionComment, SortingNode } from '../typings'
+import type { PartitionComment, SortingNode } from '../typings/index.js'
 
-import { getCommentAfter } from './get-comment-after'
-import { getNodeRange } from './get-node-range'
+import { getCommentAfter } from './get-comment-after.js'
+import { getNodeRange } from './get-node-range.js'
 
 export const makeFixes = (
   fixer: TSESLint.RuleFixer,

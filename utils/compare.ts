@@ -1,8 +1,8 @@
 import naturalCompare from 'natural-compare-lite'
 
-import type { SortingNode, SortOrder } from '../typings'
+import type { SortingNode, SortOrder } from '../typings/index.js'
 
-import { SortType } from '../typings'
+import { SortType } from '../typings/index.js'
 
 export const compare = (
   a: SortingNode,

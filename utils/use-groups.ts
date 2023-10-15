@@ -1,4 +1,6 @@
-import { minimatch } from 'minimatch'
+import * as minimatchModule from '../node_modules/minimatch/dist/mjs/index.js'
+
+const { minimatch } = minimatchModule
 
 export const useGroups = (groups: (string[] | string)[]) => {
   let group: undefined | string

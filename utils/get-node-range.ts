@@ -3,10 +3,10 @@ import type { TSESLint } from '@typescript-eslint/utils'
 
 import { ASTUtils } from '@typescript-eslint/utils'
 
-import type { PartitionComment } from '../typings'
+import type { PartitionComment } from '../typings/index.js'
 
-import { isPartitionComment } from './is-partition-comment'
-import { getCommentBefore } from './get-comment-before'
+import { isPartitionComment } from './is-partition-comment.js'
+import { getCommentBefore } from './get-comment-before.js'
 
 export const getNodeRange = (
   node: TSESTree.Node,
