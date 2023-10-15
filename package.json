@@ -85,6 +85,8 @@
   },
   "devDependencies": {
     "@azat-io/stylelint-config": "^0.1.0",
+    "@codemirror/lang-javascript": "^6.2.1",
+    "@codemirror/theme-one-dark": "^6.1.2",
     "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
     "@types/natural-compare-lite": "^1.4.1",
@@ -97,6 +99,7 @@
     "astro-eslint-parser": "^0.16.0",
     "changelogen": "^0.5.5",
     "clean-publish": "^4.2.0",
+    "codemirror": "^6.0.1",
     "daisyui": "^3.9.2",
     "eslint": "^8.52.0",
     "eslint-doc-generator": "^1.5.3",
@@ -128,7 +131,8 @@
     "vite-plugin-lightningcss": "^0.0.5",
     "vitepress": "1.0.0-rc.24",
     "vitest": "^0.34.6",
-    "vue": "^3.3.7"
+    "vue": "^3.3.7",
+    "vue-codemirror": "^6.1.1"
   }
 }
 
