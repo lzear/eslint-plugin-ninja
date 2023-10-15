@@ -144,8 +144,8 @@ export default defineConfig({
       'script',
       {
         async: '',
-        src: 'https://analytics.azat.io/script.js',
-        'data-website-id': 'c69a8be1-771a-4504-b778-4d247c1069aa',
+        src: 'https://plausible.io/js/script.js',
+        'data-domain': "dont.ninja"
       },
     ],
   ],
