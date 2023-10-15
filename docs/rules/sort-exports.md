@@ -132,5 +132,5 @@ This rule was introduced in v1.2.0.
 
 ## 📚 Resources
 
-- [Rule source](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/rules/sort-exports.ts)
-- [Test source](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/test/sort-exports.test.ts)
+- [Rule source](https://github.com/lzear/eslint-plugin-dont/blob/main/rules/sort-exports.ts)
+- [Test source](https://github.com/lzear/eslint-plugin-dont/blob/main/test/sort-exports.test.ts)

@@ -22,8 +22,8 @@ This plugin is following [Semantic Versioning](https://semver.org/) and [ESLint'
 
 ## 📰 Changelog
 
-We are using [Changelog](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/changelog.md).
+We are using [Changelog](https://github.com/lzear/eslint-plugin-dont/blob/main/changelog.md).
 
 ## 🔒 License
 
-See the [license](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/license) file for license rights and limitations (MIT).
+See the [license](https://github.com/lzear/eslint-plugin-dont/blob/main/license) file for license rights and limitations (MIT).

@@ -151,5 +151,5 @@ This rule was introduced in v0.4.0.
 
 ## 📚 Resources
 
-- [Rule source](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/rules/sort-union-types.ts)
-- [Test source](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/test/sort-union-types.test.ts)
+- [Rule source](https://github.com/lzear/eslint-plugin-dont/blob/main/rules/sort-union-types.ts)
+- [Test source](https://github.com/lzear/eslint-plugin-dont/blob/main/test/sort-union-types.test.ts)

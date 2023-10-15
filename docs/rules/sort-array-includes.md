@@ -164,5 +164,5 @@ This rule was introduced in v0.5.0.
 
 ## 📚 Resources
 
-- [Rule source](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/rules/sort-array-includes.ts)
-- [Test source](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/test/sort-array-includes.test.ts)
+- [Rule source](https://github.com/lzear/eslint-plugin-dont/blob/main/rules/sort-array-includes.ts)
+- [Test source](https://github.com/lzear/eslint-plugin-dont/blob/main/test/sort-array-includes.test.ts)

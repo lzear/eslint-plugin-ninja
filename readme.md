@@ -1,7 +1,7 @@
 # ESLint Plugin Perfectionist
 
 <img
-  src="https://raw.githubusercontent.com/azat-io/eslint-plugin-perfectionist/main/docs/public/logo.svg"
+  src="https://raw.githubusercontent.com/lzear/eslint-plugin-dont/main/docs/public/logo.svg"
   alt="ESLint Plugin Perfectionist logo"
   align="right"
   height="170"
@@ -9,7 +9,7 @@
 />
 
 [![Version](https://img.shields.io/npm/v/eslint-plugin-perfectionist.svg?color=4a32c3)](https://www.npmjs.com/package/eslint-plugin-perfectionist)
-[![GitHub license](https://img.shields.io/badge/license-MIT-4a32c3.svg)](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/license)
+[![GitHub license](https://img.shields.io/badge/license-MIT-4a32c3.svg)](https://github.com/lzear/eslint-plugin-dont/blob/main/license)
 
 ESLint plugin that sets rules to format your code and make it consistent.
 
@@ -35,7 +35,7 @@ Sorting imports and properties in software development offers numerous benefits:
 
 See [docs](https://www.dont.ninja).
 
-![ESLint Plugin Perfectionist usage example](https://raw.githubusercontent.com/azat-io/eslint-plugin-perfectionist/main/docs/public/example.png)
+![ESLint Plugin Perfectionist usage example](https://raw.githubusercontent.com/lzear/eslint-plugin-dont/main/docs/public/example.png)
 
 ## 💿 Installation
 
@@ -167,7 +167,7 @@ Yes. To do this, you need to enable autofix in ESLint when you save the file in 
 
 ### Is it safety?
 
-On the whole, yes. We are very careful to make sure that the work of the plugin does not negatively affect the work of the code. For example, the plugin takes into account spread operators in JSX and objects, comments to the code, exports with `*`. Safety is our priority. If you encounter any problem, you can create an [issue](https://github.com/azat-io/eslint-plugin-perfectionist/issues/new/choose).
+On the whole, yes. We are very careful to make sure that the work of the plugin does not negatively affect the work of the code. For example, the plugin takes into account spread operators in JSX and objects, comments to the code, exports with `*`. Safety is our priority. If you encounter any problem, you can create an [issue](https://github.com/lzear/eslint-plugin-dont/issues/new/choose).
 
 ### Why not Prettier?
 
@@ -261,7 +261,7 @@ This plugin is following [Semantic Versioning](https://semver.org/) and [ESLint'
 
 ## ❤️ Contributing
 
-See [Contributing Guide](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/contributing.md).
+See [Contributing Guide](https://github.com/lzear/eslint-plugin-dont/blob/main/contributing.md).
 
 ## 👁 See Also
 

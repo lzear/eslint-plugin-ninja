@@ -24,7 +24,7 @@ hero:
       link: /rules/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/azat-io/eslint-plugin-perfectionist
+      link: https://github.com/lzear/eslint-plugin-dont
 
 features:
   - title: ESLint Powered

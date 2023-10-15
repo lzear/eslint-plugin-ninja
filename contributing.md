@@ -11,7 +11,7 @@ How to set up a project locally and run tests:
 1. Clone repo:
 
 ```sh
-git clone git@github.com:azat-io/eslint-plugin-perfectionist.git
+git clone git@github.com:lzear/eslint-plugin-dont.git
 ```
 
 2. Install dependencies:

@@ -53,5 +53,5 @@ body:
       options:
         - label: Read the [docs](https://www.dont.ninja).
           required: true
-        - label: Check that there isn't [already an issue](https://github.com/azat-io/eslint-plugin-perfectionist/issues) that reports the same bug to avoid creating a duplicate.
+        - label: Check that there isn't [already an issue](https://github.com/lzear/eslint-plugin-dont/issues) that reports the same bug to avoid creating a duplicate.
           required: true

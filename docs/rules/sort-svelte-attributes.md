@@ -231,5 +231,5 @@ This rule was introduced in v2.0.0.
 
 ## 📚 Resources
 
-- [Rule source](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/rules/sort-svelte-attributes.ts)
-- [Test source](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/test/sort-svelte-attributes.test.ts)
+- [Rule source](https://github.com/lzear/eslint-plugin-dont/blob/main/rules/sort-svelte-attributes.ts)
+- [Test source](https://github.com/lzear/eslint-plugin-dont/blob/main/test/sort-svelte-attributes.test.ts)

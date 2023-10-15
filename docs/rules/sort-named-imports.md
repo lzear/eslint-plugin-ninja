@@ -167,5 +167,5 @@ This rule was introduced in v0.2.0.
 
 ## 📚 Resources
 
-- [Rule source](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/rules/sort-named-imports.ts)
-- [Test source](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/test/sort-named-imports.test.ts)
+- [Rule source](https://github.com/lzear/eslint-plugin-dont/blob/main/rules/sort-named-imports.ts)
+- [Test source](https://github.com/lzear/eslint-plugin-dont/blob/main/test/sort-named-imports.test.ts)
