@@ -10,7 +10,9 @@
   "keywords": [
     "eslint",
     "eslint-plugin",
-    "perfectionist"
+    "dont",
+    "10x",
+    "10x engineer"
   ],
   "scripts": {
     "build": "vite build",
