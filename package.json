@@ -38,22 +38,9 @@
   ],
   "main": "./dist/index.js",
   "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
-    },
-    "./configs/recommended-alphabetical": {
-      "require": "./dist/configs/recommended-alphabetical.js",
-      "import": "./dist/configs/recommended-alphabetical.mjs"
-    },
-    "./configs/recommended-line-length": {
-      "require": "./dist/configs/recommended-line-length.js",
-      "import": "./dist/configs/recommended-line-length.mjs"
-    },
-    "./configs/recommended-natural": {
-      "require": "./dist/configs/recommended-natural.js",
-      "import": "./dist/configs/recommended-natural.mjs"
-    },
+    ".": "./dist/index.mjs",
+    "./configs/recommended": "./dist/configs/recommended.mjs",
+    "./configs/all": "./dist/configs/all.mjs",
     "./package.json": "./package.json"
   },
   "packageManager": "yarn@1.22.19",

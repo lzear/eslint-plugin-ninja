@@ -124,14 +124,6 @@ export default [
 ]
 ```
 
-### List of Configs
-
-| Name                                                                                                     | Description                                                      |
-| :------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
-| [recommended-alphabetical](https://www.dont.ninja/configs/recommended-alphabetical) | all plugin rules with alphabetical sorting in ascending order    |
-| [recommended-natural](https://www.dont.ninja/configs/recommended-natural)           | all plugin rules with natural sorting in ascending order         |
-| [recommended-line-length](https://www.dont.ninja/configs/recommended-line-length)   | all plugin rules with sorting by line length in descending order |
-
 ## ✅ Rules
 
 <!-- begin auto-generated rules list -->
