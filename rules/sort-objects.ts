@@ -102,11 +102,11 @@ export default createEslintRule<Options, MESSAGE_ID>({
     },
   ],
   create: context => {
-    let sortObject = (
+    const sortObject = (
       node: TSESTree.ObjectExpression | TSESTree.ObjectPattern,
     ) => {
       if (node.properties.length > 1) {
-        let options = complete(context.options.at(0), {
+        const options = complete(context.options.at(0), {
           'partition-by-comment': false,
           type: SortType.alphabetical,
           'styled-components': true,
@@ -116,10 +116,10 @@ export default createEslintRule<Options, MESSAGE_ID>({
           groups: [],
         })
 
-        let isStyledCallExpression = (identifier: TSESTree.Expression) =>
+        const isStyledCallExpression = (identifier: TSESTree.Expression) =>
           identifier.type === 'Identifier' && identifier.name === 'styled'
 
-        let isStyledComponents = (
+        const isStyledComponents = (
           styledNode: TSESTree.Node | undefined,
         ): boolean =>
           styledNode !== undefined &&
@@ -138,9 +138,9 @@ export default createEslintRule<Options, MESSAGE_ID>({
           return
         }
 
-        let source = context.getSourceCode()
+        const source = context.getSourceCode()
 
-        let formatProperties = (
+        const formatProperties = (
           props: (
             | TSESTree.ObjectLiteralElement
             | TSESTree.RestElement
@@ -157,7 +157,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
                 return accumulator
               }
 
-              let comment = getCommentBefore(prop, source)
+              const comment = getCommentBefore(prop, source)
 
               if (
                 options['partition-by-comment'] &&
@@ -171,10 +171,10 @@ export default createEslintRule<Options, MESSAGE_ID>({
               }
 
               let name: string
-              let position: Position = Position.ignore
-              let dependencies: string[] = []
+              const position: Position = Position.ignore
+              const dependencies: string[] = []
 
-              let { getGroup, setCustomGroups } = useGroups(options.groups)
+              const { getGroup, setCustomGroups } = useGroups(options.groups)
 
               if (prop.key.type === 'Identifier') {
                 ;({ name } = prop.key)
@@ -185,12 +185,12 @@ export default createEslintRule<Options, MESSAGE_ID>({
               }
 
               if (prop.value.type === 'AssignmentPattern') {
-                let addDependencies = (value: TSESTree.AssignmentPattern) => {
+                const addDependencies = (value: TSESTree.AssignmentPattern) => {
                   if (value.right.type === 'Identifier') {
                     dependencies.push(value.right.name)
                   }
 
-                  let handleComplexExpression = (
+                  const handleComplexExpression = (
                     expression:
                       | TSESTree.ArrowFunctionExpression
                       | TSESTree.ConditionalExpression
@@ -198,28 +198,32 @@ export default createEslintRule<Options, MESSAGE_ID>({
                       | TSESTree.BinaryExpression
                       | TSESTree.CallExpression,
                   ) => {
-                    let nodes = []
+                    const nodes = []
 
                     switch (expression.type) {
-                      case 'ArrowFunctionExpression':
+                      case 'ArrowFunctionExpression': {
                         nodes.push(expression.body)
                         break
+                      }
 
-                      case 'ConditionalExpression':
+                      case 'ConditionalExpression': {
                         nodes.push(expression.consequent, expression.alternate)
                         break
+                      }
 
                       case 'LogicalExpression':
-                      case 'BinaryExpression':
+                      case 'BinaryExpression': {
                         nodes.push(expression.left, expression.right)
                         break
+                      }
 
-                      case 'CallExpression':
+                      case 'CallExpression': {
                         nodes.push(...expression.arguments)
                         break
+                      }
                     }
 
-                    nodes.forEach(nestedNode => {
+                    for (const nestedNode of nodes) {
                       if (nestedNode.type === 'Identifier') {
                         dependencies.push(nestedNode.name)
                       }
@@ -230,7 +234,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
                       ) {
                         handleComplexExpression(nestedNode)
                       }
-                    })
+                    }
                   }
 
                   switch (value.right.type) {
@@ -238,9 +242,10 @@ export default createEslintRule<Options, MESSAGE_ID>({
                     case 'ConditionalExpression':
                     case 'LogicalExpression':
                     case 'BinaryExpression':
-                    case 'CallExpression':
+                    case 'CallExpression': {
                       handleComplexExpression(value.right)
                       break
+                    }
 
                     default:
                   }
@@ -251,7 +256,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
 
               setCustomGroups(options['custom-groups'], name)
 
-              let value = {
+              const value = {
                 size: rangeToDiff(prop.range),
                 group: getGroup(),
                 dependencies,
@@ -267,39 +272,35 @@ export default createEslintRule<Options, MESSAGE_ID>({
             [[]],
           )
 
-        for (let nodes of formatProperties(node.properties)) {
+        for (const nodes of formatProperties(node.properties)) {
           pairwise(nodes, (left, right) => {
-            let leftNum = getGroupNumber(options.groups, left)
-            let rightNum = getGroupNumber(options.groups, right)
+            const leftNum = getGroupNumber(options.groups, left)
+            const rightNum = getGroupNumber(options.groups, right)
 
             if (
               leftNum > rightNum ||
               (leftNum === rightNum &&
                 isPositive(compare(left, right, options)))
             ) {
-              let fix:
+              const fix:
                 | ((fixer: TSESLint.RuleFixer) => TSESLint.RuleFix[])
                 | undefined = fixer => {
-                let grouped: {
+                const grouped: {
                   [key: string]: SortingNode[]
                 } = {}
 
-                for (let currentNode of nodes) {
-                  let groupNum = getGroupNumber(options.groups, currentNode)
+                for (const currentNode of nodes) {
+                  const groupNum = getGroupNumber(options.groups, currentNode)
 
-                  if (!(groupNum in grouped)) {
-                    grouped[groupNum] = [currentNode]
-                  } else {
-                    grouped[groupNum] = sortNodes(
-                      [...grouped[groupNum], currentNode],
-                      options,
-                    )
-                  }
+                  grouped[groupNum] =
+                    groupNum in grouped
+                      ? sortNodes([...grouped[groupNum], currentNode], options)
+                      : [currentNode]
                 }
 
-                let sortedNodes: SortingNode[] = []
+                const sortedNodes: SortingNode[] = []
 
-                for (let group of Object.keys(grouped).sort()) {
+                for (const group of Object.keys(grouped).sort()) {
                   sortedNodes.push(...sortNodes(grouped[group], options))
                 }
 

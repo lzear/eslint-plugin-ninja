@@ -75,16 +75,16 @@ export default createEslintRule<Options, MESSAGE_ID>({
   ],
   create: context => ({
     TSUnionType: node => {
-      let source = context.getSourceCode()
+      const source = context.getSourceCode()
 
-      let options = complete(context.options.at(0), {
+      const options = complete(context.options.at(0), {
         type: SortType.alphabetical,
         'nullable-last': false,
         'ignore-case': false,
         order: SortOrder.asc,
       })
 
-      let nodes: SortingNode[] = node.types.map(type => ({
+      const nodes: SortingNode[] = node.types.map(type => ({
         group:
           type.type === 'TSNullKeyword' || type.type === 'TSUndefinedKeyword'
             ? 'nullable'
@@ -117,9 +117,9 @@ export default createEslintRule<Options, MESSAGE_ID>({
               let sortedNodes: SortingNode[] = []
 
               if (options['nullable-last']) {
-                let nullable: SortingNode[] = []
+                const nullable: SortingNode[] = []
 
-                let nonNullable = nodes.filter(currentNode => {
+                const nonNullable = nodes.filter(currentNode => {
                   if (currentNode.group === 'nullable') {
                     nullable.push(currentNode)
                     return false

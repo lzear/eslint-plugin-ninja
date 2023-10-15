@@ -8,7 +8,7 @@ import type { PartitionComment } from '../typings'
 import { isPartitionComment } from './is-partition-comment'
 import { getCommentBefore } from './get-comment-before'
 
-export let getNodeRange = (
+export const getNodeRange = (
   node: TSESTree.Node,
   sourceCode: TSESLint.SourceCode,
   additionalOptions?: {
@@ -18,15 +18,15 @@ export let getNodeRange = (
   let start = node.range.at(0)!
   let end = node.range.at(1)!
 
-  let raw = sourceCode.text.slice(start, end)
+  const raw = sourceCode.text.slice(start, end)
 
   if (ASTUtils.isParenthesized(node, sourceCode)) {
-    let bodyOpeningParen = sourceCode.getTokenBefore(
+    const bodyOpeningParen = sourceCode.getTokenBefore(
       node,
       ASTUtils.isOpeningParenToken,
     )!
 
-    let bodyClosingParen = sourceCode.getTokenAfter(
+    const bodyClosingParen = sourceCode.getTokenAfter(
       node,
       ASTUtils.isClosingParenToken,
     )!
@@ -35,10 +35,10 @@ export let getNodeRange = (
     end = bodyClosingParen.range.at(1)!
   }
 
-  let comment = getCommentBefore(node, sourceCode)
+  const comment = getCommentBefore(node, sourceCode)
 
   if (raw.endsWith(';') || raw.endsWith(',')) {
-    let tokensAfter = sourceCode.getTokensAfter(node, {
+    const tokensAfter = sourceCode.getTokensAfter(node, {
       includeComments: true,
       count: 2,
     })

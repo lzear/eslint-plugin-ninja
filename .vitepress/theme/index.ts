@@ -7,7 +7,7 @@ import HomePage from './components/home-page.vue'
 import './tailwind.postcss'
 import './layout/colors.css'
 
-let theme: Theme = {
+const theme: Theme = {
   ...DefaultTheme,
   Layout: () =>
     h(DefaultTheme.Layout, null, {

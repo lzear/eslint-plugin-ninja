@@ -1,3 +1,5 @@
+/* eslint-disable unicorn/prefer-module */
+
 import { defineConfig } from 'vite'
 import path from 'node:path'
 

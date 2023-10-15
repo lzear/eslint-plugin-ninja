@@ -1,1 +1,1 @@
-export let isPositive = (number: number) => number > 0
+export const isPositive = (number: number) => number > 0

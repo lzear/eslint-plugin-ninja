@@ -69,15 +69,15 @@ export default createEslintRule<Options, MESSAGE_ID>({
     },
   ],
   create: context => {
-    let options = complete(context.options.at(0), {
+    const options = complete(context.options.at(0), {
       type: SortType.alphabetical,
       order: SortOrder.asc,
       'ignore-case': false,
     })
 
-    let parts: SortingNode[][] = [[]]
+    const parts: SortingNode[][] = [[]]
 
-    let registerNode = (
+    const registerNode = (
       node:
         | TSESTree.ExportNamedDeclarationWithSource
         | TSESTree.ExportAllDeclaration,
@@ -101,9 +101,9 @@ export default createEslintRule<Options, MESSAGE_ID>({
         }
       },
       'Program:exit': () => {
-        let source = context.getSourceCode()
+        const source = context.getSourceCode()
 
-        for (let nodes of parts) {
+        for (const nodes of parts) {
           pairwise(nodes, (left, right) => {
             if (isPositive(compare(left, right, options))) {
               context.report({

@@ -13,14 +13,14 @@ describe(RULE_NAME, () => {
   RuleTester.itSkip = it.skip
   RuleTester.it = it
 
-  let ruleTester = new RuleTester({
+  const ruleTester = new RuleTester({
     parser: '@typescript-eslint/parser',
   })
 
   describe(`${RULE_NAME}: sorting by alphabetical order`, () => {
-    let type = 'alphabetical-order'
+    const type = 'alphabetical-order'
 
-    let options = {
+    const options = {
       type: SortType.alphabetical,
       order: SortOrder.asc,
       'ignore-case': false,
@@ -255,9 +255,9 @@ describe(RULE_NAME, () => {
   })
 
   describe(`${RULE_NAME}: sorting by natural order`, () => {
-    let type = 'natural-order'
+    const type = 'natural-order'
 
-    let options = {
+    const options = {
       type: SortType.natural,
       order: SortOrder.asc,
       'ignore-case': false,
@@ -492,9 +492,9 @@ describe(RULE_NAME, () => {
   })
 
   describe(`${RULE_NAME}: sorting by line length`, () => {
-    let type = 'line-length-order'
+    const type = 'line-length-order'
 
-    let options = {
+    const options = {
       type: SortType['line-length'],
       order: SortOrder.desc,
     }

@@ -73,15 +73,15 @@ export default createEslintRule<Options, MESSAGE_ID>({
         node.members.length > 1 &&
         node.members.every(({ initializer }) => initializer)
       ) {
-        let options = complete(context.options.at(0), {
+        const options = complete(context.options.at(0), {
           type: SortType.alphabetical,
           order: SortOrder.asc,
           'ignore-case': false,
         })
 
-        let source = context.getSourceCode()
+        const source = context.getSourceCode()
 
-        let nodes: SortingNode[] = node.members.map(member => ({
+        const nodes: SortingNode[] = node.members.map(member => ({
           name:
             member.id.type === 'Literal'
               ? `${member.id.value}`

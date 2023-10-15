@@ -84,7 +84,7 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
   create: context => ({
     TSTypeLiteral: node => {
       if (node.members.length > 1) {
-        let options = complete(context.options.at(0), {
+        const options = complete(context.options.at(0), {
           type: SortType.alphabetical,
           'ignore-case': false,
           order: SortOrder.asc,
@@ -92,22 +92,22 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
           groups: [],
         })
 
-        let source = context.getSourceCode()
+        const source = context.getSourceCode()
 
-        let nodes: SortingNode[] = node.members.map(member => {
+        const nodes: SortingNode[] = node.members.map(member => {
           let name: string
-          let raw = source.text.slice(member.range.at(0), member.range.at(1))
+          const raw = source.text.slice(member.range.at(0), member.range.at(1))
 
-          let { getGroup, defineGroup, setCustomGroups } = useGroups(
+          const { getGroup, defineGroup, setCustomGroups } = useGroups(
             options.groups,
           )
 
-          let formatName = (value: string): string =>
+          const formatName = (value: string): string =>
             value.replace(/(,|;)$/, '')
 
           if (member.type === 'TSPropertySignature') {
             if (member.key.type === 'Identifier') {
-              ;({ name } = member.key)
+              ({ name } = member.key)
             } else if (member.key.type === 'Literal') {
               name = `${member.key.value}`
             } else {
@@ -117,7 +117,7 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
               )
             }
           } else if (member.type === 'TSIndexSignature') {
-            let endIndex: number =
+            const endIndex: number =
               member.typeAnnotation?.range.at(0) ?? member.range.at(1)!
 
             name = formatName(source.text.slice(member.range.at(0), endIndex))
@@ -133,8 +133,8 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
             defineGroup('multiline')
           }
 
-          let endsWithComma = raw.endsWith(';') || raw.endsWith(',')
-          let endSize = endsWithComma ? 1 : 0
+          const endsWithComma = raw.endsWith(';') || raw.endsWith(',')
+          const endSize = endsWithComma ? 1 : 0
 
           return {
             size: rangeToDiff(member.range) - endSize,
@@ -145,8 +145,8 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
         })
 
         pairwise(nodes, (left, right) => {
-          let leftNum = getGroupNumber(options.groups, left)
-          let rightNum = getGroupNumber(options.groups, right)
+          const leftNum = getGroupNumber(options.groups, left)
+          const rightNum = getGroupNumber(options.groups, right)
 
           if (
             leftNum > rightNum ||
@@ -160,26 +160,22 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
               },
               node: right.node,
               fix: fixer => {
-                let grouped: {
+                const grouped: {
                   [key: string]: SortingNode[]
                 } = {}
 
-                for (let currentNode of nodes) {
-                  let groupNum = getGroupNumber(options.groups, currentNode)
+                for (const currentNode of nodes) {
+                  const groupNum = getGroupNumber(options.groups, currentNode)
 
-                  if (!(groupNum in grouped)) {
-                    grouped[groupNum] = [currentNode]
-                  } else {
-                    grouped[groupNum] = sortNodes(
-                      [...grouped[groupNum], currentNode],
-                      options,
-                    )
-                  }
+                  grouped[groupNum] =
+                    groupNum in grouped
+                      ? sortNodes([...grouped[groupNum], currentNode], options)
+                      : [currentNode]
                 }
 
-                let sortedNodes: SortingNode[] = []
+                const sortedNodes: SortingNode[] = []
 
-                for (let group of Object.keys(grouped).sort()) {
+                for (const group of Object.keys(grouped).sort()) {
                   sortedNodes.push(...sortNodes(grouped[group], options))
                 }
 

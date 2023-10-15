@@ -1,11 +1,11 @@
 import type { TSESLint } from '@typescript-eslint/utils'
 import type { TSESTree } from '@typescript-eslint/types'
 
-export let getCommentAfter = (
+export const getCommentAfter = (
   node: TSESTree.Node,
   source: TSESLint.SourceCode,
 ): TSESTree.Comment | null => {
-  let token = source.getTokenAfter(node, {
+  const token = source.getTokenAfter(node, {
     filter: ({ value, type }) =>
       !(type === 'Punctuator' && [',', ';'].includes(value)),
     includeComments: true,

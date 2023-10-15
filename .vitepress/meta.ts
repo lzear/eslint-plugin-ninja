@@ -1,12 +1,12 @@
 import packageJson from '../package.json'
 
-export let { description, repository, homepage, keywords, version } =
+export const { description, repository, homepage, keywords, version } =
   packageJson
 
-export let title = 'Perfectionist'
+export const title = 'Perfectionist'
 
-export let changelog = `${repository}/blob/main/changelog.md`
+export const changelog = `${repository}/blob/main/changelog.md`
 
-export let contributing = `${repository}/blob/main/contributing.md`
+export const contributing = `${repository}/blob/main/contributing.md`
 
-export let image = `${homepage}/open-graph.png`
+export const image = `${homepage}/open-graph.png`

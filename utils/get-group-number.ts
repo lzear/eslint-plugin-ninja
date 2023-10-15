@@ -1,11 +1,11 @@
 import type { SortingNode } from '../typings'
 
-export let getGroupNumber = (
+export const getGroupNumber = (
   groups: (string[] | string)[],
   node: SortingNode,
 ): number => {
   for (let i = 0, max = groups.length; i < max; i++) {
-    let currentGroup = groups[i]
+    const currentGroup = groups[i]
 
     if (
       node.group === currentGroup ||

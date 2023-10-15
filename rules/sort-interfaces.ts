@@ -93,7 +93,7 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
   create: context => ({
     TSInterfaceDeclaration: node => {
       if (node.body.body.length > 1) {
-        let options = complete(context.options.at(0), {
+        const options = complete(context.options.at(0), {
           type: SortType.alphabetical,
           'ignore-case': false,
           order: SortOrder.asc,
@@ -109,9 +109,9 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
             }),
           )
         ) {
-          let source = context.getSourceCode()
+          const source = context.getSourceCode()
 
-          let formattedMembers: SortingNode[][] = node.body.body.reduce(
+          const formattedMembers: SortingNode[][] = node.body.body.reduce(
             (accumulator: SortingNode[][], element) => {
               if (element.type === 'TSCallSignatureDeclaration') {
                 accumulator.push([])
@@ -120,29 +120,29 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
 
               let name: string
 
-              let { getGroup, defineGroup, setCustomGroups } = useGroups(
+              const { getGroup, defineGroup, setCustomGroups } = useGroups(
                 options.groups,
               )
 
               if (element.type === 'TSPropertySignature') {
                 if (element.key.type === 'Identifier') {
-                  ;({ name } = element.key)
+                  ({ name } = element.key)
                 } else if (element.key.type === 'Literal') {
                   name = `${element.key.value}`
                 } else {
-                  let end: number =
+                  const end: number =
                     element.typeAnnotation?.range.at(0) ??
                     element.range.at(1)! - (element.optional ? '?'.length : 0)
 
                   name = source.text.slice(element.range.at(0), end)
                 }
               } else if (element.type === 'TSIndexSignature') {
-                let endIndex: number =
+                const endIndex: number =
                   element.typeAnnotation?.range.at(0) ?? element.range.at(1)!
 
                 name = source.text.slice(element.range.at(0), endIndex)
               } else {
-                let endIndex: number =
+                const endIndex: number =
                   element.returnType?.range.at(0) ?? element.range.at(1)!
 
                 name = source.text.slice(element.range.at(0), endIndex)
@@ -166,10 +166,10 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
             [[]],
           )
 
-          for (let nodes of formattedMembers) {
+          for (const nodes of formattedMembers) {
             pairwise(nodes, (left, right) => {
-              let leftNum = getGroupNumber(options.groups, left)
-              let rightNum = getGroupNumber(options.groups, right)
+              const leftNum = getGroupNumber(options.groups, left)
+              const rightNum = getGroupNumber(options.groups, right)
 
               if (
                 leftNum > rightNum ||
@@ -184,26 +184,28 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
                   },
                   node: right.node,
                   fix: fixer => {
-                    let grouped: {
+                    const grouped: {
                       [key: string]: SortingNode[]
                     } = {}
 
-                    for (let currentNode of nodes) {
-                      let groupNum = getGroupNumber(options.groups, currentNode)
+                    for (const currentNode of nodes) {
+                      const groupNum = getGroupNumber(
+                        options.groups,
+                        currentNode,
+                      )
 
-                      if (!(groupNum in grouped)) {
-                        grouped[groupNum] = [currentNode]
-                      } else {
-                        grouped[groupNum] = sortNodes(
-                          [...grouped[groupNum], currentNode],
-                          options,
-                        )
-                      }
+                      grouped[groupNum] =
+                        groupNum in grouped
+                          ? sortNodes(
+                              [...grouped[groupNum], currentNode],
+                              options,
+                            )
+                          : [currentNode]
                     }
 
-                    let sortedNodes: SortingNode[] = []
+                    const sortedNodes: SortingNode[] = []
 
-                    for (let group of Object.keys(grouped).sort()) {
+                    for (const group of Object.keys(grouped).sort()) {
                       sortedNodes.push(...sortNodes(grouped[group], options))
                     }
 

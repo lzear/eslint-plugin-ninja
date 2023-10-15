@@ -21,7 +21,7 @@ type RuleSeverity = 'error' | 'warn' | 'off'
 
 type RuleDeclaration = [RuleSeverity, { [key: string]: unknown }?]
 
-let createConfigWithOptions = (options: {
+const createConfigWithOptions = (options: {
   'ignore-case'?: boolean
   order: SortOrder
   type: SortType
@@ -31,7 +31,7 @@ let createConfigWithOptions = (options: {
   }
   plugins: ['perfectionist']
 } => {
-  let recommendedRules: {
+  const recommendedRules: {
     [key: string]: RuleDeclaration
   } = {
     [sortImportsName]: [

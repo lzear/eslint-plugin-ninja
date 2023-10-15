@@ -75,21 +75,21 @@ export default createEslintRule<Options, MESSAGE_ID>({
       if (
         node.callee.type === 'Identifier' &&
         node.callee.name === 'Map' &&
-        node.arguments.length &&
+        node.arguments.length > 0 &&
         node.arguments[0].type === 'ArrayExpression'
       ) {
-        let [{ elements }] = node.arguments
+        const [{ elements }] = node.arguments
 
         if (elements.length > 1) {
-          let options = complete(context.options.at(0), {
+          const options = complete(context.options.at(0), {
             type: SortType.alphabetical,
             'ignore-case': false,
             order: SortOrder.asc,
           })
 
-          let source = context.getSourceCode()
+          const source = context.getSourceCode()
 
-          let parts: TSESTree.Expression[][] = elements.reduce(
+          const parts: TSESTree.Expression[][] = elements.reduce(
             (
               accumulator: TSESTree.Expression[][],
               element: TSESTree.SpreadElement | TSESTree.Expression | null,
@@ -104,12 +104,12 @@ export default createEslintRule<Options, MESSAGE_ID>({
             [[]],
           )
 
-          for (let part of parts) {
-            let nodes: SortingNode[] = part.map(element => {
+          for (const part of parts) {
+            const nodes: SortingNode[] = part.map(element => {
               let name: string
 
               if (element.type === 'ArrayExpression') {
-                let [left] = element.elements
+                const [left] = element.elements
 
                 if (!left) {
                   name = `${left}`

@@ -6,7 +6,7 @@ import type { PartitionComment, SortingNode } from '../typings'
 import { getCommentAfter } from './get-comment-after'
 import { getNodeRange } from './get-node-range'
 
-export let makeFixes = (
+export const makeFixes = (
   fixer: TSESLint.RuleFixer,
   nodes: SortingNode[],
   sortedNodes: SortingNode[],
@@ -15,13 +15,13 @@ export let makeFixes = (
     partitionComment?: PartitionComment
   },
 ) => {
-  let fixes: TSESLint.RuleFix[] = []
+  const fixes: TSESLint.RuleFix[] = []
 
-  let isSingleline =
+  const isSingleline =
     nodes.at(0)?.node.loc.start.line === nodes.at(-1)?.node.loc.end.line
 
   for (let i = 0, max = nodes.length; i < max; i++) {
-    let { node } = nodes.at(i)!
+    const { node } = nodes.at(i)!
 
     fixes.push(
       fixer.replaceTextRange(
@@ -32,19 +32,19 @@ export let makeFixes = (
       ),
     )
 
-    let commentAfter = getCommentAfter(sortedNodes.at(i)!.node, source)
+    const commentAfter = getCommentAfter(sortedNodes.at(i)!.node, source)
 
     if (commentAfter && !isSingleline) {
-      let tokenBefore = source.getTokenBefore(commentAfter)
+      const tokenBefore = source.getTokenBefore(commentAfter)
 
-      let range: TSESTree.Range = [
+      const range: TSESTree.Range = [
         tokenBefore!.range.at(1)!,
         commentAfter.range.at(1)!,
       ]
 
       fixes.push(fixer.replaceTextRange(range, ''))
 
-      let tokenAfterNode = source.getTokenAfter(node)
+      const tokenAfterNode = source.getTokenAfter(node)
 
       fixes.push(
         fixer.insertTextAfter(

@@ -4,7 +4,7 @@ import type { SortingNode, SortOrder } from '../typings'
 
 import { SortType } from '../typings'
 
-export let compare = (
+export const compare = (
   a: SortingNode,
   b: SortingNode,
   options: {
@@ -19,10 +19,10 @@ export let compare = (
     return 1
   }
 
-  let orderCoefficient = options.order === 'asc' ? 1 : -1
+  const orderCoefficient = options.order === 'asc' ? 1 : -1
   let sortingFunction: (a: SortingNode, b: SortingNode) => number
 
-  let formatString = (string: string) =>
+  const formatString = (string: string) =>
     options['ignore-case'] ? string.toLowerCase() : string
 
   if (options.type === SortType.alphabetical) {

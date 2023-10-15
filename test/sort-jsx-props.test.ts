@@ -13,7 +13,7 @@ describe(RULE_NAME, () => {
   RuleTester.itSkip = it.skip
   RuleTester.it = it
 
-  let ruleTester = new RuleTester({
+  const ruleTester = new RuleTester({
     parser: '@typescript-eslint/parser',
     parserOptions: {
       ecmaFeatures: {
@@ -23,9 +23,9 @@ describe(RULE_NAME, () => {
   })
 
   describe(`${RULE_NAME}: sorting by alphabetical order`, () => {
-    let type = 'alphabetical-order'
+    const type = 'alphabetical-order'
 
-    let options = {
+    const options = {
       type: SortType.alphabetical,
       order: SortOrder.asc,
       'ignore-case': false,
@@ -564,9 +564,9 @@ describe(RULE_NAME, () => {
   })
 
   describe(`${RULE_NAME}: sorting by natural order`, () => {
-    let type = 'natural-order'
+    const type = 'natural-order'
 
-    let options = {
+    const options = {
       type: SortType.natural,
       order: SortOrder.asc,
       'ignore-case': true,
@@ -1105,9 +1105,9 @@ describe(RULE_NAME, () => {
   })
 
   describe(`${RULE_NAME}: sorting by line length`, () => {
-    let type = 'line-length-order'
+    const type = 'line-length-order'
 
-    let options = {
+    const options = {
       type: SortType['line-length'],
       order: SortOrder.desc,
     }
@@ -1116,16 +1116,16 @@ describe(RULE_NAME, () => {
       valid: [
         {
           code: dedent`
-              let Odokawa = () => (
-                <Character
-                  role="taxi driver"
-                  type="walrus"
-                  variant="odd"
-                >
-                  Pew-pew
-                </Character>
-              )
-            `,
+            let Odokawa = () => (
+              <Character
+                role="taxi driver"
+                type="walrus"
+                variant="odd"
+              >
+                Pew-pew
+              </Character>
+            )
+          `,
           options: [options],
         },
       ],
@@ -1752,23 +1752,23 @@ describe(RULE_NAME, () => {
     )
 
     // prettier-ignore
-    ;['.svelte', '.astro', '.vue'].forEach(extension => {
+    for (const extension of ['.svelte', '.astro', '.vue']) {
       ruleTester.run(`${RULE_NAME}: not works with ${extension} files`, rule, {
         valid: [
           {
             filename: 'component.vue',
             code: dedent`
-                <Student
-                  name="Mitsumi Iwakura"
-                  age={15}
-                  gender="female"
-                  birthPlace="Ikajima, Ishikawa Prefecture"
-                />
-              `,
+              <Student
+                name="Mitsumi Iwakura"
+                age={15}
+                gender="female"
+                birthPlace="Ikajima, Ishikawa Prefecture"
+              />
+            `,
           },
         ],
         invalid: [],
       })
-    })
+    }
   })
 })

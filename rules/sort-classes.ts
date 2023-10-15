@@ -93,18 +93,18 @@ export default createEslintRule<Options, MESSAGE_ID>({
   create: context => ({
     ClassBody: node => {
       if (node.body.length > 1) {
-        let options = complete(context.options.at(0), {
+        const options = complete(context.options.at(0), {
           type: SortType.alphabetical,
           order: SortOrder.asc,
           'ignore-case': false,
           groups: ['property', 'constructor', 'method', 'unknown'],
         })
 
-        let source = context.getSourceCode()
+        const source = context.getSourceCode()
 
-        let nodes: SortingNode[] = node.body.map(member => {
+        const nodes: SortingNode[] = node.body.map(member => {
           let name: string
-          let { getGroup, defineGroup } = useGroups(options.groups)
+          const { getGroup, defineGroup } = useGroups(options.groups)
 
           if (member.type === 'StaticBlock') {
             name = 'static'
@@ -115,57 +115,68 @@ export default createEslintRule<Options, MESSAGE_ID>({
             )
           } else {
             if (member.key.type === 'Identifier') {
-              ;({ name } = member.key)
+              ({ name } = member.key)
             } else {
               name = source.text.slice(...member.key.range)
             }
           }
 
-          let isPrivate = name.startsWith('_') || name.startsWith('#')
+          const isPrivate = name.startsWith('_') || name.startsWith('#')
 
-          if (member.type === 'MethodDefinition') {
-            if (member.kind === 'constructor') {
-              defineGroup('constructor')
+          switch (member.type) {
+            case 'MethodDefinition': {
+              if (member.kind === 'constructor') {
+                defineGroup('constructor')
+              }
+
+              const isPrivateMethod =
+                member.accessibility === 'private' || isPrivate
+
+              const isStaticMethod = member.static
+
+              if (isPrivateMethod && isStaticMethod) {
+                defineGroup('static-private-method')
+              }
+
+              if (isPrivateMethod) {
+                defineGroup('private-method')
+              }
+
+              if (isStaticMethod) {
+                defineGroup('static-method')
+              }
+
+              if (member.kind === 'get') {
+                defineGroup('get-method')
+              }
+
+              if (member.kind === 'set') {
+                defineGroup('set-method')
+              }
+
+              defineGroup('method')
+
+              break
             }
+            case 'TSIndexSignature': {
+              defineGroup('index-signature')
 
-            let isPrivateMethod =
-              member.accessibility === 'private' || isPrivate
-
-            let isStaticMethod = member.static
-
-            if (isPrivateMethod && isStaticMethod) {
-              defineGroup('static-private-method')
+              break
             }
+            case 'PropertyDefinition': {
+              if (member.accessibility === 'private' || isPrivate) {
+                defineGroup('private-property')
+              }
 
-            if (isPrivateMethod) {
-              defineGroup('private-method')
+              if (member.static) {
+                defineGroup('static-property')
+              }
+
+              defineGroup('property')
+
+              break
             }
-
-            if (isStaticMethod) {
-              defineGroup('static-method')
-            }
-
-            if (member.kind === 'get') {
-              defineGroup('get-method')
-            }
-
-            if (member.kind === 'set') {
-              defineGroup('set-method')
-            }
-
-            defineGroup('method')
-          } else if (member.type === 'TSIndexSignature') {
-            defineGroup('index-signature')
-          } else if (member.type === 'PropertyDefinition') {
-            if (member.accessibility === 'private' || isPrivate) {
-              defineGroup('private-property')
-            }
-
-            if (member.static) {
-              defineGroup('static-property')
-            }
-
-            defineGroup('property')
+            // No default
           }
 
           return {
@@ -177,8 +188,8 @@ export default createEslintRule<Options, MESSAGE_ID>({
         })
 
         pairwise(nodes, (left, right) => {
-          let leftNum = getGroupNumber(options.groups, left)
-          let rightNum = getGroupNumber(options.groups, right)
+          const leftNum = getGroupNumber(options.groups, left)
+          const rightNum = getGroupNumber(options.groups, right)
 
           if (
             left.name !== right.name &&
@@ -194,32 +205,31 @@ export default createEslintRule<Options, MESSAGE_ID>({
               },
               node: right.node,
               fix: (fixer: TSESLint.RuleFixer) => {
-                let fixes: TSESLint.RuleFix[] = []
+                const fixes: TSESLint.RuleFix[] = []
 
-                let grouped = nodes.reduce(
+                const grouped = nodes.reduce(
                   (
                     accumulator: {
                       [key: string]: SortingNode[]
                     },
                     sortingNode,
                   ) => {
-                    let groupNum = getGroupNumber(options.groups, sortingNode)
+                    const groupNum = getGroupNumber(options.groups, sortingNode)
 
-                    if (!(groupNum in accumulator)) {
-                      accumulator[groupNum] = [sortingNode]
-                    } else {
-                      accumulator[groupNum] = sortNodes(
-                        [...accumulator[groupNum], sortingNode],
-                        options,
-                      )
-                    }
+                    accumulator[groupNum] =
+                      groupNum in accumulator
+                        ? sortNodes(
+                            [...accumulator[groupNum], sortingNode],
+                            options,
+                          )
+                        : [sortingNode]
 
                     return accumulator
                   },
                   {},
                 )
 
-                let formatted = Object.keys(grouped)
+                const formatted = Object.keys(grouped)
                   .sort()
                   .reduce(
                     (accumulator: SortingNode[], group: string) => [

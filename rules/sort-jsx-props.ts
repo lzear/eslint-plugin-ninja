@@ -97,7 +97,7 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
     return {
       JSXElement: node => {
         if (node.openingElement.attributes.length > 1) {
-          let options = complete(context.options.at(0), {
+          const options = complete(context.options.at(0), {
             type: SortType.alphabetical,
             'ignore-case': false,
             order: SortOrder.asc,
@@ -105,9 +105,9 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
             groups: [],
           })
 
-          let source = context.getSourceCode()
+          const source = context.getSourceCode()
 
-          let parts: SortingNode[][] = node.openingElement.attributes.reduce(
+          const parts: SortingNode[][] = node.openingElement.attributes.reduce(
             (
               accumulator: SortingNode[][],
               attribute: TSESTree.JSXSpreadAttribute | TSESTree.JSXAttribute,
@@ -117,12 +117,12 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
                 return accumulator
               }
 
-              let name =
+              const name =
                 attribute.name.type === 'JSXNamespacedName'
                   ? `${attribute.name.namespace.name}:${attribute.name.name.name}`
                   : attribute.name.name
 
-              let { getGroup, defineGroup, setCustomGroups } = useGroups(
+              const { getGroup, defineGroup, setCustomGroups } = useGroups(
                 options.groups,
               )
 
@@ -136,7 +136,7 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
                 defineGroup('multiline')
               }
 
-              let jsxNode = {
+              const jsxNode = {
                 size: rangeToDiff(attribute.range),
                 group: getGroup(),
                 node: attribute,
@@ -150,10 +150,10 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
             [[]],
           )
 
-          for (let nodes of parts) {
+          for (const nodes of parts) {
             pairwise(nodes, (left, right) => {
-              let leftNum = getGroupNumber(options.groups, left)
-              let rightNum = getGroupNumber(options.groups, right)
+              const leftNum = getGroupNumber(options.groups, left)
+              const rightNum = getGroupNumber(options.groups, right)
 
               if (
                 leftNum > rightNum ||
@@ -168,26 +168,28 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
                   },
                   node: right.node,
                   fix: fixer => {
-                    let grouped: {
+                    const grouped: {
                       [key: string]: SortingNode[]
                     } = {}
 
-                    for (let currentNode of nodes) {
-                      let groupNum = getGroupNumber(options.groups, currentNode)
+                    for (const currentNode of nodes) {
+                      const groupNum = getGroupNumber(
+                        options.groups,
+                        currentNode,
+                      )
 
-                      if (!(groupNum in grouped)) {
-                        grouped[groupNum] = [currentNode]
-                      } else {
-                        grouped[groupNum] = sortNodes(
-                          [...grouped[groupNum], currentNode],
-                          options,
-                        )
-                      }
+                      grouped[groupNum] =
+                        groupNum in grouped
+                          ? sortNodes(
+                              [...grouped[groupNum], currentNode],
+                              options,
+                            )
+                          : [currentNode]
                     }
 
-                    let sortedNodes: SortingNode[] = []
+                    const sortedNodes: SortingNode[] = []
 
-                    for (let group of Object.keys(grouped).sort()) {
+                    for (const group of Object.keys(grouped).sort()) {
                       sortedNodes.push(...sortNodes(grouped[group], options))
                     }
 

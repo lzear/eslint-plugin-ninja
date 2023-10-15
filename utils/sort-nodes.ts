@@ -2,7 +2,7 @@ import type { SortingNode, SortOrder, SortType } from '../typings'
 
 import { compare } from './compare'
 
-export let sortNodes = <T extends SortingNode>(
+export const sortNodes = <T extends SortingNode>(
   nodes: T[],
   options: {
     'ignore-case'?: boolean

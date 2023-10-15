@@ -2,7 +2,7 @@ import { minimatch } from 'minimatch'
 
 import type { PartitionComment } from '../typings'
 
-export let isPartitionComment = (
+export const isPartitionComment = (
   partitionComment: PartitionComment,
   comment: string,
 ) =>

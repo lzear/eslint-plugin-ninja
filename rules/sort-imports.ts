@@ -151,7 +151,7 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
     },
   ],
   create: context => {
-    let options = complete(context.options.at(0), {
+    const options = complete(context.options.at(0), {
       'newlines-between': NewlinesBetweenValue.always,
       'custom-groups': { type: {}, value: {} },
       'internal-pattern': ['~/**'],
@@ -183,18 +183,18 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
 
     let source = context.getSourceCode()
 
-    let nodes: SortingNode[] = []
+    const nodes: SortingNode[] = []
 
-    let isSideEffectImport = (node: TSESTree.Node) =>
+    const isSideEffectImport = (node: TSESTree.Node) =>
       node.type === 'ImportDeclaration' && node.specifiers.length === 0
 
-    let computeGroup = (node: ModuleDeclaration): Group<string[]> => {
-      let isStyle = (value: string) =>
+    const computeGroup = (node: ModuleDeclaration): Group<string[]> => {
+      const isStyle = (value: string) =>
         ['.less', '.scss', '.sass', '.styl', '.pcss', '.css', '.sss'].some(
           extension => value.endsWith(extension),
         )
 
-      let isIndex = (value: string) =>
+      const isIndex = (value: string) =>
         [
           './index.d.js',
           './index.d.ts',
@@ -205,13 +205,15 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
           '.',
         ].includes(value)
 
-      let isParent = (value: string) => value.indexOf('..') === 0
+      const isParent = (value: string) => value.indexOf('..') === 0
 
-      let isSibling = (value: string) => value.indexOf('./') === 0
+      const isSibling = (value: string) => value.indexOf('./') === 0
 
-      let { getGroup, defineGroup, setCustomGroups } = useGroups(options.groups)
+      const { getGroup, defineGroup, setCustomGroups } = useGroups(
+        options.groups,
+      )
 
-      let isInternal = (nodeElement: TSESTree.ImportDeclaration) =>
+      const isInternal = (nodeElement: TSESTree.ImportDeclaration) =>
         options['internal-pattern'].length &&
         options['internal-pattern'].some(pattern =>
           minimatch(nodeElement.source.value, pattern, {
@@ -219,8 +221,8 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
           }),
         )
 
-      let isCoreModule = (value: string) => {
-        let bunModules = [
+      const isCoreModule = (value: string) => {
+        const bunModules = [
           'bun',
           'bun:ffi',
           'bun:jsc',
@@ -312,20 +314,17 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
       return getGroup()
     }
 
-    let registerNode = (node: ModuleDeclaration) => {
+    const registerNode = (node: ModuleDeclaration) => {
       let name: string
 
       if (node.type === 'ImportDeclaration') {
         name = node.source.value
       } else {
-        if (
+        name =
           node.moduleReference.type === 'TSExternalModuleReference' &&
           node.moduleReference.expression.type === 'Literal'
-        ) {
-          name = `${node.moduleReference.expression.value}`
-        } else {
-          name = source.text.slice(...node.moduleReference.range)
-        }
+            ? `${node.moduleReference.expression.value}`
+            : source.text.slice(...node.moduleReference.range)
       }
 
       nodes.push({
@@ -340,54 +339,51 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
       TSImportEqualsDeclaration: registerNode,
       ImportDeclaration: registerNode,
       'Program:exit': () => {
-        let hasContentBetweenNodes = (
+        const hasContentBetweenNodes = (
           left: SortingNode,
           right: SortingNode,
         ): boolean =>
-          !!source.getTokensBetween(
+          source.getTokensBetween(
             left.node,
             getCommentBefore(right.node, source) || right.node,
             {
               includeComments: true,
             },
-          ).length
+          ).length > 0
 
-        let getLinesBetweenImports = (
+        const getLinesBetweenImports = (
           left: SortingNode,
           right: SortingNode,
         ) => {
-          let linesBetweenImports = source.lines.slice(
+          const linesBetweenImports = source.lines.slice(
             left.node.loc.end.line,
             right.node.loc.start.line - 1,
           )
 
-          return linesBetweenImports.filter(line => !line.trim().length).length
+          return linesBetweenImports.filter(line => line.trim().length === 0)
+            .length
         }
 
-        let fix = (
+        const fix = (
           fixer: TSESLint.RuleFixer,
           nodesToFix: SortingNode[],
         ): TSESLint.RuleFix[] => {
-          let fixes: TSESLint.RuleFix[] = []
+          const fixes: TSESLint.RuleFix[] = []
 
-          let grouped: {
+          const grouped: {
             [key: string]: SortingNode[]
           } = {}
 
-          for (let node of nodesToFix) {
-            let groupNum = getGroupNumber(options.groups, node)
+          for (const node of nodesToFix) {
+            const groupNum = getGroupNumber(options.groups, node)
 
-            if (!(groupNum in grouped)) {
-              grouped[groupNum] = [node]
-            } else {
-              grouped[groupNum] = sortNodes(
-                [...grouped[groupNum], node],
-                options,
-              )
-            }
+            grouped[groupNum] =
+              groupNum in grouped
+                ? sortNodes([...grouped[groupNum], node], options)
+                : [node]
           }
 
-          let formatted = Object.keys(grouped)
+          const formatted = Object.keys(grouped)
             .sort()
             .reduce(
               (accumulator: SortingNode[], group: string) => [
@@ -398,7 +394,7 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
             )
 
           for (let i = 0, max = formatted.length; i < max; i++) {
-            let node = formatted.at(i)!
+            const node = formatted.at(i)!
 
             fixes.push(
               fixer.replaceTextRange(
@@ -408,10 +404,10 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
             )
 
             if (options['newlines-between'] !== 'ignore') {
-              let nextNode = formatted.at(i + 1)
+              const nextNode = formatted.at(i + 1)
 
               if (nextNode) {
-                let linesBetweenImports = getLinesBetweenImports(
+                const linesBetweenImports = getLinesBetweenImports(
                   nodesToFix.at(i)!,
                   nodesToFix.at(i + 1)!,
                 )
@@ -472,10 +468,10 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
           return fixes
         }
 
-        let splittedNodes: SortingNode[][] = [[]]
+        const splittedNodes: SortingNode[][] = [[]]
 
-        for (let node of nodes) {
-          let lastNode = splittedNodes.at(-1)?.at(-1)
+        for (const node of nodes) {
+          const lastNode = splittedNodes.at(-1)?.at(-1)
 
           if (lastNode && hasContentBetweenNodes(lastNode, node)) {
             splittedNodes.push([node])
@@ -484,12 +480,15 @@ export default createEslintRule<Options<string[]>, MESSAGE_ID>({
           }
         }
 
-        for (let nodeList of splittedNodes) {
+        for (const nodeList of splittedNodes) {
           pairwise(nodeList, (left, right) => {
-            let leftNum = getGroupNumber(options.groups, left)
-            let rightNum = getGroupNumber(options.groups, right)
+            const leftNum = getGroupNumber(options.groups, left)
+            const rightNum = getGroupNumber(options.groups, right)
 
-            let numberOfEmptyLinesBetween = getLinesBetweenImports(left, right)
+            const numberOfEmptyLinesBetween = getLinesBetweenImports(
+              left,
+              right,
+            )
 
             if (
               !(

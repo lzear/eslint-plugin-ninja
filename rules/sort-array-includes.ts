@@ -83,22 +83,22 @@ export default createEslintRule<Options, MESSAGE_ID>({
         node.property.type === 'Identifier' &&
         node.property.name === 'includes'
       ) {
-        let elements =
+        const elements =
           node.object.type === 'ArrayExpression'
             ? node.object.elements
             : node.object.arguments
 
         if (elements.length > 1) {
-          let options = complete(context.options.at(0), {
+          const options = complete(context.options.at(0), {
             type: SortType.alphabetical,
             order: SortOrder.asc,
             'ignore-case': false,
             'spread-last': false,
           })
 
-          let source = context.getSourceCode()
+          const source = context.getSourceCode()
 
-          let nodes: (SortingNode & { type: string })[] = elements
+          const nodes: (SortingNode & { type: string })[] = elements
             .reduce(
               (
                 accumulator: (SortingNode & { type: string })[][],
@@ -150,7 +150,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
                 },
                 node: right.node,
                 fix: fixer => {
-                  let sortedNodes = sortNodes(nodes, options)
+                  const sortedNodes = sortNodes(nodes, options)
 
                   if (options['spread-last']) {
                     for (let i = 0, max = sortedNodes.length; i < max; i++) {

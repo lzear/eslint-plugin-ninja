@@ -74,21 +74,21 @@ export default createEslintRule<Options, MESSAGE_ID>({
   ],
   create: context => ({
     ImportDeclaration: node => {
-      let specifiers = node.specifiers.filter(
+      const specifiers = node.specifiers.filter(
         ({ type }) => type === 'ImportSpecifier',
       )
 
       if (specifiers.length > 1) {
-        let options = complete(context.options.at(0), {
+        const options = complete(context.options.at(0), {
           type: SortType.alphabetical,
           'ignore-alias': true,
           'ignore-case': false,
           order: SortOrder.asc,
         })
 
-        let source = context.getSourceCode()
+        const source = context.getSourceCode()
 
-        let nodes: SortingNode[] = specifiers.map(specifier => {
+        const nodes: SortingNode[] = specifiers.map(specifier => {
           let { name } = specifier.local
 
           if (options['ignore-alias'] && specifier.type === 'ImportSpecifier') {
