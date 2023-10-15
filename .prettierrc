@@ -8,6 +8,7 @@
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "all",
+  "proseWrap": "always",
   "useTabs": false,
   "overrides": [
     {
