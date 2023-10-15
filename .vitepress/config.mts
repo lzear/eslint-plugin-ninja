@@ -19,6 +19,7 @@ let links: { lastmod?: number; url: string }[] = []
 let { configs, rules } = plugin
 
 export default defineConfig({
+  srcDir: 'docs',
   base: '/',
   title,
   description,
