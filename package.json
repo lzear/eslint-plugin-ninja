@@ -83,7 +83,8 @@
     "date-fns": "^2.30.0",
     "has-emoji": "^2.0.0",
     "minimatch": "^9.0.3",
-    "natural-compare-lite": "^1.4.0"
+    "natural-compare-lite": "^1.4.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@azat-io/stylelint-config": "^0.1.0",
