@@ -14,8 +14,8 @@
   },
   "include": [
     "**/*.ts",
-    "docs/.vitepress/**/*.ts",
-    "docs/.vitepress/config.mts"
+    ".vitepress/**/*.ts",
+    ".vitepress/config.mts"
   ],
   "exclude": ["node_modules"]
 }

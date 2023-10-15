@@ -1,4 +1,4 @@
-import packageJson from '../../package.json'
+import packageJson from '../package.json'
 
 export let { description, repository, homepage, keywords, version } =
   packageJson

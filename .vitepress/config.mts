@@ -12,7 +12,7 @@ import {
   title,
   image,
 } from './meta'
-import plugin from '../../index'
+import plugin from '../index'
 
 let links: { lastmod?: number; url: string }[] = []
 
