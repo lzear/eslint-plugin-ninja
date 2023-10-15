@@ -1,148 +1,78 @@
-import sortSvelteAttributes, { RULE_NAME as sortSvelteAttributesName } from './rules/sort-svelte-attributes'
-import sortAstroAttributes, { RULE_NAME as sortAstroAttributesName } from './rules/sort-astro-attributes'
-import sortArrayIncludes, { RULE_NAME as sortArrayIncludesName } from './rules/sort-array-includes'
-import sortVueAttributes, { RULE_NAME as sortVueAttributesName } from './rules/sort-vue-attributes'
-import sortNamedExports, { RULE_NAME as sortNamedExportsName } from './rules/sort-named-exports'
-import sortNamedImports, { RULE_NAME as sortNamedImportsName } from './rules/sort-named-imports'
-import sortObjectTypes, { RULE_NAME as sortObjectTypesName } from './rules/sort-object-types'
-import sortUnionTypes, { RULE_NAME as sortUnionTypesName } from './rules/sort-union-types'
-import sortInterfaces, { RULE_NAME as sortInterfacesName } from './rules/sort-interfaces'
-import sortJsxProps, { RULE_NAME as sortJsxPropsName } from './rules/sort-jsx-props'
-import sortExports, { RULE_NAME as sortExportsName } from './rules/sort-exports'
-import sortImports, { RULE_NAME as sortImportsName } from './rules/sort-imports'
-import sortObjects, { RULE_NAME as sortObjectsName } from './rules/sort-objects'
-import sortClasses, { RULE_NAME as sortClassesName } from './rules/sort-classes'
-import sortEnums, { RULE_NAME as sortEnumsName } from './rules/sort-enums'
-import sortMaps, { RULE_NAME as sortMapsName } from './rules/sort-maps'
-import { SortOrder, SortType } from './typings'
-import { name } from './package.json'
+import _ from 'lodash'
 
-type RuleSeverity = 'error' | 'warn' | 'off'
+import align, { RULE_NAME as alignName } from './rules/align.js'
+import emoji, { RULE_NAME as emojiName } from './rules/emoji.js'
+import justify, { RULE_NAME as justifyName } from './rules/justify.js'
+import justify2, { RULE_NAME as justify2Name } from './rules/justify2.js'
+import lottery, { RULE_NAME as lotteryName } from './rules/lottery.js'
+import monopoly, { RULE_NAME as monopolyName } from './rules/monopoly.js'
+import noCi, { RULE_NAME as noCiName } from './rules/no-ci.js'
+import noNoPlusPlus, { RULE_NAME as noNoPlusPlusName } from './rules/no-no-plusplus.js'
+import noObject, { RULE_NAME as noObjectName } from './rules/no-object.js'
+import noOvertime, { RULE_NAME as noOvertimeName } from './rules/no-overtime.js'
+import noRush, { RULE_NAME as noRushName } from './rules/no-rush.js'
+import noTs, { RULE_NAME as noTsName } from './rules/no-ts.js'
+import noUselessFor, { RULE_NAME as noUselessForName } from './rules/no-avoidable-loop.js'
+import noWoof, { RULE_NAME as noWoofName } from './rules/no-woof.js'
+import noXkcd, { RULE_NAME as noXkcdName } from './rules/no-xkcd.js'
+import no, { RULE_NAME as noName } from './rules/no.js'
+import preferNpm, { RULE_NAME as preferNpmName } from './rules/prefer-npm.js'
+import tab, { RULE_NAME as tabName } from './rules/tab.js'
+import yes, { RULE_NAME as yesName } from './rules/yes.js'
+import noRandom, { RULE_NAME as noRandomName } from './rules/no-random.js'
 
-type RuleDeclaration = [RuleSeverity, { [key: string]: unknown }?]
+const name = 'eslint-plugin-dont'
 
-const createConfigWithOptions = (options: {
-  'ignore-case'?: boolean
-  order: SortOrder
-  type: SortType
-}): {
-  rules: {
-    [key: string]: RuleDeclaration
-  }
-  plugins: ['perfectionist']
-} => {
-  const recommendedRules: {
-    [key: string]: RuleDeclaration
-  } = {
-    [sortImportsName]: [
-      'error',
-      {
-        groups: [
-          'type',
-          ['builtin', 'external'],
-          'internal-type',
-          'internal',
-          ['parent-type', 'sibling-type', 'index-type'],
-          ['parent', 'sibling', 'index'],
-          'object',
-          'unknown',
-        ],
-        'custom-groups': {
-          value: {},
-          type: {},
-        },
-        'newlines-between': 'always',
-        'internal-pattern': ['~/**'],
-      },
-    ],
-    [sortClassesName]: [
-      'error',
-      {
-        groups: [
-          'index-signature',
-          'static-property',
-          'private-property',
-          'property',
-          'constructor',
-          'static-method',
-          'private-method',
-          'method',
-          ['get-method', 'set-method'],
-          'unknown',
-        ],
-      },
-    ],
-    [sortObjectsName]: [
-      'error',
-      {
-        'partition-by-comment': false,
-      },
-    ],
-    [sortArrayIncludesName]: [
-      'error',
-      {
-        'spread-last': true,
-      },
-    ],
-    [sortSvelteAttributesName]: ['error'],
-    [sortAstroAttributesName]: ['error'],
-    [sortVueAttributesName]: ['error'],
-    [sortNamedExportsName]: ['error'],
-    [sortNamedImportsName]: ['error'],
-    [sortObjectTypesName]: ['error'],
-    [sortUnionTypesName]: ['error'],
-    [sortInterfacesName]: ['error'],
-    [sortJsxPropsName]: ['error'],
-    [sortExportsName]: ['error'],
-    [sortEnumsName]: ['error'],
-    [sortMapsName]: ['error'],
-  }
-  return {
-    rules: Object.fromEntries(
-      Object.entries(recommendedRules).map(([key, [message, baseOptions = {}]]) => [
-        `perfectionist/${key}`,
-        [message, Object.assign(baseOptions, options)],
-      ]),
-    ),
-    plugins: ['perfectionist'],
-  }
-}
+const rules = {
+  [alignName]: align,
+  [emojiName]: emoji,
+  [justify2Name]: justify2,
+  [justifyName]: justify,
+  [lotteryName]: lottery,
+  [monopolyName]: monopoly,
+  [noCiName]: noCi,
+  [noName]: no,
+  [noNoPlusPlusName]: noNoPlusPlus,
+  [noObjectName]: noObject,
+  [noOvertimeName]: noOvertime,
+  [noRushName]: noRush,
+  [noTsName]: noTs,
+  [noRandomName]: noRandom,
+  [noUselessForName]: noUselessFor,
+  [noWoofName]: noWoof,
+  [noXkcdName]: noXkcd,
+  [preferNpmName]: preferNpm,
+  [tabName]: tab,
+  [yesName]: yes,
+} as const
 
-/* eslint-disable perfectionist/sort-objects */
-export default {
-  rules: {
-    [sortArrayIncludesName]: sortArrayIncludes,
-    [sortAstroAttributesName]: sortAstroAttributes,
-    [sortClassesName]: sortClasses,
-    [sortEnumsName]: sortEnums,
-    [sortExportsName]: sortExports,
-    [sortImportsName]: sortImports,
-    [sortInterfacesName]: sortInterfaces,
-    [sortJsxPropsName]: sortJsxProps,
-    [sortMapsName]: sortMaps,
-    [sortNamedExportsName]: sortNamedExports,
-    [sortNamedImportsName]: sortNamedImports,
-    [sortObjectTypesName]: sortObjectTypes,
-    [sortObjectsName]: sortObjects,
-    [sortSvelteAttributesName]: sortSvelteAttributes,
-    [sortUnionTypesName]: sortUnionTypes,
-    [sortVueAttributesName]: sortVueAttributes,
-  },
+const config = {
+  rules,
   configs: {
-    'recommended-alphabetical': createConfigWithOptions({
-      type: SortType.alphabetical,
-      order: SortOrder.asc,
-      'ignore-case': false,
-    }),
-    'recommended-natural': createConfigWithOptions({
-      type: SortType.natural,
-      order: SortOrder.asc,
-      'ignore-case': false,
-    }),
-    'recommended-line-length': createConfigWithOptions({
-      type: SortType['line-length'],
-      order: SortOrder.desc,
-    }),
+    all: { rules },
+    recommended: {
+      rules: _.pick(rules, [
+        alignName,
+        emojiName,
+        justifyName,
+        justify2Name,
+        lotteryName,
+        monopolyName,
+        noCiName,
+        noNoPlusPlusName,
+        noObjectName,
+        noOvertimeName,
+        noRushName,
+        noTsName,
+        noUselessForName,
+        noWoofName,
+        noXkcdName,
+        preferNpmName,
+        yesName,
+      ]),
+    },
   },
   name,
-}
+} as const
+
+export default config

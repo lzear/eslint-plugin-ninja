@@ -139,23 +139,26 @@ export default [
 🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
 
 | Name                                                                                               | Description                                 | 🔧  |
-| :------------------------------------------------------------------------------------------------- | :------------------------------------------ | :-- |
-| [sort-array-includes](https://www.dont.ninja/rules/sort-array-includes)       | enforce sorted arrays before include method | 🔧  |
-| [sort-astro-attributes](https://www.dont.ninja/rules/sort-astro-attributes)   | enforce sorted Astro attributes             | 🔧  |
-| [sort-classes](https://www.dont.ninja/rules/sort-classes)                     | enforce sorted classes                      | 🔧  |
-| [sort-enums](https://www.dont.ninja/rules/sort-enums)                         | enforce sorted TypeScript enums             | 🔧  |
-| [sort-exports](https://www.dont.ninja/rules/sort-exports)                     | enforce sorted exports                      | 🔧  |
-| [sort-imports](https://www.dont.ninja/rules/sort-imports)                     | enforce sorted imports                      | 🔧  |
-| [sort-interfaces](https://www.dont.ninja/rules/sort-interfaces)               | enforce sorted interface properties         | 🔧  |
-| [sort-jsx-props](https://www.dont.ninja/rules/sort-jsx-props)                 | enforce sorted JSX props                    | 🔧  |
-| [sort-maps](https://www.dont.ninja/rules/sort-maps)                           | enforce sorted Map elements                 | 🔧  |
-| [sort-named-exports](https://www.dont.ninja/rules/sort-named-exports)         | enforce sorted named exports                | 🔧  |
-| [sort-named-imports](https://www.dont.ninja/rules/sort-named-imports)         | enforce sorted named imports                | 🔧  |
-| [sort-object-types](https://www.dont.ninja/rules/sort-object-types)           | enforce sorted object types                 | 🔧  |
-| [sort-objects](https://www.dont.ninja/rules/sort-objects)                     | enforce sorted objects                      | 🔧  |
-| [sort-svelte-attributes](https://www.dont.ninja/rules/sort-svelte-attributes) | enforce sorted Svelte attributes            | 🔧  |
-| [sort-union-types](https://www.dont.ninja/rules/sort-union-types)             | enforce sorted union types                  | 🔧  |
-| [sort-vue-attributes](https://www.dont.ninja/rules/sort-vue-attributes)       | enforce sorted Vue attributes               | 🔧  |
+| :------------------------------------------------------------------ |:----------------------------------------------------------| :-- |
+| [align](https://www.dont.ninja/rules/align)                         | enforce elegant text alignment                            | 🔧  |
+| [emoji](https://www.dont.ninja/rules/emoji)                         | require variables and properties to be named using emojis | 🔧  |
+| [justify](https://www.dont.ninja/rules/justify)                     | enforce comments explaining code                          | 🔧  |
+| [justify2](https://www.dont.ninja/rules/justify2)                   | enforce text to be justified                              | 🔧  |
+| [lottery](https://www.dont.ninja/rules/lottery)                     | require luck                                              |     |
+| [monopoly](https://www.dont.ninja/rules/monopoly)                   | disallow bad eslint configs                               | 🔧  |
+| [no](https://www.dont.ninja/rules/no)                               | disallow everything                                       |     |
+| [no-avoidable-loop](https://www.dont.ninja/rules/no-avoidable-loop) | disallow useless `for` loops                              | 🔧  |
+| [no-ci](https://www.dont.ninja/rules/no-ci)                         | disallow running on CI lol                                |     |
+| [no-no-plusplus](https://www.dont.ninja/rules/no-no-plusplus)       | enforce the unary operators ++ and --                     | 🔧  |
+| [no-object](https://www.dont.ninja/rules/no-object)                 | disallow object literals, prefer Map                      | 🔧  |
+| [no-overtime](https://www.dont.ninja/rules/no-overtime)             | disallow overwork                                         |     |
+| [no-rush](https://www.dont.ninja/rules/no-rush)                     | enforce a delay                                           |     |
+| [no-ts](https://www.dont.ninja/rules/no-ts)                         | disallow gymnastics needed to please the TS compiler      | 🔧  |
+| [no-woof](https://www.dont.ninja/rules/no-woof)                     | disallow woof!                                            | 🔧  |
+| [no-xkcd](https://www.dont.ninja/rules/no-xkcd)                     | disallow xkcd references                                  | 🔧  |
+| [prefer-npm](https://www.dont.ninja/rules/prefer-npm)               | require from npm instead of using JS builtins             | 🔧  |
+| [tab](https://www.dont.ninja/rules/tab)                             | require word separators to be tabs, not spaces            | 🔧  |
+| [yes](https://www.dont.ninja/rules/yes)                             | enforce nothing                                           |     |
 
 <!-- end auto-generated rules list -->
 

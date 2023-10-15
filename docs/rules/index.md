@@ -1,31 +1,35 @@
 ---
 title: Rules
-description: ESLint plugin dont list of rules
+description: ESLint Plugin dont list of rules
 ---
 
 # Rules
 
 <!-- begin auto-generated rules list -->
 
-🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
+🔧 Automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
 
-| Name                                                    | Description                                 | 🔧  |
-| :------------------------------------------------------ | :------------------------------------------ | :-- |
-| [sort-array-includes](/rules/sort-array-includes)       | enforce sorted arrays before include method | 🔧  |
-| [sort-astro-attributes](/rules/sort-astro-attributes)   | enforce sorted Astro attributes             | 🔧  |
-| [sort-classes](/rules/sort-classes)                     | enforce sorted classes                      | 🔧  |
-| [sort-enums](/rules/sort-enums)                         | enforce sorted TypeScript enums             | 🔧  |
-| [sort-exports](/rules/sort-exports)                     | enforce sorted exports                      | 🔧  |
-| [sort-imports](/rules/sort-imports)                     | enforce sorted imports                      | 🔧  |
-| [sort-interfaces](/rules/sort-interfaces)               | enforce sorted interface properties         | 🔧  |
-| [sort-jsx-props](/rules/sort-jsx-props)                 | enforce sorted JSX props                    | 🔧  |
-| [sort-maps](/rules/sort-maps)                           | enforce sorted Map elements                 | 🔧  |
-| [sort-named-exports](/rules/sort-named-exports)         | enforce sorted named exports                | 🔧  |
-| [sort-named-imports](/rules/sort-named-imports)         | enforce sorted named imports                | 🔧  |
-| [sort-object-types](/rules/sort-object-types)           | enforce sorted object types                 | 🔧  |
-| [sort-objects](/rules/sort-objects)                     | enforce sorted objects                      | 🔧  |
-| [sort-svelte-attributes](/rules/sort-svelte-attributes) | enforce sorted Svelte attributes            | 🔧  |
-| [sort-union-types](/rules/sort-union-types)             | enforce sorted union types                  | 🔧  |
-| [sort-vue-attributes](/rules/sort-vue-attributes)       | enforce sorted Vue attributes               | 🔧  |
+| Name                                          | Description                                               | 🔧  |
+| :-------------------------------------------- | :-------------------------------------------------------- | :-- |
+| [align](/rules/align)                         | enforce elegant text alignment                            | 🔧  |
+| [emoji](/rules/emoji)                         | require variables and properties to be named using emojis | 🔧  |
+| [justify](/rules/justify)                     | enforce comments explaining code                          | 🔧  |
+| [justify2](/rules/justify2)                   | enforce text to be justified                              | 🔧  |
+| [lottery](/rules/lottery)                     | require luck                                              |     |
+| [monopoly](/rules/monopoly)                   | disallow bad eslint configs                               | 🔧  |
+| [no](/rules/no)                               | disallow everything                                       |     |
+| [no-avoidable-loop](/rules/no-avoidable-loop) | disallow useless `for` loops                              | 🔧  |
+| [no-ci](/rules/no-ci)                         | Disallow running on CI lol                                    |     |
+| [no-no-plusplus](/rules/no-no-plusplus)       | enforce the unary operators ++ and --                     | 🔧  |
+| [no-object](/rules/no-object)                 | disallow object literals, prefer Map                      | 🔧  |
+| [no-overtime](/rules/no-overtime)             | disallow overwork                                         |     |
+| [no-rush](/rules/no-rush)                     | enforce a delay                                           |     |
+| [no-ts](/rules/no-ts)                         | disallow gymnastics needed to please the TS compiler      | 🔧  |
+| [no-woof](/rules/no-woof)                     | disallow woof!                                            | 🔧  |
+| [no-xkcd](/rules/no-xkcd)                     | disallow xkcd references                                  | 🔧  |
+| [prefer-npm](/rules/prefer-npm)               | require from npm instead of using JS builtins             | 🔧  |
+| [tab](/rules/tab)                             | require word separators to be tabs, not spaces            | 🔧  |
+| [yes](/rules/yes)                             | enforce nothing                                           |     |
 
 <!-- end auto-generated rules list -->
