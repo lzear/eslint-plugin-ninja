@@ -1,0 +1,46 @@
+---
+title: no-woof
+description: No woof!
+---
+
+<script setup lang="ts">
+import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-woof.js';
+</script>
+
+> "Woof" — Randall T.
+
+# Disallow woof! (`dont/no-woof`)
+
+🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+
+<!-- end auto-generated rule header -->
+
+## 📖 Rule details
+
+No woof!
+
+## 💡 Examples
+
+```js
+// ❌ Incorrect
+// woof Woof! WOOF!
+const woof = 'woof'
+
+// ✅ Correct
+const foo = 'bar'
+```
+
+## 🔧 Config
+
+```js
+{ rules: { 'dont/no-woof': 2 } }
+```
+
+## 🔗 See also
+
+- [private joke](https://en.wikipedia.org/wiki/Private_joke)
+
+## 🧑‍💻 Demo
+
+<CodeEditor :rule="ruleName" :text="initialText" :presetConfigs="presetConfigs" />
