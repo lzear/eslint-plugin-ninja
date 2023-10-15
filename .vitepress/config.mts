@@ -168,32 +168,9 @@ export default defineConfig({
 
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/introduction',
-        activeMatch: '^/guide/',
-      },
-      {
-        text: 'Configs',
-        link: '/configs/',
-        activeMatch: '^/configs/',
-      },
-      {
         text: 'Rules',
         link: '/rules/',
         activeMatch: '^/rules/',
-      },
-      {
-        text: `v${version}`,
-        items: [
-          {
-            text: 'Changelog',
-            link: changelog,
-          },
-          {
-            text: 'Contributing',
-            link: contributing,
-          },
-        ],
       },
     ],
 
@@ -203,32 +180,14 @@ export default defineConfig({
           text: 'Guide',
           items: [
             {
-              text: 'Introduction',
-              link: '/guide/introduction',
-            },
-            {
-              text: 'Why',
-              link: '/guide/why',
-            },
-            {
-              text: 'Integrations',
-              link: '/guide/integrations',
-            },
-            {
               text: 'Getting Started',
               link: '/guide/getting-started',
             },
           ],
         },
         {
-          text: 'Configs',
-          items: Object.keys(configs).map(config => ({
-            text: config,
-            link: `/configs/${config}`,
-          })),
-        },
-        {
           text: 'Rules',
+          link: '/rules/',
           items: Object.keys(rules).map(rule => ({
             text: rule,
             link: `/rules/${rule}`,

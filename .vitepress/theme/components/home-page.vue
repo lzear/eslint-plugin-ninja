@@ -1,9 +1,6 @@
 <script lang="ts" setup>
-import { VPTeamMembers } from 'vitepress/theme'
-import { onMounted, computed, ref } from 'vue'
-
-import codeBefore from './code-before.vue'
-import codeAfter from './code-after.vue'
+import {VPTeamMembers} from 'vitepress/theme'
+import {computed, onMounted, ref} from 'vue'
 
 let twitterAzat = ref('https://twitter.com/azat_io_en')
 
@@ -51,23 +48,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="container">
-    <hr class="divider" />
-  </div>
-  <div class="container">
-    <div class="content">
-      <VPTeamMembers class="members flex flex-wrap m-auto max-w-[100%]" :members="members" size="small"/>
-      <div class="code-blocks">
-        <figure class="code-wrapper code-wrapper-left">
-          <figcaption class="code-caption">Input</figcaption>
-          <code-before />
-        </figure>
-        <figure class="code-wrapper code-wrapper-right">
-          <figcaption class="code-caption">Output</figcaption>
-          <code-after />
-        </figure>
-      </div>
-    </div>
+  <div class="px-16">
+    <hr class="divider"/>
+    <VPTeamMembers class="members flex flex-wrap m-auto max-w-[100%]" :members="members" size="small"/>
   </div>
 </template>
 
