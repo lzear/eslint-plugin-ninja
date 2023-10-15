@@ -296,7 +296,7 @@ The [minimatch](https://github.com/isaacs/minimatch) library is used for pattern
 
 ```js [Flat Config]
 // eslint.config.js
-import perfectionist from 'eslint-plugin-perfectionist'
+import perfectionist from 'eslint-plugin-dont'
 
 export default [
   {

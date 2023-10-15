@@ -7,7 +7,7 @@ description: ESLint Plugin Perfectionist config for sorting by line length
 
 ## 📖 Config Details
 
-Configuration for the `eslint-plugin-perfectionist` plugin, which provides all plugin rules with preset options: sorting by string length in descending order.
+Configuration for the `eslint-plugin-dont` plugin, which provides all plugin rules with preset options: sorting by string length in descending order.
 
 This configuration will make your code prettier and more pleasing to the eye.
 
@@ -28,7 +28,7 @@ This configuration will make your code prettier and more pleasing to the eye.
 <!-- prettier-ignore -->
 ```js [Flat Config]
 // eslint.config.js
-import perfectionistLineLength from 'eslint-plugin-perfectionist/configs/recommended-line-length'
+import perfectionistLineLength from 'eslint-plugin-dont/configs/recommended-line-length'
 
 export default [
   perfectionistLineLength,

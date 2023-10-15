@@ -202,7 +202,7 @@ In order to start using this rule, you need to install additional dependencies:
 
 ```js [Flat Config]
 // eslint.config.js
-import perfectionist from 'eslint-plugin-perfectionist'
+import perfectionist from 'eslint-plugin-dont'
 
 export default [
   {

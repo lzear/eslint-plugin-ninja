@@ -32,7 +32,7 @@ body:
       required: true
 
   - type: input
-    id: eslint-plugin-perfectionist-version
+    id: eslint-plugin-dont-version
     attributes:
       label: ESLint Plugin Perfectionist version
       description: Please provide ESLint Plugin Perfectionist version.

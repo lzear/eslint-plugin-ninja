@@ -214,7 +214,7 @@ If you use [one of the configs](/configs/) exported by this plugin, you get the 
 
 ```js [Flat Config]
 // eslint.config.js
-import perfectionist from 'eslint-plugin-perfectionist'
+import perfectionist from 'eslint-plugin-dont'
 
 export default [
   {

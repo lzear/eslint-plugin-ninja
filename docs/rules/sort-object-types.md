@@ -151,7 +151,7 @@ Example:
 
 ```js [Flat Config]
 // eslint.config.js
-import perfectionist from 'eslint-plugin-perfectionist'
+import perfectionist from 'eslint-plugin-dont'
 
 export default [
   {

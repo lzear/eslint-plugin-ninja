@@ -24,27 +24,27 @@ yarn add --dev eslint
 
 :::
 
-Next, install `eslint-plugin-perfectionist`:
+Next, install `eslint-plugin-dont`:
 
 ::: code-group
 
 ```bash [npm]
-npm install --save-dev eslint-plugin-perfectionist
+npm install --save-dev eslint-plugin-dont
 ```
 
 ```bash [pnpm]
-pnpm add --save-dev eslint-plugin-perfectionist
+pnpm add --save-dev eslint-plugin-dont
 ```
 
 ```bash [yarn]
-yarn add --dev eslint-plugin-perfectionist
+yarn add --dev eslint-plugin-dont
 ```
 
 :::
 
 ## ⚙️ Usage
 
-Add `perfectionist` to the plugins section of your `.eslintrc` configuration file or import `eslint-plugin-perfectionist` in your `eslint.config.js`. Then configure the rules you want to use under the rules section.
+Add `perfectionist` to the plugins section of your `.eslintrc` configuration file or import `eslint-plugin-dont` in your `eslint.config.js`. Then configure the rules you want to use under the rules section.
 
 ### Legacy Config
 
@@ -62,7 +62,7 @@ Add `perfectionist` to the plugins section of your `.eslintrc` configuration fil
 
 ```js
 // eslint.config.js
-import perfectionist from 'eslint-plugin-perfectionist'
+import perfectionist from 'eslint-plugin-dont'
 
 export default {
   plugins: {

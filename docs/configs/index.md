@@ -5,7 +5,7 @@ description: ESLint Plugin Perfectionist list of configs
 
 # Configs
 
-The easiest way to use `eslint-plugin-perfectionist` is to use ready-made configs. Config files use all the rules of the current plugin, but you can override them.
+The easiest way to use `eslint-plugin-dont` is to use ready-made configs. Config files use all the rules of the current plugin, but you can override them.
 
 This plugin provides three configs out of the box.
 

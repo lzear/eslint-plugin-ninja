@@ -8,7 +8,7 @@
   width="170"
 />
 
-[![Version](https://img.shields.io/npm/v/eslint-plugin-perfectionist.svg?color=4a32c3)](https://www.npmjs.com/package/eslint-plugin-perfectionist)
+[![Version](https://img.shields.io/npm/v/eslint-plugin-dont.svg?color=4a32c3)](https://www.npmjs.com/package/eslint-plugin-dont)
 [![GitHub license](https://img.shields.io/badge/license-MIT-4a32c3.svg)](https://github.com/lzear/eslint-plugin-dont/blob/main/license)
 
 ESLint plugin that sets rules to format your code and make it consistent.
@@ -45,15 +45,15 @@ You'll first need to install [ESLint](https://eslint.org):
 npm install --save-dev eslint
 ```
 
-Next, install `eslint-plugin-perfectionist`:
+Next, install `eslint-plugin-dont`:
 
 ```sh
-npm install --save-dev eslint-plugin-perfectionist
+npm install --save-dev eslint-plugin-dont
 ```
 
 ## 🚀️️️️ Usage
 
-Add `eslint-plugin-perfectionist` to the plugins section of the ESLint configuration file and define the list of rules you will use.
+Add `eslint-plugin-dont` to the plugins section of the ESLint configuration file and define the list of rules you will use.
 
 ### Legacy Config ([`.eslintrc`](https://eslint.org/docs/latest/use/configure/configuration-files))
 
@@ -78,7 +78,7 @@ Add `eslint-plugin-perfectionist` to the plugins section of the ESLint configura
 ### Flat Config ([`eslint.config.js`](https://eslint.org/docs/latest/use/configure/configuration-files-new)) (requires eslint >= v8.23.0)
 
 ```js
-import perfectionist from 'eslint-plugin-perfectionist'
+import perfectionist from 'eslint-plugin-dont'
 
 export default [
   {
@@ -100,7 +100,7 @@ export default [
 
 ## ⚙️ Configs
 
-The easiest way to use `eslint-plugin-perfectionist` is to use ready-made configs. Config files use all the rules of the current plugin, but you can override them.
+The easiest way to use `eslint-plugin-dont` is to use ready-made configs. Config files use all the rules of the current plugin, but you can override them.
 
 ### Legacy Config ([`.eslintrc`](https://eslint.org/docs/latest/use/configure/configuration-files))
 
@@ -117,7 +117,7 @@ The easiest way to use `eslint-plugin-perfectionist` is to use ready-made config
 
 <!-- prettier-ignore -->
 ```js
-import perfectionistNatural from 'eslint-plugin-perfectionist/configs/recommended-natural'
+import perfectionistNatural from 'eslint-plugin-dont/configs/recommended-natural'
 
 export default [
   perfectionistNatural,
