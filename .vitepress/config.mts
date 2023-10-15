@@ -168,6 +168,11 @@ export default defineConfig({
 
     nav: [
       {
+        text: 'FAQ',
+        link: '/faq/',
+        activeMatch: '^/faq/',
+      },
+      {
         text: 'Rules',
         link: '/rules/',
         activeMatch: '^/rules/',
@@ -182,6 +187,10 @@ export default defineConfig({
             {
               text: 'Getting Started',
               link: '/guide/getting-started',
+            },
+            {
+              text: 'FAQ',
+              link: '/faq/',
             },
           ],
         },
