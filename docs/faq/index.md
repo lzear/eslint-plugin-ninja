@@ -10,7 +10,7 @@
 
 ### Who wrote this?
 
-[I](https://github.com/lzear) did. But most of the code is stolen from other ESLint plugins ([perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist), [unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn), ...)
+[I](https://github.com/lzear) did. But most of the code is stolen from other ESLint plugins ([perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist), [unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn), …)
 
 ### How do I use it?
 

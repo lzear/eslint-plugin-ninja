@@ -8,7 +8,7 @@ import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
 import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer-npm.js';
 </script>
 
-> "[...] and I do open source because, Power To The People" — Azer Koçulu
+> "[…] and I do open source because, Power To The People" — Azer Koçulu
 
 # Require from npm instead of using JS builtins (`dont/prefer-npm`)
 

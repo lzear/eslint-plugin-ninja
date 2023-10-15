@@ -8,7 +8,7 @@ import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
 import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/lottery.js';
 </script>
 
-> "Not only does God play dice, but... he sometimes throws them where they cannot be seen." — Stephen Hawking
+> "Not only does God play dice, but… he sometimes throws them where they cannot be seen." — Stephen Hawking
 
 # Require luck (`dont/lottery`)
 
