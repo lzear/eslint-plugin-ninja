@@ -1,21 +1,23 @@
-let eslintPlugin = require('eslint-plugin-eslint-plugin/configs/all')
-let config = require('@azat-io/eslint-config-typescript')
+// eslint-disable-next-line import/no-unresolved,n/no-extraneous-import
+import config from '@lzear/eslint-config-typescript'
+import eslintPlugin from 'eslint-plugin-eslint-plugin/configs/all'
 
-module.exports = [
+export default [
   ...config,
   eslintPlugin,
   {
-    ignores: ['**/.vitepress/cache/**/*', 'coverage/**/*'],
+    ignores: [
+      'utils/eslint-types/**',
+      'coverage/**/*',
+      'rules/utils/**',
+      'rules/shared/**',
+      'rules/fix/**',
+      'rules/ast/**',
+    ],
   },
   {
     rules: {
-      'eslint-plugin/require-meta-docs-url': 'off',
-    },
-  },
-  {
-    files: ['**/test/*', '**/rules/*', '**/docs/.vitepress/config.ts'],
-    rules: {
-      'perfectionist/sort-objects': 'off',
+      'eslint-plugin/require-meta-docs-url': 0,
     },
   },
 ]
