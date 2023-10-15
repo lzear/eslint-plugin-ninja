@@ -13,13 +13,10 @@ hero:
     src: /logo.svg
     alt: ESLint Plugin Dont
   actions:
-    - theme: brand
+    - theme: alt
       text: Get Started
       link: /guide/getting-started
-    - theme: alt
-      text: Configs
-      link: /configs/
-    - theme: alt
+    - theme: brand
       text: Rules
       link: /rules/
     - theme: alt
@@ -27,12 +24,12 @@ hero:
       link: https://github.com/lzear/eslint-plugin-dont
 
 features:
-  - title: ESLint Powered
+  - title: ESLint powered
     details: Use the plugin inside ESLint to improve your code and make rules for other developers.
-  - title: Fixable Rules
-    details: All errors can be safely fixed automatically with ESLint. You don't have to do anything!
-  - title: ESM, TypeScript, JSX
-    details: A large number of rules, including support for ESM, TypeScript and JSX.
-  - title: It's Just Beautiful
-    details: Enjoy the look of your code, let it be awesome
+  - title: Objectively better
+    details: All the rules are the best rules. You can't find better rules anywhere else.
+  - title: Fixable rules
+    details: Most errors can be safely fixed automatically with ESLint. You don't have to do anything!
+  - title: It's just beautiful
+    details: Enjoy the look of your code, let it be awesome.
 ---
