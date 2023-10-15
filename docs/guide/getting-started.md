@@ -44,16 +44,16 @@ yarn add --dev eslint-plugin-dont
 
 ## ⚙️ Usage
 
-Add `perfectionist` to the plugins section of your `.eslintrc` configuration file or import `eslint-plugin-dont` in your `eslint.config.js`. Then configure the rules you want to use under the rules section.
+Add `dont` to the plugins section of your `.eslintrc` configuration file or import `eslint-plugin-dont` in your `eslint.config.js`. Then configure the rules you want to use under the rules section.
 
 ### Legacy Config
 
 ```json
 // .eslintrc
 {
-  "plugins": ["perfectionist"],
+  "plugins": ["dont"],
   "rules": {
-    "perfectionist/sort-interfaces": "error"
+    "dont/emoji": 2
   }
 }
 ```
@@ -62,14 +62,14 @@ Add `perfectionist` to the plugins section of your `.eslintrc` configuration fil
 
 ```js
 // eslint.config.js
-import perfectionist from 'eslint-plugin-dont'
+import dont from 'eslint-plugin-dont'
 
 export default {
   plugins: {
-    perfectionist,
+    dont,
   },
   rules: {
-    'perfectionist/sort-interfaces': 'error',
+    'dont/emoji': 'error',
   },
 }
 ```

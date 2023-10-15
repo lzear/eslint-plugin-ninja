@@ -1,6 +1,6 @@
 ---
 title: Rules
-description: ESLint Plugin Perfectionist list of rules
+description: ESLint plugin dont list of rules
 ---
 
 # Rules

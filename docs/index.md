@@ -2,16 +2,16 @@
 layout: home
 sidebar: false
 
-title: ESLint Plugin Perfectionist
-titleTemplate: ESLint plugin for sorting various data such as objects, imports, types, enums, JSX props, etc.
+title: ESLint Plugin Dont
+titleTemplate: The ultimate ESLint plugin
 
 hero:
-  name: Perfectionist
-  text: Take Your Code to the Beauty Salon
-  tagline: An ESLint plugin
+  name: eslint-plugin-dont
+  text: Black belt in code cleanliness
+  tagline: “eslint-config-ninja” was already taken ☹
   image:
-    src: /logo-shadow.svg
-    alt: ESLint Plugin Perfectionist
+    src: /logo.svg
+    alt: ESLint Plugin Dont
   actions:
     - theme: brand
       text: Get Started

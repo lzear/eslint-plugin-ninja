@@ -1,9 +1,9 @@
 import packageJson from '../package.json'
 
-export const { description, repository, homepage, keywords, version } =
+export const { description, homepage, keywords, repository, version } =
   packageJson
 
-export const title = 'Perfectionist'
+export const title = 'ESLint Dont'
 
 export const changelog = `${repository}/blob/main/changelog.md`
 
