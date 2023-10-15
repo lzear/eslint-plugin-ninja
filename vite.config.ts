@@ -7,9 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: [
-        path.resolve(__dirname, 'configs/recommended-alphabetical.ts'),
-        path.resolve(__dirname, 'configs/recommended-line-length.ts'),
-        path.resolve(__dirname, 'configs/recommended-natural.ts'),
+        path.resolve(__dirname, 'configs/recommended.ts'),
+        path.resolve(__dirname, 'configs/all.ts'),
         path.resolve(__dirname, 'index.ts'),
       ],
       fileName: (format, entryName) => {
