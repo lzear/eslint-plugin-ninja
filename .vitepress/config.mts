@@ -2,13 +2,10 @@ import lightningcss from 'vite-plugin-lightningcss'
 import { defineConfig } from 'vitepress'
 
 import {
-  contributing,
   description,
   repository,
-  changelog,
   keywords,
   homepage,
-  version,
   title,
   image,
 } from './meta'
