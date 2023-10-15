@@ -1,19 +1,27 @@
 {
   "compilerOptions": {
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "bundler",
-    "verbatimModuleSyntax": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "module": "esnext",
     "target": "esnext",
+
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
     "types": ["node"],
+    "lib": ["esnext", "ES2021", "dom", "dom.iterable"],
     "allowJs": true,
     "strict": true,
-    "noEmit": true
+    "noEmit": true,
+    "resolveJsonModule": true,
+
+
+//    "noUnusedLocals": true,
+    "jsx": "preserve",
   },
   "include": [
     "**/*.ts",
+    "**/*.vue",
+    "**/*.json",
     ".vitepress/**/*.ts",
     ".vitepress/config.mts"
   ],
