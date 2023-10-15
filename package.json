@@ -80,6 +80,7 @@
   },
   "dependencies": {
     "@typescript-eslint/utils": "^6.9.1",
+    "has-emoji": "^2.0.0",
     "minimatch": "^9.0.3",
     "natural-compare-lite": "^1.4.0"
   },
