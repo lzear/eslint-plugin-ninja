@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "eslint-plugin-dont",
   "description": "ESLint plugin for sorting various data such as objects, imports, types, enums, JSX props, etc.",
   "version": "2.2.0",
