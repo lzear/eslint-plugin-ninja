@@ -241,4 +241,23 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://www.dont.ninja/',
   },
+
+  transformHead({ assets }) {
+    // adjust the regex accordingly to match your font
+    const myFontFile = assets.find(file => /font-name\.\w+\.woff2/)
+    if (myFontFile) {
+      return [
+        [
+          'link',
+          {
+            rel: 'preload',
+            href: myFontFile,
+            as: 'font',
+            type: 'font/woff2',
+            crossorigin: ''
+          }
+        ]
+      ]
+    }
+  }
 })

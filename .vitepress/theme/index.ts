@@ -6,6 +6,7 @@ import { h } from 'vue'
 import HomePage from './components/home-page.vue'
 import './tailwind.postcss'
 import './vars.css'
+import './stuff.css'
 
 const theme: Theme = {
   ...DefaultTheme,
