@@ -270,6 +270,6 @@ export default defineConfig({
   },
 
   sitemap: {
-    hostname: 'https://eslint-plugin-perfectionist.azat.io/',
+    hostname: 'https://www.dont.ninja/',
   },
 })

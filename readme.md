@@ -33,7 +33,7 @@ Sorting imports and properties in software development offers numerous benefits:
 
 ## 📖 Documentation
 
-See [docs](https://eslint-plugin-perfectionist.azat.io).
+See [docs](https://www.dont.ninja).
 
 ![ESLint Plugin Perfectionist usage example](https://raw.githubusercontent.com/azat-io/eslint-plugin-perfectionist/main/docs/public/example.png)
 
@@ -128,9 +128,9 @@ export default [
 
 | Name                                                                                                     | Description                                                      |
 | :------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
-| [recommended-alphabetical](https://eslint-plugin-perfectionist.azat.io/configs/recommended-alphabetical) | all plugin rules with alphabetical sorting in ascending order    |
-| [recommended-natural](https://eslint-plugin-perfectionist.azat.io/configs/recommended-natural)           | all plugin rules with natural sorting in ascending order         |
-| [recommended-line-length](https://eslint-plugin-perfectionist.azat.io/configs/recommended-line-length)   | all plugin rules with sorting by line length in descending order |
+| [recommended-alphabetical](https://www.dont.ninja/configs/recommended-alphabetical) | all plugin rules with alphabetical sorting in ascending order    |
+| [recommended-natural](https://www.dont.ninja/configs/recommended-natural)           | all plugin rules with natural sorting in ascending order         |
+| [recommended-line-length](https://www.dont.ninja/configs/recommended-line-length)   | all plugin rules with sorting by line length in descending order |
 
 ## ✅ Rules
 
@@ -140,22 +140,22 @@ export default [
 
 | Name                                                                                               | Description                                 | 🔧  |
 | :------------------------------------------------------------------------------------------------- | :------------------------------------------ | :-- |
-| [sort-array-includes](https://eslint-plugin-perfectionist.azat.io/rules/sort-array-includes)       | enforce sorted arrays before include method | 🔧  |
-| [sort-astro-attributes](https://eslint-plugin-perfectionist.azat.io/rules/sort-astro-attributes)   | enforce sorted Astro attributes             | 🔧  |
-| [sort-classes](https://eslint-plugin-perfectionist.azat.io/rules/sort-classes)                     | enforce sorted classes                      | 🔧  |
-| [sort-enums](https://eslint-plugin-perfectionist.azat.io/rules/sort-enums)                         | enforce sorted TypeScript enums             | 🔧  |
-| [sort-exports](https://eslint-plugin-perfectionist.azat.io/rules/sort-exports)                     | enforce sorted exports                      | 🔧  |
-| [sort-imports](https://eslint-plugin-perfectionist.azat.io/rules/sort-imports)                     | enforce sorted imports                      | 🔧  |
-| [sort-interfaces](https://eslint-plugin-perfectionist.azat.io/rules/sort-interfaces)               | enforce sorted interface properties         | 🔧  |
-| [sort-jsx-props](https://eslint-plugin-perfectionist.azat.io/rules/sort-jsx-props)                 | enforce sorted JSX props                    | 🔧  |
-| [sort-maps](https://eslint-plugin-perfectionist.azat.io/rules/sort-maps)                           | enforce sorted Map elements                 | 🔧  |
-| [sort-named-exports](https://eslint-plugin-perfectionist.azat.io/rules/sort-named-exports)         | enforce sorted named exports                | 🔧  |
-| [sort-named-imports](https://eslint-plugin-perfectionist.azat.io/rules/sort-named-imports)         | enforce sorted named imports                | 🔧  |
-| [sort-object-types](https://eslint-plugin-perfectionist.azat.io/rules/sort-object-types)           | enforce sorted object types                 | 🔧  |
-| [sort-objects](https://eslint-plugin-perfectionist.azat.io/rules/sort-objects)                     | enforce sorted objects                      | 🔧  |
-| [sort-svelte-attributes](https://eslint-plugin-perfectionist.azat.io/rules/sort-svelte-attributes) | enforce sorted Svelte attributes            | 🔧  |
-| [sort-union-types](https://eslint-plugin-perfectionist.azat.io/rules/sort-union-types)             | enforce sorted union types                  | 🔧  |
-| [sort-vue-attributes](https://eslint-plugin-perfectionist.azat.io/rules/sort-vue-attributes)       | enforce sorted Vue attributes               | 🔧  |
+| [sort-array-includes](https://www.dont.ninja/rules/sort-array-includes)       | enforce sorted arrays before include method | 🔧  |
+| [sort-astro-attributes](https://www.dont.ninja/rules/sort-astro-attributes)   | enforce sorted Astro attributes             | 🔧  |
+| [sort-classes](https://www.dont.ninja/rules/sort-classes)                     | enforce sorted classes                      | 🔧  |
+| [sort-enums](https://www.dont.ninja/rules/sort-enums)                         | enforce sorted TypeScript enums             | 🔧  |
+| [sort-exports](https://www.dont.ninja/rules/sort-exports)                     | enforce sorted exports                      | 🔧  |
+| [sort-imports](https://www.dont.ninja/rules/sort-imports)                     | enforce sorted imports                      | 🔧  |
+| [sort-interfaces](https://www.dont.ninja/rules/sort-interfaces)               | enforce sorted interface properties         | 🔧  |
+| [sort-jsx-props](https://www.dont.ninja/rules/sort-jsx-props)                 | enforce sorted JSX props                    | 🔧  |
+| [sort-maps](https://www.dont.ninja/rules/sort-maps)                           | enforce sorted Map elements                 | 🔧  |
+| [sort-named-exports](https://www.dont.ninja/rules/sort-named-exports)         | enforce sorted named exports                | 🔧  |
+| [sort-named-imports](https://www.dont.ninja/rules/sort-named-imports)         | enforce sorted named imports                | 🔧  |
+| [sort-object-types](https://www.dont.ninja/rules/sort-object-types)           | enforce sorted object types                 | 🔧  |
+| [sort-objects](https://www.dont.ninja/rules/sort-objects)                     | enforce sorted objects                      | 🔧  |
+| [sort-svelte-attributes](https://www.dont.ninja/rules/sort-svelte-attributes) | enforce sorted Svelte attributes            | 🔧  |
+| [sort-union-types](https://www.dont.ninja/rules/sort-union-types)             | enforce sorted union types                  | 🔧  |
+| [sort-vue-attributes](https://www.dont.ninja/rules/sort-vue-attributes)       | enforce sorted Vue attributes               | 🔧  |
 
 <!-- end auto-generated rules list -->
 
@@ -163,7 +163,7 @@ export default [
 
 ### Can I automatically fix problems in the editor?
 
-Yes. To do this, you need to enable autofix in ESLint when you save the file in your editor. Instructions for your editor can be found [here](https://eslint-plugin-perfectionist.azat.io/guide/integrations).
+Yes. To do this, you need to enable autofix in ESLint when you save the file in your editor. Instructions for your editor can be found [here](https://www.dont.ninja/guide/integrations).
 
 ### Is it safety?
 
@@ -177,7 +177,7 @@ I love Prettier. However, this is not his area of responsibility. Prettier is us
 
 There are rules of ESLint and other ESLint plugins that may conflict with the rules of ESLint Plugin Perfectionist. We strongly recommend that you [disable rules](https://eslint.org/docs/latest/use/configure/rules#using-configuration-files-1) with similar functionality.
 
-I recommend that you read the [documentation](https://eslint-plugin-perfectionist.azat.io) before using any rules.
+I recommend that you read the [documentation](https://www.dont.ninja) before using any rules.
 
 <details>
   <summary>Possible conflicts</summary>

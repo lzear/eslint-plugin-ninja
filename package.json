@@ -2,7 +2,7 @@
   "name": "eslint-plugin-perfectionist",
   "description": "ESLint plugin for sorting various data such as objects, imports, types, enums, JSX props, etc.",
   "version": "2.2.0",
-  "homepage": "https://eslint-plugin-perfectionist.azat.io",
+  "homepage": "https://www.dont.ninja",
   "repository": "https://github.com/azat-io/eslint-plugin-perfectionist",
   "author": "Azat S. <to@azat.io>",
   "license": "MIT",
@@ -14,7 +14,7 @@
   "scripts": {
     "build": "vite build",
     "docs:dev": "vitepress dev docs",
-    "docs:generate": "eslint-doc-generator --rule-list-columns name,description,fixable,hasSuggestions,deprecated --path-rule-list readme.md --url-rule-doc https://eslint-plugin-perfectionist.azat.io/rules/{name} --url-configs https://eslint-plugin-perfectionist.azat.io/configs && eslint-doc-generator --rule-list-columns name,description,fixable,hasSuggestions,deprecated --rule-doc-title-format name --path-rule-list ./docs/rules/index.md --url-rule-doc /rules/{name} --url-configs /configs/ && prettier --write readme.md ./docs/rules/index.md",
+    "docs:generate": "eslint-doc-generator --rule-list-columns name,description,fixable,hasSuggestions,deprecated --path-rule-list readme.md --url-rule-doc https://www.dont.ninja/rules/{name} --url-configs https://www.dont.ninja/configs && eslint-doc-generator --rule-list-columns name,description,fixable,hasSuggestions,deprecated --rule-doc-title-format name --path-rule-list ./docs/rules/index.md --url-rule-doc /rules/{name} --url-configs /configs/ && prettier --write readme.md ./docs/rules/index.md",
     "docs:build": "vitepress build docs",
     "release": "pnpm release:check && pnpm release:version && pnpm release:publish",
     "release:check": "pnpm test && pnpm run build",
@@ -126,3 +126,4 @@
     "vue": "^3.3.7"
   }
 }
+
