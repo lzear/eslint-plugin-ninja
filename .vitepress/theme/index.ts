@@ -4,6 +4,7 @@ import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 
 import HomePage from './components/home-page.vue'
+import './tailwind.postcss'
 import './layout/colors.css'
 
 let theme: Theme = {
