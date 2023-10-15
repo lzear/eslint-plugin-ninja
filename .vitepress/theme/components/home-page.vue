@@ -5,13 +5,22 @@ import { onMounted, computed, ref } from 'vue'
 import codeBefore from './code-before.vue'
 import codeAfter from './code-after.vue'
 
-let twitter = ref('https://twitter.com/azat_io_en')
+let twitterAzat = ref('https://twitter.com/azat_io_en')
 
 let members = computed(() => [
   {
+    avatar: 'https://github.com/lzear.png',
+    name: 'lzear',
+    title: 'Author of eslint-plugin-dont',
+    links: [
+      {icon: 'github', link: 'https://github.com/lzear',},
+      {icon: 'twitter', link: 'https://twitter.com/_lzear',},
+    ],
+  },
+  {
     avatar: 'https://github.com/azat-io.png',
     name: 'Azat S.',
-    title: 'An open source developer',
+    title: 'Author of eslint-plugin-perfectionist, which this project is forked from',
     links: [
       {
         icon: 'github',
@@ -19,7 +28,7 @@ let members = computed(() => [
       },
       {
         icon: 'twitter',
-        link: twitter.value,
+        link: twitterAzat.value,
       },
     ],
   },
@@ -36,7 +45,7 @@ onMounted(() => {
   }
 
   if (checkUserLang(['ru', 'uk', 'be'])) {
-    twitter.value = 'https://twitter.com/azat_io'
+    twitterAzat.value = 'https://twitter.com/azat_io'
   }
 })
 </script>
@@ -47,7 +56,7 @@ onMounted(() => {
   </div>
   <div class="container">
     <div class="content">
-      <VPTeamMembers class="members" :members="members" />
+      <VPTeamMembers class="members flex flex-wrap m-auto max-w-[100%]" :members="members" size="small"/>
       <div class="code-blocks">
         <figure class="code-wrapper code-wrapper-left">
           <figcaption class="code-caption">Input</figcaption>

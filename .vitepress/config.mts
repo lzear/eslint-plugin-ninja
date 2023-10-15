@@ -50,7 +50,7 @@ export default defineConfig({
       'meta',
       {
         name: 'author',
-        content: 'Azat S.',
+        content: 'Elzéar',
       },
     ],
     [
@@ -99,7 +99,7 @@ export default defineConfig({
       'meta',
       {
         name: 'twitter:creator',
-        content: '@azat_io',
+        content: '@_lzear',
       },
     ],
     [
