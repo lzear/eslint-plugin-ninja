@@ -2,6 +2,10 @@ import type { Theme } from 'vitepress'
 
 import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
+import '@fontsource/comic-mono'
+import '@fontsource/comic-neue'
+import '@fontsource/comic-mono/700.css'
+import '@fontsource/comic-neue/700.css'
 
 import HomePage from './components/home-page.vue'
 import './tailwind.postcss'

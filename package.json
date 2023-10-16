@@ -79,6 +79,8 @@
     "@codemirror/theme-one-dark": "^6.1.2",
     "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
+    "@fontsource/comic-mono": "^5.0.7",
+    "@fontsource/comic-neue": "^5.0.8",
     "@types/babel__helper-validator-identifier": "^7.15.0",
     "@types/eslint": "^8.44.4",
     "@types/lodash": "^4.14.199",
