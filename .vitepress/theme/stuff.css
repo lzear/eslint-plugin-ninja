@@ -66,3 +66,9 @@
     50%{background-position:91% 100%}
     100%{background-position:10% 0%}
 }
+
+.cm-scroller {
+    font-family: 'Comic Mono', monospace !important;
+    font-size: 18px;
+}
+

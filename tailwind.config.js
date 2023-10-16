@@ -1,5 +1,8 @@
 /* eslint-disable unicorn/prefer-module */
 
+const mono =
+  '"Comic Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'
+
 module.exports = {
   // purge: {
   //   content: [
@@ -30,18 +33,18 @@ module.exports = {
     utils: true, // adds responsive and modifier utility classes
   },
   plugins: [require('daisyui')],
-  // fontFamily: {
-  //   mono: '"Comic Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
-  // },
+  fontFamily: {
+    mono,
+  },
 
   theme: {
     extend: {
       fontFamily: {
-        mono: '"Comic Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+        mono,
       },
     },
-    // fontFamily: {
-    //   mono: '"Comic Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
-    // },
+    fontFamily: {
+      mono,
+    },
   },
 }
