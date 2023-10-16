@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "eslint-plugin-dont",
-  "description": "ESLint plugin for sorting various data such as objects, imports, types, enums, JSX props, etc.",
+  "description": "Optimized ESLint Rules for Elite Coders",
   "version": "2.2.0",
   "homepage": "https://www.dont.ninja",
   "repository": "https://github.com/lzear/eslint-plugin-dont",
