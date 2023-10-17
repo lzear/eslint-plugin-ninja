@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/monopo
 
 > Second place is just the first place loser. — Dale Earnhardt
 
-# Disallow bad eslint configs (`dont/monopoly`)
+# Disallow bad eslint configs (`monopoly`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

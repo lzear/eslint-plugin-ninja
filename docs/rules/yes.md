@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 > Silence is a source of great strength. — Lao Tzu
 
-# Enforce nothing (`dont/yes`)
+# Enforce nothing (`yes`)
 
 <!-- end auto-generated rule header -->
 

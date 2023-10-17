@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer
 
 > "[…] and I do open source because, Power To The People" — Azer Koçulu
 
-# Require from npm instead of using JS builtins (`dont/prefer-npm`)
+# Require from npm instead of using JS builtins (`prefer-npm`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 > The point is there ain't no point. — Cormac McCarthy
 
-# Disallow everything (`dont/no`)
+# Disallow everything (`no`)
 
 <!-- end auto-generated rule header -->
 

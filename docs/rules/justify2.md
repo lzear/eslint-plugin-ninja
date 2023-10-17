@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/justif
 
 > "From the beginning men used God to justify the unjustifiable." — Salman Rushdie
 
-# Enforce text to be justified (`dont/justify2`)
+# Enforce text to be justified (`justify2`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

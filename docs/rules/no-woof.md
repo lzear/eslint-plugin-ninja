@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-woo
 
 > "Woof" — Randall T.
 
-# Disallow woof! (`dont/no-woof`)
+# Disallow woof! (`no-woof`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-obj
 
 > "New is always Better" — Barney Stinson
 
-# Disallow object literals, prefer Map (`dont/no-object`)
+# Disallow object literals, prefer Map (`no-object`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

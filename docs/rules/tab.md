@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/tab.js
 
 > "I just think it's weird that you use spaces instead of tabs." — Richard Hendricks
 
-# Require word separators to be tabs, not spaces (`dont/tab`)
+# Require word separators to be tabs, not spaces (`tab`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

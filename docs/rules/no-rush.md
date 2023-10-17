@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 > "Sometimes, the most productive thing you can do is wait." - Unknown
 
-# Enforce a delay (`dont/no-rush`)
+# Enforce a delay (`no-rush`)
 
 <!-- end auto-generated rule header -->
 

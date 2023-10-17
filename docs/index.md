@@ -8,7 +8,6 @@ titleTemplate: The ultimate ESLint plugin
 hero:
   name: eslint-plugin-dont
   text: Black belt in code cleanliness
-  tagline: “eslint-config-ninja” was already taken ☹
   image:
     src: /logo.svg
     alt: ESLint Plugin Dont

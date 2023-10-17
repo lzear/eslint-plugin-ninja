@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-ran
 
 > "God does not play dice with the universe" — Albert Einstein
 
-# Disallow non-deterministic randomness (`dont/no-random`)
+# Disallow non-deterministic randomness (`no-random`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

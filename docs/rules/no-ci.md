@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 > "The Matrix is a system, Neo. That system is our enemy." — Morpheus
 
-# Disallow running on CI (`dont/no-ci`)
+# Disallow running on CI (`no-ci`)
 
 <!-- end auto-generated rule header -->
 

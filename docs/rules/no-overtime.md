@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 > "It's not the hours you put in your work that counts, it's the work you put in the hours." — Sam Ewing
 
-# Disallow overwork (`dont/no-overtime`)
+# Disallow overwork (`no-overtime`)
 
 <!-- end auto-generated rule header -->
 

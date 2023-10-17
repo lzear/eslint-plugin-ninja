@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/emoji.
 
 > "A picture is worth a thousand words."
 
-# Require variables and properties to be named using emojis (`dont/emoji`)
+# Require variables and properties to be named using emojis (`emoji`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

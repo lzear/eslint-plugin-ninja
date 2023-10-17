@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/justif
 
 > "The end may justify the means as long as there is something that justifies the end." — Leon Trotsky
 
-# Enforce comments explaining code (`dont/justify`)
+# Enforce comments explaining code (`justify`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

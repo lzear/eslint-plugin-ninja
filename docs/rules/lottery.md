@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 > "Not only does God play dice, but… he sometimes throws them where they cannot be seen." — Stephen Hawking
 
-# Require luck (`dont/lottery`)
+# Require luck (`lottery`)
 
 <!-- end auto-generated rule header -->
 

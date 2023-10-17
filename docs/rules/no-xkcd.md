@@ -11,7 +11,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-xkc
 > "Originality is the best form of rebellion." – Mike Sasso
 
 
-# Disallow xkcd references (`dont/no-xkcd`)
+# Disallow xkcd references (`no-xkcd`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-avo
 
 > "Sometimes clarity trumps brevity. Write for humans first, machines second."
 
-# Disallow useless `for` loops (`dont/no-avoidable-loop`)
+# Disallow useless `for` loops (`no-avoidable-loop`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

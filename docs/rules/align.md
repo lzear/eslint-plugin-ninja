@@ -12,7 +12,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/align.
 > "Typography is two-dimensional architecture, based on experience and imagination, and guided by rules and
 > readability." — Hermann Zapf
 
-# Enforce elegant text alignment (`dont/align`)
+# Enforce elegant text alignment (`align`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 

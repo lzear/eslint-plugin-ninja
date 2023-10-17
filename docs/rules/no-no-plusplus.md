@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-no-
 
 > The less code, the fewer bugs. — Kevlin Henney
 
-# Enforce the unary operators ++ and -- (`dont/no-no-plusplus`)
+# Enforce the unary operators ++ and -- (`no-no-plusplus`)
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
