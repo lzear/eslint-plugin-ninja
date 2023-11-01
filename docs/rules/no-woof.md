@@ -8,7 +8,7 @@ import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
 import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-woof.js';
 </script>
 
-> "Woof" — Randall T.
+> "Woof" — Randalf T.
 
 # Disallow woof! (`no-woof`)
 
