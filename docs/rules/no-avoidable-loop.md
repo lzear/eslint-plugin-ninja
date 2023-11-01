@@ -72,7 +72,7 @@ function hasDuplicate(arr: [V, V, V, V]): boolean {
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/no-avoidable-loop': 1 } }
+{ rules: { 'ninja/no-avoidable-loop': 1 } }
 ```
 
 ## 🧑‍💻 Demo

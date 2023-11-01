@@ -48,7 +48,7 @@ const color = isOdd(n) ? 'blue' : 'red'
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/prefer-npm': 2 } }
+{ rules: { 'ninja/prefer-npm': 2 } }
 ```
 
 ## 🔗 See also

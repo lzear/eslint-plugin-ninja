@@ -5,14 +5,14 @@ export const ruleName = 'monopoly'
 export const presetConfigs = [] satisfies PresetConfig[]
 
 export const initialText = `
-// eslint-config-import
-/* eslint-config-perfectionist */
-/* eslint-config-dont */
+// eslint-plugin-import
+/* eslint-plugin-perfectionist */
+/* eslint-plugin-ninja */
 
 const config = {
   extends: [
-    'eslint-config-dont',
-    'eslint-config-unicorn',
+    'eslint-plugin-ninja',
+    'eslint-plugin-unicorn',
   ],
 }
 `

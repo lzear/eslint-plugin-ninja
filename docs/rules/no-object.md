@@ -43,7 +43,7 @@ const map = new Map([
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/object': 2 } }
+{ rules: { 'ninja/object': 2 } }
 ```
 
 ## 🧑‍💻 Demo

@@ -38,7 +38,7 @@ What time the workday ends. Format is `HH:mm:ss`. Defaults to `18:00:00`.
 
 ```json
 {
-  "dont/no-overtime": [
+  "ninja/no-overtime": [
     "error",
     {
       "workdays": [1, 2, 3, 4, 5],

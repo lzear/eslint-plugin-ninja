@@ -36,7 +36,7 @@ const bar = 0.19891733174822845
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/no-random': 2 } }
+{ rules: { 'ninja/no-random': 2 } }
 ```
 
 ## 🧑‍💻 Demo

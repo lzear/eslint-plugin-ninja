@@ -41,7 +41,7 @@ const woof = 'woof'
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/no-xkcd': 2 } }
+{ rules: { 'ninja/no-xkcd': 2 } }
 ```
 
 ## 🧑‍💻 Demo

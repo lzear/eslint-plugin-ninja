@@ -49,7 +49,7 @@ add(1, [2, 3])
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/no-ts': 2 } }
+{ rules: { 'ninja/no-ts': 2 } }
 ```
 
 ## 🧑‍💻 Demo

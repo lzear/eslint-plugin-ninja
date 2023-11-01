@@ -95,7 +95,7 @@ which this rule is copied from.
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/justify': 2 } }
+{ rules: { 'ninja/justify': 2 } }
 ```
 
 ## 🧑‍💻 Demo

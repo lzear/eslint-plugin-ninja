@@ -2,14 +2,14 @@
 layout: home
 sidebar: false
 
-title: ESLint Plugin Dont
+title: ESLint Plugin Ninja
 titleTemplate: The ultimate ESLint plugin
 
 hero:
   name: eslint-plugin-ninja
   image:
     src: /logo.svg
-    alt: ESLint Plugin Dont
+    alt: ESLint Plugin Ninja
   actions:
     - theme: alt
       text: Get Started

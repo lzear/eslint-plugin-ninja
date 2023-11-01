@@ -24,13 +24,13 @@ export default createEslintRule<Options, MESSAGE_ID>({
       },
     ],
     messages: {
-      match: 'Only eslint-config-dont is allowed, but found "{{ match }}".',
+      match: 'Only eslint-plugin-ninja is allowed, but found "{{ match }}".',
     },
   },
   defaultOptions: [{}],
   create: (context: Context): RuleListener => {
     const { sourceCode } = context
-    const regex = /eslint-config-(?!dont\b)[\dA-Za-z]+/g
+    const regex = /eslint-plugin-(?!ninja\b)[\dA-Za-z]+/g
     return {
       Program: () => {
         const comments = sourceCode.getAllComments()
@@ -48,7 +48,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
       Literal: node => {
         if (typeof node.raw === 'string' && regex.test(node.raw)) {
           const match = node.raw.match(regex)
-          const replacement = node.raw.replaceAll(regex, 'eslint-config-dont')
+          const replacement = node.raw.replaceAll(regex, 'eslint-plugin-ninja')
           context.report({
             node,
             messageId: 'match',

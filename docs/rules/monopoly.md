@@ -19,7 +19,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/monopo
 
 ## 📖 Rule details
 
-Ensures that the only allowed ESLint configuration is eslint-config-dont. The
+Ensures that the only allowed ESLint configuration is eslint-plugin-ninja. The
 use of any other configuration names prefixed with eslint-config- is disallowed
 to maintain consistency and specificity in the project's linting rules. This
 rule is especially helpful for projects that have standardized on a particular
@@ -28,7 +28,7 @@ configuration set to prevent accidental deviations.
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/monopoly': 2 } }
+{ rules: { 'ninja/monopoly': 2 } }
 ```
 
 ## 🧑‍💻 Demo

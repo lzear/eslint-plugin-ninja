@@ -31,29 +31,29 @@ Add it to your `.eslintrc` or `eslint.config.js`:
 ```json [.eslintrc]
 // .eslintrc
 {
-  "plugins": ["dont"],
+  "plugins": ["ninja"],
   "rules": {
-    "dont/emoji": 2
+    "ninja/emoji": 2
   }
 }
 ```
 
 ```js [Flat config: eslint.config.js - recommended rules]
 // eslint.config.js
-import dont from 'eslint-plugin-ninja'
+import ninja from 'eslint-plugin-ninja'
 
-export default [dont]
+export default [ninja]
 ```
 
 ```js [Flat config: eslint.config.js - custom rules]
 // eslint.config.js
-import dont from 'eslint-plugin-ninja'
+import ninja from 'eslint-plugin-ninja'
 
 export default [
   {
-    plugins: { dont },
+    plugins: { ninja },
     rules: {
-      'dont/emoji': 2,
+      'ninja/emoji': 2,
     },
   },
 ]

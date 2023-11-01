@@ -1,6 +1,6 @@
 ---
 title: Rules
-description: ESLint Plugin dont list of rules
+description: ESLint Plugin Ninja list of rules
 ---
 
 # Rules

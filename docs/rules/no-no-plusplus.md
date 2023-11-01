@@ -31,7 +31,7 @@ out consecutive `++` don't work 🙄
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/no-no-plusplus': 2 } }
+{ rules: { 'ninja/no-no-plusplus': 2 } }
 ```
 
 ## 🧑‍💻 Demo

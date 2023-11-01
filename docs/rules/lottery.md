@@ -26,7 +26,7 @@ In `[0, 1]` - The chances for the linting to **succeed**.
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/lottery': [2, { probability: 0.1 }] } }
+{ rules: { 'ninja/lottery': [2, { probability: 0.1 }] } }
 ```
 
 ## 🧑‍💻 Demo

@@ -53,7 +53,7 @@ if (a) {
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/justify': 2 } }
+{ rules: { 'ninja/justify': 2 } }
 ```
 
 ## 🔗 See also

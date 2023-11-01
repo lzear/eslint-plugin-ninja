@@ -19,7 +19,7 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/no': 2 } }
+{ rules: { 'ninja/no': 2 } }
 ```
 
 ## 🧑‍💻 Demo

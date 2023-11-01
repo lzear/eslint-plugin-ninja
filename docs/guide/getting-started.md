@@ -44,7 +44,7 @@ yarn add --dev eslint-plugin-ninja
 
 ## ⚙️ Usage
 
-Add `dont` to the plugins section of your `.eslintrc` configuration file or
+Add `ninja` to the plugins section of your `.eslintrc` configuration file or
 import `eslint-plugin-ninja` in your `eslint.config.js`. Then configure the rules
 you want to use under the rules section.
 
@@ -53,9 +53,9 @@ you want to use under the rules section.
 ```json
 // .eslintrc
 {
-  "plugins": ["dont"],
+  "plugins": ["ninja"],
   "rules": {
-    "dont/emoji": 2
+    "ninja/emoji": 2
   }
 }
 ```
@@ -64,14 +64,14 @@ you want to use under the rules section.
 
 ```js
 // eslint.config.js
-import dont from 'eslint-plugin-ninja'
+import ninja from 'eslint-plugin-ninja'
 
 export default {
   plugins: {
-    dont,
+    ninja,
   },
   rules: {
-    'dont/emoji': 'error',
+    'ninja/emoji': 'error',
   },
 }
 ```

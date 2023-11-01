@@ -29,7 +29,7 @@ Time to wait, in seconds.
 
 ```js
 // wait 10 seconds
-{ rules: {'dont/no-rush': [2, { delay: 10 }] } }
+{ rules: {'ninja/no-rush': [2, { delay: 10 }] } }
 ```
 
 ## 🧑‍💻 Demo

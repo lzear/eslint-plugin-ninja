@@ -35,7 +35,7 @@ const foo = 'bar'
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/no-woof': 2 } }
+{ rules: { 'ninja/no-woof': 2 } }
 ```
 
 ## 🔗 See also

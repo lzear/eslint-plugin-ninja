@@ -46,7 +46,7 @@ if (a) {
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/tab': 2 } }
+{ rules: { 'ninja/tab': 2 } }
 ```
 
 ## 🧑‍💻 Demo

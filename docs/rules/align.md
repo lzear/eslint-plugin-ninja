@@ -104,7 +104,7 @@ if (a) {
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/align': [2, { side: 'center' }] } }
+{ rules: { 'ninja/align': [2, { side: 'center' }] } }
 ```
 
 ## 🔗 See also

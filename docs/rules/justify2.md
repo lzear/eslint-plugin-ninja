@@ -42,7 +42,7 @@ if (a) {
 ## 🔧 Config
 
 ```js
-{ rules: { 'dont/justify2': 2 } }
+{ rules: { 'ninja/justify2': 2 } }
 ```
 
 ## 🔗 See also

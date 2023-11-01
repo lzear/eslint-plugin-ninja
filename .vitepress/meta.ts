@@ -3,7 +3,7 @@ import packageJson from '../package.json'
 export const { description, homepage, keywords, repository, version } =
   packageJson
 
-export const title = 'ESLint Dont'
+export const title = 'ESLint Ninja'
 
 export const changelog = `${repository}/blob/main/changelog.md`
 
