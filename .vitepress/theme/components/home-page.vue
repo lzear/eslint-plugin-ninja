@@ -1,6 +1,10 @@
 <script lang="ts" setup>
-import {VPTeamMembers} from 'vitepress/theme'
+import {VPTeamMembers, VPHomeFeatures} from 'vitepress/theme'
 import {computed, onMounted, ref} from 'vue'
+import CodeSamples from "./code-samples.vue";
+import CodeSamplesAlign from "./code-samples-align.vue";
+import CodeSamplesJustify from "./code-samples-justify.vue";
+import CodeSamplesJustify2 from "./code-samples-justify2.vue";
 
 let twitterAzat = ref('https://twitter.com/azat_io_en')
 
@@ -48,19 +52,45 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="px-16">
+  <div class="px-4 md:px-16 max-w-[1170px] m-auto">
+    <CodeSamples />
     <hr class="divider"/>
+
+    <h2>
+      20+ rules, including…
+    </h2>
+    <div class="saamples">
+    <CodeSamplesAlign />
+    <CodeSamplesJustify2 />
+    <CodeSamplesJustify />
+      </div>
+
+    <hr class="divider"/>
+
+    <h2>
+      By
+    </h2>
     <VPTeamMembers class="members flex flex-wrap m-auto max-w-[100%]" :members="members" size="small"/>
   </div>
 </template>
 
 <style scoped>
-.container {
+.saamples {
   display: flex;
-  flex-direction: column;
-  padding-inline: 24px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 35px;
 }
-
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var( --vp-font-family-mono);
+  text-align: center;
+  margin-bottom: 20px;
+}
 .divider {
   inline-size: 100%;
   block-size: 1px;

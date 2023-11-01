@@ -61,15 +61,10 @@ export default [
 
 :::
 
-### Something is broken, what do I do?
+### Something is broken, what do I do? Can I also suggest a rule?
 
-Ideally, just spend your time doing something interesting or useful. If you don't want to, you can open an issue or PR
-on [GitHub](https://github.com/lzear/eslint-plugin-dont).
-
-### Can I also suggest a rule?
-
-Sure.
+You can open [issues](https://github.com/azat-io/eslint-plugin-dont/issues) or [pull requests](https://github.com/azat-io/eslint-plugin-dont/pulls). You can also not do that, and spend your time on more useful things.
 
 ### Do you recommend using this in my projects or at my workplace?
 
-`dont`
+dont
