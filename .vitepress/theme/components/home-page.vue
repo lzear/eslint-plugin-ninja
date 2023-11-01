@@ -12,7 +12,7 @@ let members = computed(() => [
   {
     avatar: 'https://github.com/lzear.png',
     name: 'lzear',
-    title: 'Author of eslint-plugin-dont',
+    title: 'Author of eslint-plugin-ninja',
     links: [
       {icon: 'github', link: 'https://github.com/lzear',},
       {icon: 'twitter', link: 'https://twitter.com/_lzear',},

@@ -24,20 +24,20 @@ yarn add --dev eslint
 
 :::
 
-Next, install `eslint-plugin-dont`:
+Next, install `eslint-plugin-ninja`:
 
 ::: code-group
 
 ```bash [npm]
-npm install --save-dev eslint-plugin-dont
+npm install --save-dev eslint-plugin-ninja
 ```
 
 ```bash [pnpm]
-pnpm add --save-dev eslint-plugin-dont
+pnpm add --save-dev eslint-plugin-ninja
 ```
 
 ```bash [yarn]
-yarn add --dev eslint-plugin-dont
+yarn add --dev eslint-plugin-ninja
 ```
 
 :::
@@ -45,7 +45,7 @@ yarn add --dev eslint-plugin-dont
 ## ⚙️ Usage
 
 Add `dont` to the plugins section of your `.eslintrc` configuration file or
-import `eslint-plugin-dont` in your `eslint.config.js`. Then configure the rules
+import `eslint-plugin-ninja` in your `eslint.config.js`. Then configure the rules
 you want to use under the rules section.
 
 ### Legacy Config
@@ -64,7 +64,7 @@ you want to use under the rules section.
 
 ```js
 // eslint.config.js
-import dont from 'eslint-plugin-dont'
+import dont from 'eslint-plugin-ninja'
 
 export default {
   plugins: {

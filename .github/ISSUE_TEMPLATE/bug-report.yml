@@ -34,7 +34,7 @@ body:
       required: true
 
   - type: input
-    id: eslint-plugin-dont-version
+    id: eslint-plugin-ninja-version
     attributes:
       label: ESLint Plugin Perfectionist version
       description: Please provide ESLint Plugin Perfectionist version.
@@ -58,6 +58,6 @@ body:
           required: true
         - label:
             Check that there isn't [already an
-            issue](https://github.com/lzear/eslint-plugin-dont/issues) that
+            issue](https://github.com/lzear/eslint-plugin-ninja/issues) that
             reports the same bug to avoid creating a duplicate.
           required: true

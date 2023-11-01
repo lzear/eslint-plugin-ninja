@@ -21,7 +21,7 @@ import tab, { RULE_NAME as tabName } from './rules/tab.js'
 import yes, { RULE_NAME as yesName } from './rules/yes.js'
 import noRandom, { RULE_NAME as noRandomName } from './rules/no-random.js'
 
-const name = 'eslint-plugin-dont'
+const name = 'eslint-plugin-ninja'
 
 const rules = {
   [alignName]: align,

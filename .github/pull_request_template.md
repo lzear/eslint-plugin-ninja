@@ -26,4 +26,4 @@
 - [ ] Ideally, include relevant tests that fail without this PR but pass with
       it.
 - [ ] Read
-      [contribution guidelines](https://github.com/lzear/eslint-plugin-dont/blob/main/contributing.md).
+      [contribution guidelines](https://github.com/lzear/eslint-plugin-ninja/blob/main/contributing.md).

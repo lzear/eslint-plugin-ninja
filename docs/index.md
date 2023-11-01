@@ -6,7 +6,7 @@ title: ESLint Plugin Dont
 titleTemplate: The ultimate ESLint plugin
 
 hero:
-  name: eslint-plugin-dont
+  name: eslint-plugin-ninja
   image:
     src: /logo.svg
     alt: ESLint Plugin Dont
@@ -19,5 +19,5 @@ hero:
       link: /rules/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/lzear/eslint-plugin-dont
+      link: https://github.com/lzear/eslint-plugin-ninja
 ---

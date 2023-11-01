@@ -1,10 +1,10 @@
 {
   "type": "module",
-  "name": "eslint-plugin-dont",
+  "name": "eslint-plugin-ninja",
   "description": "Optimized ESLint Rules for Elite Coders",
   "version": "2.2.0",
   "homepage": "https://www.dont.ninja",
-  "repository": "https://github.com/lzear/eslint-plugin-dont",
+  "repository": "https://github.com/lzear/eslint-plugin-ninja",
   "author": "lzear",
   "license": "MIT",
   "keywords": [

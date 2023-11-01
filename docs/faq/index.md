@@ -6,7 +6,7 @@
 
 ### What does it do?
 
-`eslint-plugin-dont` is a collection of state-of-the-art ESLint rules that will
+`eslint-plugin-ninja` is a collection of state-of-the-art ESLint rules that will
 help you write better code.
 
 ### Who wrote this?
@@ -21,7 +21,7 @@ ESLint plugins
 Install it:
 
 ```sh
-npm install --save-dev eslint eslint-plugin-dont
+npm install --save-dev eslint eslint-plugin-ninja
 ```
 
 Add it to your `.eslintrc` or `eslint.config.js`:
@@ -40,14 +40,14 @@ Add it to your `.eslintrc` or `eslint.config.js`:
 
 ```js [Flat config: eslint.config.js - recommended rules]
 // eslint.config.js
-import dont from 'eslint-plugin-dont'
+import dont from 'eslint-plugin-ninja'
 
 export default [dont]
 ```
 
 ```js [Flat config: eslint.config.js - custom rules]
 // eslint.config.js
-import dont from 'eslint-plugin-dont'
+import dont from 'eslint-plugin-ninja'
 
 export default [
   {
@@ -63,8 +63,8 @@ export default [
 
 ### Something is broken, what do I do? Can I also suggest a rule?
 
-You can open [issues](https://github.com/azat-io/eslint-plugin-dont/issues) or
-[pull requests](https://github.com/azat-io/eslint-plugin-dont/pulls). You can
+You can open [issues](https://github.com/azat-io/eslint-plugin-ninja/issues) or
+[pull requests](https://github.com/azat-io/eslint-plugin-ninja/pulls). You can
 also not do that, and spend your time on more useful things.
 
 ### Do you recommend using this in my projects or at my workplace?

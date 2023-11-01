@@ -1,15 +1,15 @@
 # ESLint Plugin Perfectionist
 
 <img
-  src="https://raw.githubusercontent.com/lzear/eslint-plugin-dont/main/docs/public/logo.svg"
+  src="https://raw.githubusercontent.com/lzear/eslint-plugin-ninja/main/docs/public/logo.svg"
   alt="ESLint Plugin Perfectionist logo"
   align="right"
   height="170"
   width="170"
 />
 
-[![Version](https://img.shields.io/npm/v/eslint-plugin-dont.svg?color=4a32c3)](https://www.npmjs.com/package/eslint-plugin-dont)
-[![GitHub license](https://img.shields.io/badge/license-MIT-4a32c3.svg)](https://github.com/lzear/eslint-plugin-dont/blob/main/license)
+[![Version](https://img.shields.io/npm/v/eslint-plugin-ninja.svg?color=4a32c3)](https://www.npmjs.com/package/eslint-plugin-ninja)
+[![GitHub license](https://img.shields.io/badge/license-MIT-4a32c3.svg)](https://github.com/lzear/eslint-plugin-ninja/blob/main/license)
 
 ESLint plugin that sets rules to format your code and make it consistent.
 
@@ -46,7 +46,7 @@ Sorting imports and properties in software development offers numerous benefits:
 
 See [docs](https://www.dont.ninja).
 
-![ESLint Plugin Perfectionist usage example](https://raw.githubusercontent.com/lzear/eslint-plugin-dont/main/docs/public/example.png)
+![ESLint Plugin Perfectionist usage example](https://raw.githubusercontent.com/lzear/eslint-plugin-ninja/main/docs/public/example.png)
 
 ## 💿 Installation
 
@@ -56,15 +56,15 @@ You'll first need to install [ESLint](https://eslint.org):
 npm install --save-dev eslint
 ```
 
-Next, install `eslint-plugin-dont`:
+Next, install `eslint-plugin-ninja`:
 
 ```sh
-npm install --save-dev eslint-plugin-dont
+npm install --save-dev eslint-plugin-ninja
 ```
 
 ## 🚀️️️️ Usage
 
-Add `eslint-plugin-dont` to the plugins section of the ESLint configuration file
+Add `eslint-plugin-ninja` to the plugins section of the ESLint configuration file
 and define the list of rules you will use.
 
 ### Legacy Config ([`.eslintrc`](https://eslint.org/docs/latest/use/configure/configuration-files))
@@ -90,7 +90,7 @@ and define the list of rules you will use.
 ### Flat Config ([`eslint.config.js`](https://eslint.org/docs/latest/use/configure/configuration-files-new)) (requires eslint >= v8.23.0)
 
 ```js
-import perfectionist from 'eslint-plugin-dont'
+import perfectionist from 'eslint-plugin-ninja'
 
 export default [
   {
@@ -112,7 +112,7 @@ export default [
 
 ## ⚙️ Configs
 
-The easiest way to use `eslint-plugin-dont` is to use ready-made configs. Config
+The easiest way to use `eslint-plugin-ninja` is to use ready-made configs. Config
 files use all the rules of the current plugin, but you can override them.
 
 ### Legacy Config ([`.eslintrc`](https://eslint.org/docs/latest/use/configure/configuration-files))
@@ -130,7 +130,7 @@ files use all the rules of the current plugin, but you can override them.
 
 <!-- prettier-ignore -->
 ```js
-import perfectionistNatural from 'eslint-plugin-dont/configs/recommended-natural'
+import perfectionistNatural from 'eslint-plugin-ninja/configs/recommended-natural'
 
 export default [
   perfectionistNatural,
@@ -182,7 +182,7 @@ On the whole, yes. We are very careful to make sure that the work of the plugin
 does not negatively affect the work of the code. For example, the plugin takes
 into account spread operators in JSX and objects, comments to the code, exports
 with `*`. Safety is our priority. If you encounter any problem, you can create
-an [issue](https://github.com/lzear/eslint-plugin-dont/issues/new/choose).
+an [issue](https://github.com/lzear/eslint-plugin-ninja/issues/new/choose).
 
 ### Why not Prettier?
 
@@ -288,7 +288,7 @@ This plugin is following [Semantic Versioning](https://semver.org/) and
 ## ❤️ Contributing
 
 See
-[Contributing Guide](https://github.com/lzear/eslint-plugin-dont/blob/main/contributing.md).
+[Contributing Guide](https://github.com/lzear/eslint-plugin-ninja/blob/main/contributing.md).
 
 ## 👁 See Also
 
