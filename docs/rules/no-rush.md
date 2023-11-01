@@ -16,8 +16,8 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 ## 📖 Rule details
 
-Slowing down can sometimes lead to more thoughtful and considered decisions, ensuring you're not rushing through
-critical processes or checks.
+Slowing down can sometimes lead to more thoughtful and considered decisions,
+ensuring you're not rushing through critical processes or checks.
 
 ## ⚙️ Options
 
@@ -31,7 +31,6 @@ Time to wait, in seconds.
 // wait 10 seconds
 { rules: {'dont/no-rush': [2, { delay: 10 }] } }
 ```
-
 
 ## 🧑‍💻 Demo
 

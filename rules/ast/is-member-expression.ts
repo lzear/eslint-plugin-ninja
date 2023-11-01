@@ -14,88 +14,71 @@
 @returns {string}
 */
 export const isMemberExpression: any = (node, options) => {
-	if (node?.type !== 'MemberExpression') {
-    return false;
+  if (node?.type !== 'MemberExpression') {
+    return false
   }
 
   if (typeof options === 'string') {
-    options = {properties: [options]};
+    options = { properties: [options] }
   }
 
   if (Array.isArray(options)) {
-    options = {properties: options};
+    options = { properties: options }
   }
 
-  let {
-    property,
-    properties,
-    object,
-    objects,
-    optional,
-    computed,
-  } = {
+  let { property, properties, object, objects, optional, computed } = {
     property: '',
     properties: [],
     object: '',
     ...options,
-  };
+  }
 
   if (property) {
-    properties = [property];
+    properties = [property]
   }
 
   if (object) {
-    objects = [object];
+    objects = [object]
   }
 
   if (
-    (optional === true && (node.optional !== optional))
-		|| (
-		  optional === false
+    (optional === true && node.optional !== optional) ||
+    (optional === false &&
       // `node.optional` can be `undefined` in some parsers
-			&& node.optional
-		)
+      node.optional)
   ) {
-    return false;
+    return false
   }
 
-  if (
-    Array.isArray(properties)
-		&& properties.length > 0
-  ) {
+  if (Array.isArray(properties) && properties.length > 0) {
     if (
-      node.property.type !== 'Identifier'
-			|| !properties.includes(node.property.name)
+      node.property.type !== 'Identifier' ||
+      !properties.includes(node.property.name)
     ) {
-      return false;
+      return false
     }
 
-    computed ??= false;
+    computed ??= false
   }
 
   if (
-    (computed === true && (node.computed !== computed))
-		|| (
-		  computed === false
+    (computed === true && node.computed !== computed) ||
+    (computed === false &&
       // `node.computed` can be `undefined` in some parsers
-			&& node.computed
-		)
+      node.computed)
   ) {
-    return false;
+    return false
   }
 
   if (
-    Array.isArray(objects)
-		&& objects.length > 0
-		&& (
-		  node.object.type !== 'Identifier'
-			|| !objects.includes(node.object.name)
-		)
+    Array.isArray(objects) &&
+    objects.length > 0 &&
+    (node.object.type !== 'Identifier' || !objects.includes(node.object.name))
   ) {
-    return false;
+    return false
   }
 
-  return true;
+  return true
 }
 
-export default isMemberExpression;
+export default isMemberExpression

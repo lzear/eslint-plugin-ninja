@@ -1,8 +1,5 @@
 /* eslint-disable */
-import {
-  AST_TOKEN_TYPES,
-  TSESTree,
-} from '@typescript-eslint/types'
+import { AST_TOKEN_TYPES, TSESTree } from '@typescript-eslint/types'
 declare namespace AST {
   type TokenType = AST_TOKEN_TYPES
   type Token = TSESTree.Token

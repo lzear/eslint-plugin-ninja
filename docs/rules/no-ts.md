@@ -8,12 +8,14 @@ import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
 import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-ts.js';
 </script>
 
-> "So farewell, TypeScript. May you bring much rigor and satisfaction to your tribe while letting the rest of us enjoy
-> JavaScript in the glorious spirit it was originally designed: Free of strong typing" — David Heinemeier Hansson
+> "So farewell, TypeScript. May you bring much rigor and satisfaction to your
+> tribe while letting the rest of us enjoy JavaScript in the glorious spirit it
+> was originally designed: Free of strong typing" — David Heinemeier Hansson
 
 # Disallow gymnastics needed to please the TS compiler (`no-ts`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 

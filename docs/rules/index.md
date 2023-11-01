@@ -20,7 +20,7 @@ description: ESLint Plugin dont list of rules
 | [monopoly](/rules/monopoly)                   | disallow bad eslint configs                               | 🔧  |
 | [no](/rules/no)                               | disallow everything                                       |     |
 | [no-avoidable-loop](/rules/no-avoidable-loop) | disallow useless `for` loops                              | 🔧  |
-| [no-ci](/rules/no-ci)                         | Disallow running on CI lol                                    |     |
+| [no-ci](/rules/no-ci)                         | Disallow running on CI lol                                |     |
 | [no-no-plusplus](/rules/no-no-plusplus)       | enforce the unary operators ++ and --                     | 🔧  |
 | [no-object](/rules/no-object)                 | disallow object literals, prefer Map                      | 🔧  |
 | [no-overtime](/rules/no-overtime)             | disallow overwork                                         |     |

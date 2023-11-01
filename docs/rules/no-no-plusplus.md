@@ -12,7 +12,8 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-no-
 
 # Enforce the unary operators ++ and -- (`no-no-plusplus`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
@@ -20,7 +21,8 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-no-
 
 Use `++` instead of `+= 1`, and `--` instead of `-= 1`.
 
-The initial plan was to replace `+= 4` by `++++++++`, and so on. But it turns out consecutive `++` don't work 🙄
+The initial plan was to replace `+= 4` by `++++++++`, and so on. But it turns
+out consecutive `++` don't work 🙄
 
 ## 🔗 See also
 

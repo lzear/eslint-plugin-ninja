@@ -12,7 +12,8 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-ran
 
 # Disallow non-deterministic randomness (`no-random`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
@@ -20,14 +21,13 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-ran
 
 Code should be predictable. Replaces `Math.random()` with a deterministic value.
 
-![random](/random_number.png)
-*https://xkcd.com/221/*
+![random](/random_number.png) *https://xkcd.com/221/*
 
 ## 💡 Examples
 
 ```ts
 // ❌ Incorrect
-const foo = Math.random();
+const foo = Math.random()
 
 // ✅ Correct
 const bar = 0.19891733174822845

@@ -22,7 +22,8 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 ## 🔗 See also
 
-- [node-noop](https://github.com/euank/node-noop): used in the implementation of this rule.
+- [node-noop](https://github.com/euank/node-noop): used in the implementation of
+  this rule.
 
 ## 🧑‍💻 Demo
 

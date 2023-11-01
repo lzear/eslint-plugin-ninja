@@ -14,7 +14,10 @@ export default defineConfig({
       fileName: (format, entryName) => {
         let directory = ''
 
-        if (entryName.startsWith('recommended') || entryName.startsWith('all')) {
+        if (
+          entryName.startsWith('recommended') ||
+          entryName.startsWith('all')
+        ) {
           directory = 'configs/'
         }
 

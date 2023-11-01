@@ -12,7 +12,8 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer
 
 # Require from npm instead of using JS builtins (`prefer-npm`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
@@ -21,11 +22,14 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer
 Using NPM packages over native JavaScript has many advantages:
 
 1. Controlled Updates: Decide when to upgrade, avoiding sudden breaks.
-2. Contribute Easily: Open-source and accessible nature allows for quick bug fixes or enhancements.
+2. Contribute Easily: Open-source and accessible nature allows for quick bug
+   fixes or enhancements.
 3. Find Better Solutions: Often more efficient or elegant than native methods.
 4. Flexibility: Avoid lock-ins; switch packages as needs evolve.
-5. Community Support: Active communities mean faster fixes and richer documentation.
-6. Tailored Solutions: Greater customization options than native functionalities.
+5. Community Support: Active communities mean faster fixes and richer
+   documentation.
+6. Tailored Solutions: Greater customization options than native
+   functionalities.
 
 ## 💡 Examples
 

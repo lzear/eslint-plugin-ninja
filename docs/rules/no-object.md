@@ -12,14 +12,16 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-obj
 
 # Disallow object literals, prefer Map (`no-object`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
 ## 📖 Rule details
 
-Leverage the modern and performance-optimized features of Map over traditional objects for key-value collections. This
-rule promotes the use of Map to ensure consistency, avoid prototype pitfalls, and harness the power of ES6 collections
+Leverage the modern and performance-optimized features of Map over traditional
+objects for key-value collections. This rule promotes the use of Map to ensure
+consistency, avoid prototype pitfalls, and harness the power of ES6 collections
 more effectively.
 
 ## 💡 Examples

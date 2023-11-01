@@ -30,7 +30,6 @@ export default createEslintRule<Options, MESSAGE_ID>({
   defaultOptions: [],
   create: (): RuleListener => {
     noop()
-    return {
-    }
+    return {}
   },
 })

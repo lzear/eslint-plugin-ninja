@@ -44,7 +44,9 @@ yarn add --dev eslint-plugin-dont
 
 ## ⚙️ Usage
 
-Add `dont` to the plugins section of your `.eslintrc` configuration file or import `eslint-plugin-dont` in your `eslint.config.js`. Then configure the rules you want to use under the rules section.
+Add `dont` to the plugins section of your `.eslintrc` configuration file or
+import `eslint-plugin-dont` in your `eslint.config.js`. Then configure the rules
+you want to use under the rules section.
 
 ### Legacy Config
 

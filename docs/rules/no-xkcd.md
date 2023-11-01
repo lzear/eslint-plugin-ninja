@@ -10,18 +10,19 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-xkc
 
 > "Originality is the best form of rebellion." – Mike Sasso
 
-
 # Disallow xkcd references (`no-xkcd`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
 ## 📖 Rule details
 
-`xkcd` is great and all, but references to it are overused!
-Also, you're not edgy or teaching anyone anything. Everybody and their grandma is reading it, and we've all seen that
-comic a billion times, especially #927 (you already know which one I'm talking about).
+`xkcd` is great and all, but references to it are overused! Also, you're not
+edgy or teaching anyone anything. Everybody and their grandma is reading it, and
+we've all seen that comic a billion times, especially #927 (you already know
+which one I'm talking about).
 
 On exception for https://xkcd.com/2832 which is allowed because fuck cars.
 

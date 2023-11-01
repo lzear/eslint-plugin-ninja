@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type {RuleContext, RuleListener} from '../utils/eslint-types/Rule.js'
-import {createEslintRule} from '../utils/create-eslint-rule.js'
+import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule.js'
+import { createEslintRule } from '../utils/create-eslint-rule.js'
 
 type MESSAGE_ID = 'no-avoidable-loop'
 
@@ -24,15 +24,21 @@ export default createEslintRule<Options, MESSAGE_ID>({
       },
     ],
     messages: {
-      'no-avoidable-loop': 'Avoid loops obfuscating of repeated operations. Check if you can repeat the body of the loop instead.'
+      'no-avoidable-loop':
+        'Avoid loops obfuscating of repeated operations. Check if you can repeat the body of the loop instead.',
     },
   },
   defaultOptions: [{}],
   create: (context: Context): RuleListener => ({
-    ForStatement: node => context.report({messageId: 'no-avoidable-loop', node}),
-    ForOfStatement: node => context.report({messageId: 'no-avoidable-loop', node,}),
-    ForInStatement: node => context.report({messageId: 'no-avoidable-loop', node,}),
-    DoWhileStatement: node => context.report({messageId: 'no-avoidable-loop', node,}),
-    WhileStatement: node => context.report({messageId: 'no-avoidable-loop', node,}),
+    ForStatement: node =>
+      context.report({ messageId: 'no-avoidable-loop', node }),
+    ForOfStatement: node =>
+      context.report({ messageId: 'no-avoidable-loop', node }),
+    ForInStatement: node =>
+      context.report({ messageId: 'no-avoidable-loop', node }),
+    DoWhileStatement: node =>
+      context.report({ messageId: 'no-avoidable-loop', node }),
+    WhileStatement: node =>
+      context.report({ messageId: 'no-avoidable-loop', node }),
   }),
 })

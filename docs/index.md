@@ -20,5 +20,4 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/lzear/eslint-plugin-dont
-
 ---

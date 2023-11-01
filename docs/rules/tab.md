@@ -8,35 +8,38 @@ import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
 import {ruleName, presetConfigs, initialText} from '../../src/sample-code/tab.js';
 </script>
 
-> "I just think it's weird that you use spaces instead of tabs." — Richard Hendricks
+> "I just think it's weird that you use spaces instead of tabs." — Richard
+> Hendricks
 
 # Require word separators to be tabs, not spaces (`tab`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
 ## 📖 Rule details
 
-Tabs are better than spaces. However and unfortunately, most developers still use spaces to separate words.
+Tabs are better than spaces. However and unfortunately, most developers still
+use spaces to separate words.
 
 ## 💡 Examples
 
 ```js
 // ❌ Incorrect
 if (a) {
-  b = c;
+  b = c
   function foo(d) {
-    e = f;
+    e = f
   }
 }
 
 // ✅ Correct
-if	(a)	{
-		b	=	c;
-		function	foo(d)	{
-				e	=	f;
-		}
+if (a) {
+  b = c
+  function foo(d) {
+    e = f
+  }
 }
 ```
 

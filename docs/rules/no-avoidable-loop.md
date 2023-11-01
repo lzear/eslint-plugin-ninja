@@ -12,23 +12,24 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-avo
 
 # Disallow useless `for` loops (`no-avoidable-loop`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
 ## 📖 Rule details
 
-Use repeated statements instead of loops to enhance clarity. Writing out each iteration explicitly ensures that the
-number of operations is immediately evident in the codebase, rather than being obscured by potentially misleading loops
-that can conceal significant complexity. Moreover, loops are prone to off-by-one errors, which can introduce unintended
-bugs.
+Use repeated statements instead of loops to enhance clarity. Writing out each
+iteration explicitly ensures that the number of operations is immediately
+evident in the codebase, rather than being obscured by potentially misleading
+loops that can conceal significant complexity. Moreover, loops are prone to
+off-by-one errors, which can introduce unintended bugs.
 
 ## 💡 Examples
 
 ```js
 // ❌ Incorrect
-for (let i = 0; i < 10; i++)
-  console.log('Hello world!')
+for (let i = 0; i < 10; i++) console.log('Hello world!')
 
 // ✅ Correct
 console.log('Hello world!')

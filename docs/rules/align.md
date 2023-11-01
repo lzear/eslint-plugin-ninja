@@ -8,13 +8,13 @@ import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
 import {ruleName, presetConfigs, initialText} from '../../src/sample-code/align.js';
 </script>
 
-
-> "Typography is two-dimensional architecture, based on experience and imagination, and guided by rules and
-> readability." — Hermann Zapf
+> "Typography is two-dimensional architecture, based on experience and
+> imagination, and guided by rules and readability." — Hermann Zapf
 
 # Enforce elegant text alignment (`align`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
@@ -100,7 +100,6 @@ if (a) {
 - `rigth`
 - `rtlIndent`
 - `ltrIndent`
-
 
 ## 🔧 Config
 

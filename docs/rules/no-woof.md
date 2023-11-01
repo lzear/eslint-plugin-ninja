@@ -12,7 +12,8 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-woo
 
 # Disallow woof! (`no-woof`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
@@ -40,7 +41,6 @@ const foo = 'bar'
 ## 🔗 See also
 
 - [private joke](https://en.wikipedia.org/wiki/Private_joke)
-
 ## 🧑‍💻 Demo
 
 <CodeEditor :rule="ruleName" :text="initialText" :presetConfigs="presetConfigs" />

@@ -12,15 +12,17 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/emoji.
 
 # Require variables and properties to be named using emojis (`emoji`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
 ## 📖 Rule details
 
-Emojis convey complex ideas succinctly and are universally recognized. Using them as variable names enhances code
-clarity and expressiveness. Unfortunately, the Javascript ecosystem doesn't embrace this potential as emojis can't be
-used as variable names.
+Emojis convey complex ideas succinctly and are universally recognized. Using
+them as variable names enhances code clarity and expressiveness. Unfortunately,
+the Javascript ecosystem doesn't embrace this potential as emojis can't be used
+as variable names.
 
 ## 💡 Examples
 
@@ -70,15 +72,24 @@ if (a) {
 
 ## ⚙️ Options
 
-**See [eslint-plugin-unicorn/prevent-abbreviations](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md)**, which this rule is copied from.
+**See
+[eslint-plugin-unicorn/prevent-abbreviations](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md)**,
+which this rule is copied from.
 
 ### checkDefaultAndNamespaceImports
+
 ### checkFilenames
+
 ### checkProperties
+
 ### checkShorthandImports
+
 ### checkShorthandProperties
+
 ### checkVariables
+
 ### ignore
+
 ### replacements
 
 ## 🔧 Config

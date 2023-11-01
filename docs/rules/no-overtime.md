@@ -8,7 +8,8 @@ import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
 import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/no-overtime.js';
 </script>
 
-> "It's not the hours you put in your work that counts, it's the work you put in the hours." — Sam Ewing
+> "It's not the hours you put in your work that counts, it's the work you put in
+> the hours." — Sam Ewing
 
 # Disallow overwork (`no-overtime`)
 
@@ -22,7 +23,8 @@ Prevent commits done outside working hours.
 
 ### workdays
 
-What days of the week are workdays. Defined in ISO 8601 format, where 1 is Monday and 7 is Sunday. Defaults to 1-5 (Monday to Friday).
+What days of the week are workdays. Defined in ISO 8601 format, where 1 is
+Monday and 7 is Sunday. Defaults to 1-5 (Monday to Friday).
 
 ### start
 

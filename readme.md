@@ -13,7 +13,9 @@
 
 ESLint plugin that sets rules to format your code and make it consistent.
 
-This plugin defines rules for sorting various data, such as objects, imports, TypeScript types, enums, JSX props, Svelte attributes, etc. alphabetically, naturally, or by line length
+This plugin defines rules for sorting various data, such as objects, imports,
+TypeScript types, enums, JSX props, Svelte attributes, etc. alphabetically,
+naturally, or by line length
 
 All rules are automatically fixable. It's safe!
 
@@ -21,15 +23,24 @@ All rules are automatically fixable. It's safe!
 
 Sorting imports and properties in software development offers numerous benefits:
 
-- **Readability**: Finding declarations in a sorted, large list is a little faster. Remember that you read the code much more often than you write it.
+- **Readability**: Finding declarations in a sorted, large list is a little
+  faster. Remember that you read the code much more often than you write it.
 
-- **Maintainability**: Sorting imports and properties is considered a good practice in software development, contributing to code quality and consistency across the codebase.
+- **Maintainability**: Sorting imports and properties is considered a good
+  practice in software development, contributing to code quality and consistency
+  across the codebase.
 
-- **Code Review and Collaboration**: If you set rules that say you can only do things one way, then no one will have to spend time thinking about how to do it.
+- **Code Review and Collaboration**: If you set rules that say you can only do
+  things one way, then no one will have to spend time thinking about how to do
+  it.
 
-- **Code Uniformity**: When all code looks exactly the same, it is very hard to see who wrote it, which makes achieving the lofty goal of _collective code ownership_ easier.
+- **Code Uniformity**: When all code looks exactly the same, it is very hard to
+  see who wrote it, which makes achieving the lofty goal of _collective code
+  ownership_ easier.
 
-- **Aesthetics**: This not only provides functional benefits, but also gives the code an aesthetic appeal, visually pleasing and harmonious structure. Take your code to the beauty salon!
+- **Aesthetics**: This not only provides functional benefits, but also gives the
+  code an aesthetic appeal, visually pleasing and harmonious structure. Take
+  your code to the beauty salon!
 
 ## 📖 Documentation
 
@@ -53,7 +64,8 @@ npm install --save-dev eslint-plugin-dont
 
 ## 🚀️️️️ Usage
 
-Add `eslint-plugin-dont` to the plugins section of the ESLint configuration file and define the list of rules you will use.
+Add `eslint-plugin-dont` to the plugins section of the ESLint configuration file
+and define the list of rules you will use.
 
 ### Legacy Config ([`.eslintrc`](https://eslint.org/docs/latest/use/configure/configuration-files))
 
@@ -100,7 +112,8 @@ export default [
 
 ## ⚙️ Configs
 
-The easiest way to use `eslint-plugin-dont` is to use ready-made configs. Config files use all the rules of the current plugin, but you can override them.
+The easiest way to use `eslint-plugin-dont` is to use ready-made configs. Config
+files use all the rules of the current plugin, but you can override them.
 
 ### Legacy Config ([`.eslintrc`](https://eslint.org/docs/latest/use/configure/configuration-files))
 
@@ -128,10 +141,11 @@ export default [
 
 <!-- begin auto-generated rules list -->
 
-🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
+🔧 Automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
 
-| Name                                                                                               | Description                                 | 🔧  |
-| :------------------------------------------------------------------ |:----------------------------------------------------------| :-- |
+| Name                                                                | Description                                               | 🔧  |
+| :------------------------------------------------------------------ | :-------------------------------------------------------- | :-- |
 | [align](https://www.dont.ninja/rules/align)                         | enforce elegant text alignment                            | 🔧  |
 | [emoji](https://www.dont.ninja/rules/emoji)                         | require variables and properties to be named using emojis | 🔧  |
 | [justify](https://www.dont.ninja/rules/justify)                     | enforce comments explaining code                          | 🔧  |
@@ -158,21 +172,37 @@ export default [
 
 ### Can I automatically fix problems in the editor?
 
-Yes. To do this, you need to enable autofix in ESLint when you save the file in your editor. Instructions for your editor can be found [here](https://www.dont.ninja/guide/integrations).
+Yes. To do this, you need to enable autofix in ESLint when you save the file in
+your editor. Instructions for your editor can be found
+[here](https://www.dont.ninja/guide/integrations).
 
 ### Is it safety?
 
-On the whole, yes. We are very careful to make sure that the work of the plugin does not negatively affect the work of the code. For example, the plugin takes into account spread operators in JSX and objects, comments to the code, exports with `*`. Safety is our priority. If you encounter any problem, you can create an [issue](https://github.com/lzear/eslint-plugin-dont/issues/new/choose).
+On the whole, yes. We are very careful to make sure that the work of the plugin
+does not negatively affect the work of the code. For example, the plugin takes
+into account spread operators in JSX and objects, comments to the code, exports
+with `*`. Safety is our priority. If you encounter any problem, you can create
+an [issue](https://github.com/lzear/eslint-plugin-dont/issues/new/choose).
 
 ### Why not Prettier?
 
-I love Prettier. However, this is not his area of responsibility. Prettier is used for formatting, and ESLint is also used for styling. For example, changing the order of imports can affect how the code works (console.log calls, fetch, style loading). Prettier should not change the AST. There is a cool article about this: ["The Blurry Line Between Formatting and Style"](https://blog.joshuakgoldberg.com/the-blurry-line-between-formatting-and-style) by **@joshuakgoldberg**.
+I love Prettier. However, this is not his area of responsibility. Prettier is
+used for formatting, and ESLint is also used for styling. For example, changing
+the order of imports can affect how the code works (console.log calls, fetch,
+style loading). Prettier should not change the AST. There is a cool article
+about this:
+["The Blurry Line Between Formatting and Style"](https://blog.joshuakgoldberg.com/the-blurry-line-between-formatting-and-style)
+by **@joshuakgoldberg**.
 
 ## ⚠️ Troubleshooting
 
-There are rules of ESLint and other ESLint plugins that may conflict with the rules of ESLint Plugin Perfectionist. We strongly recommend that you [disable rules](https://eslint.org/docs/latest/use/configure/rules#using-configuration-files-1) with similar functionality.
+There are rules of ESLint and other ESLint plugins that may conflict with the
+rules of ESLint Plugin Perfectionist. We strongly recommend that you
+[disable rules](https://eslint.org/docs/latest/use/configure/rules#using-configuration-files-1)
+with similar functionality.
 
-I recommend that you read the [documentation](https://www.dont.ninja) before using any rules.
+I recommend that you read the [documentation](https://www.dont.ninja) before
+using any rules.
 
 <details>
   <summary>Possible conflicts</summary>
@@ -252,15 +282,18 @@ I recommend that you read the [documentation](https://www.dont.ninja) before usi
 
 ## 🚥 Versioning Policy
 
-This plugin is following [Semantic Versioning](https://semver.org/) and [ESLint's Semantic Versioning Policy](https://github.com/eslint/eslint#semantic-versioning-policy).
+This plugin is following [Semantic Versioning](https://semver.org/) and
+[ESLint's Semantic Versioning Policy](https://github.com/eslint/eslint#semantic-versioning-policy).
 
 ## ❤️ Contributing
 
-See [Contributing Guide](https://github.com/lzear/eslint-plugin-dont/blob/main/contributing.md).
+See
+[Contributing Guide](https://github.com/lzear/eslint-plugin-dont/blob/main/contributing.md).
 
 ## 👁 See Also
 
-- [`@azat-io/eslint-config`](https://github.com/azat-io/eslint-config) - Collection of ESLint configs
+- [`@azat-io/eslint-config`](https://github.com/azat-io/eslint-config) -
+  Collection of ESLint configs
 
 ## 🔒 License
 

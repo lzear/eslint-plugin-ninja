@@ -14,9 +14,8 @@
     "noEmit": true,
     "resolveJsonModule": true,
 
-
-//    "noUnusedLocals": true,
-    "jsx": "preserve",
+    //    "noUnusedLocals": true,
+    "jsx": "preserve"
   },
   "include": [
     "**/*.ts",
