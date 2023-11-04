@@ -1,9 +1,9 @@
-import type { TSESLint } from '@typescript-eslint/utils'
 import type { TSESTree } from '@typescript-eslint/types'
+import type { SourceCode } from './eslint-types/SourceCode.js'
 
 export const getCommentBefore = (
   node: TSESTree.Node,
-  source: TSESLint.SourceCode,
+  source: SourceCode,
 ): TSESTree.Comment | null => {
   const [tokenBefore, tokenOrCommentBefore] = source.getTokensBefore(node, {
     filter: ({ value, type }) =>
