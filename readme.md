@@ -148,7 +148,6 @@ export default [
 | :------------------------------------------------------------------ | :-------------------------------------------------------- | :-- |
 | [align](https://www.dont.ninja/rules/align)                         | enforce elegant text alignment                            | 🔧  |
 | [declare-keyword](https://www.dont.ninja/rules/declare-keyword)     | enforce variable names to include their type              | 🔧  |
-| [emoji](https://www.dont.ninja/rules/emoji)                         | require variables and properties to be named using emojis | 🔧  |
 | [justify](https://www.dont.ninja/rules/justify)                     | enforce comments explaining code                          | 🔧  |
 | [justify2](https://www.dont.ninja/rules/justify2)                   | enforce text to be justified                              | 🔧  |
 | [lottery](https://www.dont.ninja/rules/lottery)                     | require luck                                              |     |
@@ -164,8 +163,9 @@ export default [
 | [no-ts](https://www.dont.ninja/rules/no-ts)                         | disallow gymnastics needed to please the TS compiler      | 🔧  |
 | [no-woof](https://www.dont.ninja/rules/no-woof)                     | disallow woof!                                            | 🔧  |
 | [no-xkcd](https://www.dont.ninja/rules/no-xkcd)                     | disallow xkcd references                                  | 🔧  |
+| [prefer-emoji](https://www.dont.ninja/rules/prefer-emoji)           | require variables and properties to be named using emojis | 🔧  |
 | [prefer-npm](https://www.dont.ninja/rules/prefer-npm)               | require from npm instead of using JS builtins             | 🔧  |
-| [tab](https://www.dont.ninja/rules/tab)                             | require word separators to be tabs, not spaces            | 🔧  |
+| [prefer-tab](https://www.dont.ninja/rules/prefer-tab)               | require word separators to be tabs, not spaces            | 🔧  |
 | [yes](https://www.dont.ninja/rules/yes)                             | enforce nothing                                           |     |
 
 <!-- end auto-generated rules list -->

@@ -13,7 +13,7 @@ description: ESLint Plugin Ninja list of rules
 | Name                                          | Description                                               | 🔧  |
 | :-------------------------------------------- | :-------------------------------------------------------- | :-- |
 | [align](/rules/align)                         | enforce elegant text alignment                            | 🔧  |
-| [emoji](/rules/emoji)                         | require variables and properties to be named using emojis | 🔧  |
+| [declare-keyword](/rules/declare-keyword)     | enforce variable names to include their type              | 🔧  |
 | [justify](/rules/justify)                     | enforce comments explaining code                          | 🔧  |
 | [justify2](/rules/justify2)                   | enforce text to be justified                              | 🔧  |
 | [lottery](/rules/lottery)                     | require luck                                              |     |
@@ -29,8 +29,9 @@ description: ESLint Plugin Ninja list of rules
 | [no-ts](/rules/no-ts)                         | disallow gymnastics needed to please the TS compiler      | 🔧  |
 | [no-woof](/rules/no-woof)                     | disallow woof!                                            | 🔧  |
 | [no-xkcd](/rules/no-xkcd)                     | disallow xkcd references                                  | 🔧  |
+| [prefer-emoji](/rules/prefer-emoji)           | require variables and properties to be named using emojis | 🔧  |
 | [prefer-npm](/rules/prefer-npm)               | require from npm instead of using JS builtins             | 🔧  |
-| [tab](/rules/tab)                             | require word separators to be tabs, not spaces            | 🔧  |
+| [prefer-tab](/rules/prefer-tab)               | require word separators to be tabs, not spaces            | 🔧  |
 | [yes](/rules/yes)                             | enforce nothing                                           |     |
 
 <!-- end auto-generated rules list -->
