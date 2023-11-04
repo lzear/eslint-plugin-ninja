@@ -1,17 +1,17 @@
 ---
-title: tab
+title: prefer-tab
 description: Use tabs to separate words in the code
 ---
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/tab.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer-tab.js';
 </script>
 
 > "I just think it's weird that you use spaces instead of tabs." — Richard
 > Hendricks
 
-# Require word separators to be tabs, not spaces (`tab`)
+# Require word separators to be tabs, not spaces (`prefer-tab`)
 
 🔧 This rule is automatically fixable by the
 [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
@@ -46,7 +46,7 @@ if	(a)	{
 ## 🔧 Config
 
 ```js
-{ rules: { 'ninja/tab': 2 } }
+{ rules: { 'ninja/prefer-tab': 2 } }
 ```
 
 ## 🧑‍💻 Demo

@@ -1,6 +1,6 @@
 import type { PresetConfig } from './presets.js'
 
-export const ruleName = 'tab'
+export const ruleName = 'prefer-tab'
 
 export const presetConfigs = [] satisfies PresetConfig[]
 

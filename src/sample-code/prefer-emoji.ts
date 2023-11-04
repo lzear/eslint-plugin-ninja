@@ -1,6 +1,6 @@
 import type { PresetConfig } from './presets.js'
 
-export const ruleName = 'emoji'
+export const ruleName = 'prefer-emoji'
 
 const defaultOptions = {
   checkDefaultAndNamespaceImports: false,

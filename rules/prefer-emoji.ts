@@ -522,7 +522,7 @@ type Options = [
   }>,
 ]
 
-export const RULE_NAME = 'emoji'
+export const RULE_NAME = 'prefer-emoji'
 
 export default createEslintRule<Options, MESSAGE_ID>({
   name: RULE_NAME,

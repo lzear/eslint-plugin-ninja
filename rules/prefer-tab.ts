@@ -6,7 +6,7 @@ type MESSAGE_ID = 'replace'
 
 type Options = []
 
-export const RULE_NAME = 'tab'
+export const RULE_NAME = 'prefer-tab'
 
 export default createEslintRule<Options, MESSAGE_ID>({
   name: RULE_NAME,

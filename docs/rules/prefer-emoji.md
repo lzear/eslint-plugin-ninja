@@ -1,16 +1,16 @@
 ---
-title: emoji
+title: prefer-emoji
 description: 💩
 ---
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/emoji.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer-emoji.js';
 </script>
 
 > "A picture is worth a thousand words."
 
-# Require variables and properties to be named using emojis (`emoji`)
+# Require variables and properties to be named using emojis (`prefer-emoji`)
 
 🔧 This rule is automatically fixable by the
 [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
@@ -95,7 +95,7 @@ which this rule is copied from.
 ## 🔧 Config
 
 ```js
-{ rules: { 'ninja/justify': 2 } }
+{ rules: { 'ninja/prefer-emoji': 2 } }
 ```
 
 ## 🧑‍💻 Demo
