@@ -45,8 +45,8 @@ yarn add --dev eslint-plugin-ninja
 ## ⚙️ Usage
 
 Add `ninja` to the plugins section of your `.eslintrc` configuration file or
-import `eslint-plugin-ninja` in your `eslint.config.js`. Then configure the rules
-you want to use under the rules section.
+import `eslint-plugin-ninja` in your `eslint.config.js`. Then configure the
+rules you want to use under the rules section.
 
 ### Legacy Config
 

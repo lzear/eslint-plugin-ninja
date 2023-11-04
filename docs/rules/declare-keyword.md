@@ -12,16 +12,19 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/declar
 
 # Indicate the type of a variable in its name (`declare-keyword`)
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
 ## 📖 Rule details
 
-Don't you hate it when you're unsure whether you can mutate a variable because it's declared with const, or if you're dealing with a class that can be instantiated?
+Don't you hate it when you're unsure whether you can mutate a variable because
+it's declared with const, or if you're dealing with a class that can be
+instantiated?
 
-By prefixing the variable name with its type, you can easily avoid these confusions and have a clearer understanding of your code at a glance.
-
+By prefixing the variable name with its type, you can easily avoid these
+confusions and have a clearer understanding of your code at a glance.
 
 ## ⚙️ Options
 
@@ -29,15 +32,17 @@ By prefixing the variable name with its type, you can easily avoid these confusi
 
 <sub>(default: `natural`)</sub>
 
-* `start` - the type must be at the start of the variable name
-* `end` - the type must be at the end of the variable name
-* `natural` - the type must be at the natural position of the variable name (start for consts, end for classes, etc.)
+- `start` - the type must be at the start of the variable name
+- `end` - the type must be at the end of the variable name
+- `natural` - the type must be at the natural position of the variable name
+  (start for consts, end for classes, etc.)
 
 ### oneLetter
 
 <sub>(default: `false`)</sub>
 
-If true, the type must be a single letter (e.g. `cName` for a const, `eName` for an enum, etc.). Classes get `k`, not to be confused with consts.
+If true, the type must be a single letter (e.g. `cName` for a const, `eName` for
+an enum, etc.). Classes get `k`, not to be confused with consts.
 
 ## 🔧 Config
 

@@ -1,9 +1,7 @@
 // eslint-disable-next-line import/no-unresolved,n/no-extraneous-import
-import config from '@lzear/eslint-config-typescript'
 import eslintPlugin from 'eslint-plugin-eslint-plugin/configs/all'
 
 export default [
-  ...config,
   eslintPlugin,
   {
     ignores: [
