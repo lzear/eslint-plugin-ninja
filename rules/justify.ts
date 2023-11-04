@@ -4,11 +4,11 @@ import type {
   RuleFix,
   RuleFixer,
   RuleListener,
+  RuleContext,
 } from '../utils/eslint-types/Rule.js'
 
 import { createEslintRule } from '../utils/create-eslint-rule.js'
 import { getCommentBefore } from '../utils/get-comment-before.js'
-import { RuleContext } from '../utils/eslint-types/Rule.js'
 
 type MESSAGE_ID = 'expectedJustification'
 

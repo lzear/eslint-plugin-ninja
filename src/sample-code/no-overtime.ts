@@ -1,4 +1,5 @@
 import type { PresetConfig } from './presets.js'
+
 import { noOvertimeImpl } from '../../rules/no-overtime.impl.js'
 
 export const ruleName = 'no-overtime'
@@ -12,6 +13,7 @@ export const initialText = `const someCode = () => {}
 // (approx)
 `
 
+// eslint-disable-next-line consistent-return
 export const fakeLint = async (code: string) => {
   const r = noOvertimeImpl(new Date())
 

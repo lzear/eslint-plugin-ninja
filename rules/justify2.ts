@@ -1,8 +1,8 @@
-import type { TSESTree } from '@typescript-eslint/types'
 import type { Difference } from 'prettier-linter-helpers'
+import type { TSESTree } from '@typescript-eslint/types'
 
-import _ from 'lodash'
 import { generateDifferences } from 'prettier-linter-helpers'
+import _ from 'lodash'
 
 import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule.js'
 
@@ -26,9 +26,9 @@ const splitNumberEvenly = (number: number, count: number) => {
 const replacePortions = (
   input: string,
   replacements: {
-    end: number
     length: number
     start: number
+    end: number
   }[],
 ) => {
   const r2 = [...replacements].sort((a, b) => b.start - a.start)

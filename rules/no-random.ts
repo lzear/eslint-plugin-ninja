@@ -41,7 +41,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
         node.callee.property?.name === 'random'
       )
         context.report({
-          node: node,
+          node,
           messageId: RULE_NAME,
           fix: fixer => fixer.replaceText(node, String(Math.random())),
         })

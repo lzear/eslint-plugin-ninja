@@ -4,23 +4,23 @@ import type { TSESTree } from '@typescript-eslint/types'
 import hasEmoji from 'has-emoji'
 import path from 'node:path'
 
-import type { JSONSchema4 } from '../utils/eslint-types/json-schema.js'
 import type {
   ReportDescriptor,
   RuleContext,
   RuleListener,
 } from '../utils/eslint-types/Rule.js'
+import type { JSONSchema4 } from '../utils/eslint-types/json-schema.js'
 import type { Scope } from '../utils/eslint-types/Scope.js'
 
-import { complete } from '../utils/complete.js'
+import isShorthandPropertyValue from './utils/is-shorthand-property-value.js'
+import isShorthandImportLocal from './utils/is-shorthand-import-local.js'
+import getVariableIdentifiers from './utils/get-variable-identifiers.js'
 import { createEslintRule } from '../utils/create-eslint-rule.js'
-import { emojis } from '../utils/emoji-list.js'
 import renameVariable from './fix/rename-variable.js'
 import avoidCapture from './utils/avoid-capture.js'
+import { complete } from '../utils/complete.js'
+import { emojis } from '../utils/emoji-list.js'
 import getScopes from './utils/get-scopes.js'
-import getVariableIdentifiers from './utils/get-variable-identifiers.js'
-import isShorthandImportLocal from './utils/is-shorthand-import-local.js'
-import isShorthandPropertyValue from './utils/is-shorthand-property-value.js'
 
 const MESSAGE_ID_REPLACE = 'replace'
 const MESSAGE_ID_SUGGESTION = 'suggestion'
@@ -512,13 +512,13 @@ type MESSAGE_ID = typeof MESSAGE_ID_REPLACE | typeof MESSAGE_ID_SUGGESTION
 type Options = [
   Partial<{
     checkDefaultAndNamespaceImports: boolean | string
-    checkFilenames: boolean
-    checkProperties: boolean
     checkShorthandImports: boolean | string
-    checkShorthandProperties: boolean
-    checkVariables: boolean
-    ignore: (RegExp | string)[]
     replacements: Record<string, string[]>
+    checkShorthandProperties: boolean
+    ignore: (RegExp | string)[]
+    checkProperties: boolean
+    checkFilenames: boolean
+    checkVariables: boolean
   }>,
 ]
 

@@ -10,16 +10,14 @@ export const presetConfigs = [
 
 export { webstormJsSample as initialText } from './webstorm-js-sample.js'
 
-const okay = (code: string) => {
-  return {
-    fix: {
-      fixed: false,
-      messages: [],
-      output: code,
-    },
-    verify: [],
-  }
-}
+const okay = (code: string) => ({
+  fix: {
+    fixed: false,
+    messages: [],
+    output: code,
+  },
+  verify: [],
+})
 
 const ko = (code: string, p: number, roll: number) => ({
   fix: {

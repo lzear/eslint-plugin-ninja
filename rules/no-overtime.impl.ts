@@ -19,10 +19,10 @@ export const defaultOptions = {
   end: '18:00:00',
 }
 
-export type NoOvertimeOptions = {
-  end: string
-  start: string
+export interface NoOvertimeOptions {
   workdays: Weekday[]
+  start: string
+  end: string
 }
 
 export const noOvertimeImpl = (
@@ -58,8 +58,8 @@ export const noOvertimeImpl = (
         messageId: 'hour-late' as const,
         data: { duration: formatDistance(currentTime, endTime) },
       }
-  } else
-    return {
-      messageId: 'day' as const,
-    }
+  }
+  return {
+    messageId: 'day' as const,
+  }
 }

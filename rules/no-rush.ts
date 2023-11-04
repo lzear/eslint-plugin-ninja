@@ -1,9 +1,8 @@
-import type { RuleListener } from '../utils/eslint-types/Rule.js'
+import type { RuleListener, RuleContext } from '../utils/eslint-types/Rule.js'
 
 import { createEslintRule } from '../utils/create-eslint-rule.js'
 import { sleepSync } from '../utils/sleep-sync.js'
 import { complete } from '../utils/complete.js'
-import { RuleContext } from '../utils/eslint-types/Rule.js'
 
 type MESSAGE_ID = 'no-rush'
 

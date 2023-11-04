@@ -1,7 +1,9 @@
-import { createEslintRule } from '../utils/create-eslint-rule.js'
-import { RuleContext } from '../utils/eslint-types/Rule.js'
-import { complete } from '../utils/complete.js'
 import type { TSESTree } from '@typescript-eslint/types'
+
+import type { RuleContext } from '../utils/eslint-types/Rule.js'
+
+import { createEslintRule } from '../utils/create-eslint-rule.js'
+import { complete } from '../utils/complete.js'
 
 type MESSAGE_ID = 'satisfyRegex'
 
@@ -68,8 +70,8 @@ export default createEslintRule<Options, MESSAGE_ID>({
       const side = type === 'start' || type === 'end' ? type : naturalSide
       if (!('id' in node) || !node.id || !('name' in node.id)) return
 
-      const id = node.id
-      const name = id.name
+      const { id } = node
+      const { name } = id
       const keyword = oneLetter ? kind.charAt(0) : kind
 
       if (side === 'start' && !name.toLowerCase().startsWith(keyword)) {
@@ -104,7 +106,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
     return {
       VariableDeclarator: node => {
         if (!('kind' in node.parent)) return
-        const kind = node.parent.kind
+        const { kind } = node.parent
         check(node, 'start', kind)
       },
 

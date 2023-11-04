@@ -7,13 +7,11 @@ export const presetConfigs = [] satisfies PresetConfig[]
 export const initialText = `// just pass
 `
 
-export const fakeLint = async (code: string) => {
-  return {
-    fix: {
-      fixed: false,
-      messages: [],
-      output: code,
-    },
-    verify: [],
-  }
-}
+export const fakeLint = async (code: string) => ({
+  fix: {
+    fixed: false,
+    messages: [],
+    output: code,
+  },
+  verify: [],
+})

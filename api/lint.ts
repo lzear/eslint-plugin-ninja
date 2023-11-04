@@ -40,8 +40,8 @@ const lintLocal = <Rule extends RuleName>(
 
 const lintServerless = async (request: VercelRequest, res: VercelResponse) => {
   const parsed = JSON.parse(request.body) as {
-    code: string
     options?: unknown
+    code: string
     rule: string
   }
 
@@ -52,7 +52,7 @@ const lintServerless = async (request: VercelRequest, res: VercelResponse) => {
     return res.status(400).send({ error: 'invalid rule name' })
   }
   const lintResults = lintLocal(code, rule, options)
-  res.status(200).send(lintResults)
+  return res.status(200).send(lintResults)
 }
 
 export default lintServerless
