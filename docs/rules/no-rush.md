@@ -34,4 +34,4 @@ Time to wait, in seconds.
 
 ## 🧑‍💻 Demo
 
-<CodeEditor :rule="ruleName" :text="initialText" :presetConfigs="presetConfigs" />
+<CodeEditor :rule="ruleName" :text="initialText" :presetConfigs="presetConfigs" fake-lint="fakeLint" />
