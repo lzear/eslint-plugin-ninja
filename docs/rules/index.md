@@ -20,10 +20,11 @@ description: ESLint Plugin Ninja list of rules
 | [monopoly](/rules/monopoly)                   | disallow bad eslint configs                               | 🔧  |
 | [no](/rules/no)                               | disallow everything                                       |     |
 | [no-avoidable-loop](/rules/no-avoidable-loop) | disallow useless `for` loops                              | 🔧  |
-| [no-ci](/rules/no-ci)                         | Disallow running on CI lol                                |     |
+| [no-ci](/rules/no-ci)                         | disallow running on CI lol                                |     |
 | [no-no-plusplus](/rules/no-no-plusplus)       | enforce the unary operators ++ and --                     | 🔧  |
 | [no-object](/rules/no-object)                 | disallow object literals, prefer Map                      | 🔧  |
 | [no-overtime](/rules/no-overtime)             | disallow overwork                                         |     |
+| [no-random](/rules/no-random)                 | disallow non-deterministic randomness                     | 🔧  |
 | [no-rush](/rules/no-rush)                     | enforce a delay                                           |     |
 | [no-ts](/rules/no-ts)                         | disallow gymnastics needed to please the TS compiler      | 🔧  |
 | [no-woof](/rules/no-woof)                     | disallow woof!                                            | 🔧  |

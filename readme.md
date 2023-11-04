@@ -158,6 +158,7 @@ export default [
 | [no-no-plusplus](https://www.dont.ninja/rules/no-no-plusplus)       | enforce the unary operators ++ and --                     | 🔧  |
 | [no-object](https://www.dont.ninja/rules/no-object)                 | disallow object literals, prefer Map                      | 🔧  |
 | [no-overtime](https://www.dont.ninja/rules/no-overtime)             | disallow overwork                                         |     |
+| [no-random](https://www.dont.ninja/rules/no-random)                 | disallow non-deterministic randomness                     | 🔧  |
 | [no-rush](https://www.dont.ninja/rules/no-rush)                     | enforce a delay                                           |     |
 | [no-ts](https://www.dont.ninja/rules/no-ts)                         | disallow gymnastics needed to please the TS compiler      | 🔧  |
 | [no-woof](https://www.dont.ninja/rules/no-woof)                     | disallow woof!                                            | 🔧  |
