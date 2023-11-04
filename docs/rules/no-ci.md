@@ -20,6 +20,10 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 { rules: { 'ninja/no-ci': 2 } }
 ```
 
+## 🔗 See also
+
+- [volkswagen](https://www.npmjs.com/package/volkswagen)
+
 ## 🧑‍💻 Demo
 
 <CodeEditor :rule="ruleName" :text="initialText" :presetConfigs="presetConfigs" :fakeLint="fakeLint" />

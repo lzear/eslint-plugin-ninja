@@ -34,6 +34,10 @@ out consecutive `++` don't work 🙄
 { rules: { 'ninja/no-no-plusplus': 2 } }
 ```
 
+## 🔗 See also
+
+- [no-plusplus](https://eslint.org/docs/latest/rules/no-plusplus)
+
 ## 🧑‍💻 Demo
 
 <CodeEditor :rule="ruleName" :text="initialText" :presetConfigs="presetConfigs" />
