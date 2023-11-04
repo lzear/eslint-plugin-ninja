@@ -46,7 +46,7 @@
 
       <div class="flex">
       <p class="italic text-xs text-center max-w-[100%]">
-        Preview provided solely for illustrative purposes, should not be considered as a binding or contractual representation. Fonts not included. Please note that using emojis as variable names is not technically supported in Javascript and most programming languages. Performed by trained professionals only. Do not attempt this at home. Always prioritize safe coding practices.
+        Preview provided solely for illustrative purposes, should not be considered as a binding or contractual representation. Fonts not included. Please note that using emojis as variable names is not technically supported in Javascript and most programming languages. Performed by trained professionals only. Do not try this at home. Always prioritize safe coding practices.
       </p>
       </div>
     </div>
