@@ -1,6 +1,7 @@
 import _ from 'lodash'
 
 import align, { RULE_NAME as alignName } from './rules/align.js'
+import declareKeyword, { RULE_NAME as declareKeywordName } from './rules/declare-keyword.js'
 import emoji, { RULE_NAME as emojiName } from './rules/emoji.js'
 import justify, { RULE_NAME as justifyName } from './rules/justify.js'
 import justify2, { RULE_NAME as justify2Name } from './rules/justify2.js'
@@ -25,6 +26,7 @@ const name = 'eslint-plugin-ninja'
 
 const rules = {
   [alignName]: align,
+  [declareKeywordName]: declareKeyword,
   [emojiName]: emoji,
   [justify2Name]: justify2,
   [justifyName]: justify,
@@ -53,6 +55,7 @@ const config = {
     recommended: {
       rules: _.pick(rules, [
         alignName,
+        declareKeywordName,
         emojiName,
         justifyName,
         justify2Name,

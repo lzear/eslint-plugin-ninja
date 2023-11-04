@@ -64,8 +64,8 @@ npm install --save-dev eslint-plugin-ninja
 
 ## 🚀️️️️ Usage
 
-Add `eslint-plugin-ninja` to the plugins section of the ESLint configuration file
-and define the list of rules you will use.
+Add `eslint-plugin-ninja` to the plugins section of the ESLint configuration
+file and define the list of rules you will use.
 
 ### Legacy Config ([`.eslintrc`](https://eslint.org/docs/latest/use/configure/configuration-files))
 
@@ -112,8 +112,8 @@ export default [
 
 ## ⚙️ Configs
 
-The easiest way to use `eslint-plugin-ninja` is to use ready-made configs. Config
-files use all the rules of the current plugin, but you can override them.
+The easiest way to use `eslint-plugin-ninja` is to use ready-made configs.
+Config files use all the rules of the current plugin, but you can override them.
 
 ### Legacy Config ([`.eslintrc`](https://eslint.org/docs/latest/use/configure/configuration-files))
 
@@ -147,6 +147,7 @@ export default [
 | Name                                                                | Description                                               | 🔧  |
 | :------------------------------------------------------------------ | :-------------------------------------------------------- | :-- |
 | [align](https://www.dont.ninja/rules/align)                         | enforce elegant text alignment                            | 🔧  |
+| [declare-keyword](https://www.dont.ninja/rules/declare-keyword)     | enforce variable names to include their type              | 🔧  |
 | [emoji](https://www.dont.ninja/rules/emoji)                         | require variables and properties to be named using emojis | 🔧  |
 | [justify](https://www.dont.ninja/rules/justify)                     | enforce comments explaining code                          | 🔧  |
 | [justify2](https://www.dont.ninja/rules/justify2)                   | enforce text to be justified                              | 🔧  |
