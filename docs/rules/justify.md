@@ -38,10 +38,14 @@ if (a) {
 
 // ✅ Correct
 // if a
-if      (a)     {
-  b       =       c
+if (a) {
+  // then assign c to b
+  b = c
+
+  // define foo
   function foo(d) {
-    e       =       f
+    // assign f to e
+    e = f
   }
 }
 ```

@@ -41,6 +41,7 @@ const foo = 'bar'
 ## 🔗 See also
 
 - [private joke](https://en.wikipedia.org/wiki/Private_joke)
+
 ## 🧑‍💻 Demo
 
 <CodeEditor :rule="ruleName" :text="initialText" :presetConfigs="presetConfigs" />

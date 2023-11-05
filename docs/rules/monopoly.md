@@ -19,11 +19,9 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/monopo
 
 ## 📖 Rule details
 
-Ensures that the only allowed ESLint configuration is eslint-plugin-ninja. The
-use of any other configuration names prefixed with eslint-config- is disallowed
-to maintain consistency and specificity in the project's linting rules. This
-rule is especially helpful for projects that have standardized on a particular
-configuration set to prevent accidental deviations.
+Ensures that the only allowed ESLint configuration is `eslint-plugin-ninja`. The
+use of any other configuration is disallowed. Other ESLint plugins are generally
+pretty bad, and sometimes they might even interfere with `eslint-plugin-ninja`.
 
 ## 🔧 Config
 

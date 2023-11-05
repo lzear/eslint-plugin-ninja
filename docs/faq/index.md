@@ -63,8 +63,8 @@ export default [
 
 ### Something is broken, what do I do? Can I also suggest a rule?
 
-You can open [issues](https://github.com/azat-io/eslint-plugin-ninja/issues) or
-[pull requests](https://github.com/azat-io/eslint-plugin-ninja/pulls). You can
+You can open [issues](https://github.com/lzear/eslint-plugin-ninja/issues) or
+[pull requests](https://github.com/lzear/eslint-plugin-ninja/pulls). You can
 also not do that, and spend your time on more useful things.
 
 ### Do you recommend using this in my projects or at my workplace?

@@ -1,9 +1,25 @@
 # ESLint Plugin Ninja
 
-[![Version](https://img.shields.io/npm/v/eslint-plugin-ninja.svg?color=4a32c3)](https://www.npmjs.com/package/eslint-plugin-ninja)
-[![GitHub license](https://img.shields.io/badge/license-MIT-4a32c3.svg)](https://github.com/lzear/eslint-plugin-ninja/blob/main/license)
+[![Version](https://img.shields.io/npm/v/eslint-plugin-ninja.svg?color=b5749d)](https://www.npmjs.com/package/eslint-plugin-ninja)
+[![GitHub license](https://img.shields.io/badge/license-MIT-b5749d.svg)](https://github.com/lzear/eslint-plugin-ninja/blob/main/license)
 
-The ultimate ESLint plugin. Please check www.dont.ninja for more info.
+The ultimate ESLint plugin.
+
+### www.dont.ninja
+
+```js
+     // Make your code look like this!
+         import 👈 from 'left-pad'
+         import 🎭 from 'is-even'
+
+               let ✋ = '1'
+            let 🔥 = +👈(✋++, ✋)
+       let 🌈 = 🔥++ + ++✋ + +🎭(++🔥)
+            let 🌯 = 🌈 + 🔥 * 🖐️
+
+// 12% of the people can't solve this! 😂
+       console.log(👈(✋, 🌯, 🌈) + 1)
+```
 
 ## ✅ Rules
 

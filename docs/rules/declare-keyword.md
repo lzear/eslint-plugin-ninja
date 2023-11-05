@@ -50,6 +50,11 @@ an enum, etc.). Classes get `k`, not to be confused with consts.
 { rules: { 'ninja/declare-keyword': [2, { side: 'start', oneLetter: false }] } }
 ```
 
+## 🔗 See also
+
+- [Enforce that interface names do not begin with an I](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/naming-convention.md#enforce-that-interface-names-do-not-begin-with-an-i)
+- [Require that interface names be prefixed with I](https://github.com/bradzacher/eslint-plugin-typescript/blob/master/docs/rules/interface-name-prefix.md)
+
 ## 🧑‍💻 Demo
 
 <CodeEditor :rule="ruleName" :text="initialText" :presetConfigs="presetConfigs" />

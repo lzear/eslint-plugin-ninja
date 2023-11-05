@@ -21,7 +21,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-ran
 
 Code should be predictable. Replaces `Math.random()` with a deterministic value.
 
-![random](/random_number.png) *https://xkcd.com/221/*
+![random](/random_number.png)
 
 ## 💡 Examples
 
@@ -38,6 +38,10 @@ const bar = 0.19891733174822845
 ```js
 { rules: { 'ninja/no-random': 2 } }
 ```
+
+## 🔗 See also
+
+- [xkcd.com/221](https://xkcd.com/221/)
 
 ## 🧑‍💻 Demo
 
