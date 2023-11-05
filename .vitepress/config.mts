@@ -7,6 +7,7 @@ import {
   keywords,
   homepage,
   title,
+  image,
 } from './meta.js'
 import plugin from '../index.js'
 
@@ -81,6 +82,13 @@ export default defineConfig({
     [
       'meta',
       {
+        property: 'og:image',
+        content: image,
+      },
+    ],
+    [
+      'meta',
+      {
         name: 'twitter:title',
         content: title,
       },
@@ -97,6 +105,13 @@ export default defineConfig({
       {
         name: 'twitter:description',
         content: description,
+      },
+    ],
+    [
+      'meta',
+      {
+        name: 'twitter:image',
+        content: image,
       },
     ],
     [

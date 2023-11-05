@@ -5,6 +5,8 @@
 
 The ultimate ESLint plugin.
 
+![](docs/public/open-graph.png)
+
 ### www.dont.ninja
 
 ```js
