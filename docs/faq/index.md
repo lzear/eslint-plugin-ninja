@@ -32,8 +32,10 @@ Add it to your `.eslintrc` or `eslint.config.js`:
 // .eslintrc
 {
   "plugins": ["ninja"],
+  "extends": ["plugin:ninja/recommended"],
   "rules": {
-    "ninja/emoji": 2
+    "ninja/align": 2,
+    "ninja/prefer-emoji": 2
   }
 }
 ```
@@ -52,8 +54,10 @@ import ninja from 'eslint-plugin-ninja'
 export default [
   {
     plugins: { ninja },
+    extends: ['plugin:ninja/recommended'],
     rules: {
-      'ninja/emoji': 2,
+      'ninja/align': 2,
+      'ninja/prefer-emoji': 1,
     },
   },
 ]

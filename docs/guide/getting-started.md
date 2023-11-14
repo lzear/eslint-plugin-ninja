@@ -54,8 +54,10 @@ rules you want to use under the rules section.
 // .eslintrc
 {
   "plugins": ["ninja"],
+  "extends": ["plugin:ninja/recommended"],
   "rules": {
-    "ninja/emoji": 2
+    "ninja/align": 2,
+    "ninja/prefer-emoji": 1
   }
 }
 ```
@@ -70,8 +72,10 @@ export default {
   plugins: {
     ninja,
   },
+  extends: ['plugin:ninja/recommended'],
   rules: {
-    'ninja/emoji': 'error',
+    'ninja/align': 'error',
+    'ninja/prefer-emoji': 'warn',
   },
 }
 ```

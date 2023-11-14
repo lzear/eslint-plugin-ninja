@@ -21,7 +21,10 @@ for more information about extending config files.
 
 ## recommended
 
-```json
+::: code-group
+
+<!-- prettier-ignore -->
+```json [Legacy Config]
 // .eslintrc
 {
   "plugin": ["ninja"],
@@ -29,12 +32,40 @@ for more information about extending config files.
 }
 ```
 
+<!-- prettier-ignore -->
+```js [Flat Config]
+// eslint.config.js
+import ninjadvised from 'eslint-plugin-ninja/configs/recommended'
+
+export default [
+  ninjadvised,
+]
+```
+
+:::
+
+
 ## all
 
-```json
+::: code-group
+
+<!-- prettier-ignore -->
+```json [Legacy Config]
 // .eslintrc
 {
   "plugin": ["ninja"],
   "extends": ["plugin:ninja/all"]
 }
 ```
+
+<!-- prettier-ignore -->
+```js [Flat Config]
+// eslint.config.js
+import ninjall from 'eslint-plugin-ninja/configs/all'
+
+export default [
+  ninjall,
+]
+```
+
+:::

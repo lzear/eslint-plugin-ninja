@@ -15,8 +15,11 @@ hero:
       text: Get Started
       link: /guide/getting-started
     - theme: brand
-      text: Rules
+      text: RULES
       link: /rules/
+    - theme: alt
+      text: Configs
+      link: /configs/
     - theme: alt
       text: View on GitHub
       link: https://github.com/lzear/eslint-plugin-ninja
