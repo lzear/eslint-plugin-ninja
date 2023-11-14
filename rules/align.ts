@@ -86,6 +86,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
       side: Side,
     ) => {
       const trimmed = shouldTrim ? line.trim() : line
+      if (trimmed.length === 0) return line
       if (side === Side.left) return trimmed
       if (side === Side.right) return trimmed.padStart(maxLen)
       return trimmed.padStart(Math.round((maxLen + trimmed.length) / 2))
