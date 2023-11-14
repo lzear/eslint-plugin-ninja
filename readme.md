@@ -5,8 +5,6 @@
 
 The ultimate ESLint plugin.
 
-![](docs/public/open-graph.png)
-
 ### www.dont.ninja
 
 ```js
@@ -21,6 +19,23 @@ The ultimate ESLint plugin.
 
 // 12% of the people can't solve this! 😂
        console.log(👈(✋, 🌯, 🌈) + 1)
+```
+
+## 🚀 Install
+
+```shell
+npm i -D eslint-plugin-ninja
+```
+
+```json
+{
+  "plugins": ["ninja"],
+  "extends": ["plugin:ninja/recommended"],
+  "rules": {
+    "ninja/align": 2,
+    "ninja/prefer-emoji": 1
+  }
+}
 ```
 
 ## ✅ Rules
