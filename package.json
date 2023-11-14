@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "name": "eslint-plugin-ninja",
   "description": "Optimized ESLint Rules for Elite Coders",
   "version": "0.0.4",
