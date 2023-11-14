@@ -5,7 +5,7 @@ description: Avoid bad eslint-configs
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/monopoly.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/monopoly';
 </script>
 
 > Second place is just the first place loser. — Dale Earnhardt

@@ -5,7 +5,7 @@ description: Describe your code so it's readable
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/justify.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/justify';
 </script>
 
 > "The end may justify the means as long as there is something that justifies

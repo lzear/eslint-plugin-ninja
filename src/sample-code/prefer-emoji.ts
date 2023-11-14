@@ -1,4 +1,4 @@
-import type { PresetConfig } from './presets.js'
+import type { PresetConfig } from './presets'
 
 export const ruleName = 'prefer-emoji'
 
@@ -26,4 +26,4 @@ export const presetConfigs = [
   { config: defaultOptions, name: 'properties' },
 ] satisfies PresetConfig[]
 
-export { webstormJsSample as initialText } from './webstorm-js-sample.js'
+export { webstormJsSample as initialText } from './webstorm-js-sample'

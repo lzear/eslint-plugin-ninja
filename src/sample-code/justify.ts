@@ -1,7 +1,7 @@
-import type { PresetConfig } from './presets.js'
+import type { PresetConfig } from './presets'
 
 export const ruleName = 'justify'
 
 export const presetConfigs = [] satisfies PresetConfig[]
 
-export { webstormJsSample as initialText } from './webstorm-js-sample.js'
+export { webstormJsSample as initialText } from './webstorm-js-sample'

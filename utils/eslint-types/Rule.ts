@@ -2,11 +2,11 @@
 import type { TSESTree } from '@typescript-eslint/types'
 import type { ParserServices } from '@typescript-eslint/typescript-estree'
 
-import type { AST } from './ast.js'
-import type { JSONSchema4 } from './json-schema.js'
-import type { Linter } from './linter.js'
-import type { Scope } from './Scope.js'
-import type { SourceCode } from './SourceCode.js'
+import type { AST } from './ast'
+import type { JSONSchema4 } from './json-schema'
+import type { Linter } from './linter'
+import type { Scope } from './Scope'
+import type { SourceCode } from './SourceCode'
 export type RuleRecommendation = 'recommended' | 'strict' | 'stylistic'
 export interface RuleMetaDataDocs {
   /**

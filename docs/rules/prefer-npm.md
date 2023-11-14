@@ -5,7 +5,7 @@ description: Load packages from NPM instead of using obscure vanilla JS
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer-npm.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer-npm';
 </script>
 
 > "[…] and I do open source because, Power To The People" — Azer Koçulu

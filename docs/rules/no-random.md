@@ -5,7 +5,7 @@ description: Disallow non-deterministic randomness
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-random.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-random';
 </script>
 
 > "God does not play dice with the universe" — Albert Einstein

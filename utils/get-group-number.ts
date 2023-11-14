@@ -1,4 +1,4 @@
-import type { SortingNode } from '../typings/index.js'
+import type { SortingNode } from '../typings/index'
 
 export const getGroupNumber = (
   groups: (string[] | string)[],

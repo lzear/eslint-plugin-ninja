@@ -1,7 +1,7 @@
 import type { TSESTree } from '@typescript-eslint/types'
 import type { ParserServices } from '@typescript-eslint/typescript-estree'
 
-import type { Scope } from './Scope.js'
+import type { Scope } from './Scope'
 declare class TokenStore {
   /**
    * Checks whether any comments exist or not between the given 2 nodes.

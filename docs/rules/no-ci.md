@@ -5,7 +5,7 @@ description: Fails on CI
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/no-ci.js';
+import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/no-ci';
 </script>
 
 > "The Matrix is a system, Neo. That system is our enemy." — Morpheus

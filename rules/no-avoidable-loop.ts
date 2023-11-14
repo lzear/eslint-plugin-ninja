@@ -1,6 +1,6 @@
 /* eslint-disable */
-import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule.js'
-import { createEslintRule } from '../utils/create-eslint-rule.js'
+import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule'
+import { createEslintRule } from '../utils/create-eslint-rule'
 
 type MESSAGE_ID = 'no-avoidable-loop'
 

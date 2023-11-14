@@ -6,7 +6,7 @@ description:
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/justify2.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/justify2';
 </script>
 
 > "From the beginning men used God to justify the unjustifiable." — Salman

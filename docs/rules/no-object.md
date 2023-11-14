@@ -5,7 +5,7 @@ description: Use Map instead of objects
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-object.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-object';
 </script>
 
 > "New is always Better" — Barney Stinson

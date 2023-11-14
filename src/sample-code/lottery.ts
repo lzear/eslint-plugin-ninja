@@ -1,4 +1,4 @@
-import type { PresetConfig } from './presets.js'
+import type { PresetConfig } from './presets'
 
 export const ruleName = 'lottery'
 
@@ -8,7 +8,7 @@ export const presetConfigs = [
   { config: { probability: 0.01 }, name: '1%' },
 ] satisfies PresetConfig[]
 
-export { webstormJsSample as initialText } from './webstorm-js-sample.js'
+export { webstormJsSample as initialText } from './webstorm-js-sample'
 
 const okay = (code: string) => ({
   fix: {

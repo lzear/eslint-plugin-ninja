@@ -5,7 +5,7 @@ description: Use tabs to separate words in the code
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer-tab.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer-tab';
 </script>
 
 > "I just think it's weird that you use spaces instead of tabs." — Richard

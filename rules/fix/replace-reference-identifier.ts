@@ -1,13 +1,13 @@
 'use strict'
 
-import isShorthandPropertyValue from '../utils/is-shorthand-property-value.js'
+import isShorthandPropertyValue from '../utils/is-shorthand-property-value'
 
-import isShorthandPropertyAssignmentPatternLeft from '../utils/is-shorthand-property-assignment-pattern-left.js'
+import isShorthandPropertyAssignmentPatternLeft from '../utils/is-shorthand-property-assignment-pattern-left'
 
-import isShorthandImportLocal from '../utils/is-shorthand-import-local.js'
+import isShorthandImportLocal from '../utils/is-shorthand-import-local'
 
-import isShorthandExportLocal from '../utils/is-shorthand-export-local.js'
-import { RuleFixer } from '../../utils/eslint-types/Rule.js'
+import isShorthandExportLocal from '../utils/is-shorthand-export-local'
+import { RuleFixer } from '../../utils/eslint-types/Rule'
 
 export function replaceReferenceIdentifier(
   identifier: any,

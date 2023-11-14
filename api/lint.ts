@@ -3,7 +3,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node'
 import * as ppp from '@typescript-eslint/parser'
 import { Linter } from 'eslint'
 
-import plugin from '../index.js'
+import plugin from '../index'
 
 type RuleName = keyof typeof plugin.rules
 

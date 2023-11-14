@@ -5,10 +5,10 @@ import type {
   RuleFixer,
   RuleListener,
   RuleContext,
-} from '../utils/eslint-types/Rule.js'
+} from '../utils/eslint-types/Rule'
 
-import { createEslintRule } from '../utils/create-eslint-rule.js'
-import { getCommentBefore } from '../utils/get-comment-before.js'
+import { createEslintRule } from '../utils/create-eslint-rule'
+import { getCommentBefore } from '../utils/get-comment-before'
 
 type MESSAGE_ID = 'expectedJustification'
 

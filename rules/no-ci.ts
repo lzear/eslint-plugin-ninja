@@ -1,8 +1,8 @@
 import { isCI } from 'std-env'
 
-import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule.js'
+import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule'
 
-import { createEslintRule } from '../utils/create-eslint-rule.js'
+import { createEslintRule } from '../utils/create-eslint-rule'
 
 type MESSAGE_ID = 'noci'
 

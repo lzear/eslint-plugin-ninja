@@ -10,9 +10,9 @@ import type {
   RuleFix,
   RuleModule,
   SharedConfigurationSettings,
-} from './Rule.js'
-import type { Scope } from './Scope.js'
-import type { SourceCode } from './SourceCode.js'
+} from './Rule'
+import type { Scope } from './Scope'
+import type { SourceCode } from './SourceCode'
 export type MinimalRuleModule<
   TMessageIds extends string = string,
   TOptions extends readonly unknown[] = [],

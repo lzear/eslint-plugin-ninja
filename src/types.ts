@@ -1,4 +1,4 @@
-import plugin from '../index.js'
+import plugin from '../index'
 // import {z} from "zod";
 
 export type RuleName = keyof typeof plugin.rules

@@ -5,7 +5,7 @@ description: Align text elegantly
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/align.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/align';
 </script>
 
 > "Typography is two-dimensional architecture, based on experience and

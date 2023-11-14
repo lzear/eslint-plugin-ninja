@@ -1,5 +1,5 @@
 'use strict'
-import hasSameRange from './has-same-range.js'
+import hasSameRange from './has-same-range'
 
 const isShorthandImportLocal = (node: any) => {
   const { type, local, imported } = node.parent

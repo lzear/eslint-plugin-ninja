@@ -5,7 +5,7 @@ description: disallow work outside working hours
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/no-overtime.js';
+import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/no-overtime';
 </script>
 
 > "It's not the hours you put in your work that counts, it's the work you put in

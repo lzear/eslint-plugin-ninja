@@ -4,7 +4,7 @@ import {
   RuleMetaData,
   RuleMetaDataDocs,
   RuleModule,
-} from './Rule.js'
+} from './Rule'
 
 // export type NamedCreateRuleMetaDocs = Omit<RuleMetaDataDocs, 'url'>
 export type NamedCreateRuleMeta<TMessageIds extends string> = Omit<

@@ -2492,9 +2492,9 @@ culori@^3:
   integrity sha512-HIEbTSP7vs1mPq/2P9In6QyFE0Tkpevh0k9a+FkjhD+cwsYm9WRSbn4uMdW9O0yXlNYC3ppxL3gWWPOcvEl57w==
 
 daisyui@^4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.0.5.tgz#6f7a31a009c93e514ad946d6c3322cf2508d34ac"
-  integrity sha512-UNHgz5puB9YHlTM6/BsjHmc1G08i0YP/5Qth9zoeP3pdFrIJ5WOkHeDBx8jmmz29rqoG4Q1PCRbsGo4WyiVlKg==
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.0.6.tgz#5dda6c48fb35ba31388350f8f6da83de35c60f1c"
+  integrity sha512-XUUxeUo0OwgcZ9Rv+WZ3hGVMyIJ2py1Qwk9xvjNHe6cTEqjPCeD+STPoFu+dO+OJo6dw37ZFW+4l0/DXymA04Q==
   dependencies:
     css-selector-tokenizer "^0.8"
     culori "^3"

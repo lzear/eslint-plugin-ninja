@@ -2,7 +2,7 @@ import type { Difference } from 'prettier-linter-helpers'
 
 import { showInvisibles } from 'prettier-linter-helpers'
 
-import type { RuleContext } from './eslint-types/Rule.js'
+import type { RuleContext } from './eslint-types/Rule'
 
 export interface Diff {
   deleteText: string

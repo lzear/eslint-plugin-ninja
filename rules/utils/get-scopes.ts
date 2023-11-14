@@ -1,4 +1,4 @@
-import { Scope } from '../../utils/eslint-types/Scope.js'
+import { Scope } from '../../utils/eslint-types/Scope'
 
 /**
 Gather a list of all Scopes starting recursively from the input Scope.

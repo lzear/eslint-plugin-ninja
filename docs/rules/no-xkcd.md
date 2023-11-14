@@ -5,7 +5,7 @@ description: Allow all
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-xkcd.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-xkcd';
 </script>
 
 > "Originality is the best form of rebellion." – Mike Sasso

@@ -1,4 +1,4 @@
-import { Scope } from '../../utils/eslint-types/Scope.js'
+import { Scope } from '../../utils/eslint-types/Scope'
 
 const getVariableIdentifiers = ({
   identifiers,

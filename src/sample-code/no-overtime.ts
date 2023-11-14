@@ -1,6 +1,6 @@
-import type { PresetConfig } from './presets.js'
+import type { PresetConfig } from './presets'
 
-import { noOvertimeImpl } from '../../rules/no-overtime.impl.js'
+import { noOvertimeImpl } from '../../rules/no-overtime.impl'
 
 export const ruleName = 'no-overtime'
 

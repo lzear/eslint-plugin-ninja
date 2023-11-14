@@ -8,8 +8,8 @@ import {
   homepage,
   title,
   image,
-} from './meta.js'
-import plugin from '../index.js'
+} from './meta'
+import plugin from '../index'
 
 let links: { lastmod?: number; url: string }[] = []
 
@@ -142,7 +142,7 @@ export default defineConfig({
       'script',
       {
         async: '',
-        src: 'https://plausible.io/js/script.js',
+        src: 'https://plausible.io/js/script',
         'data-domain': "dont.ninja"
       },
     ],

@@ -1,8 +1,8 @@
 import type { TSESTree } from '@typescript-eslint/types'
 
-import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule.js'
+import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule'
 
-import { createEslintRule } from '../utils/create-eslint-rule.js'
+import { createEslintRule } from '../utils/create-eslint-rule'
 
 type MESSAGE_ID = 'code' | 'file'
 

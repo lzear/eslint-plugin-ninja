@@ -5,7 +5,7 @@ description: Just passes
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/yes.js';
+import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/yes';
 </script>
 
 > Silence is a source of great strength. — Lao Tzu

@@ -5,7 +5,7 @@ description: No rush
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/no-rush.js';
+import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/no-rush';
 </script>
 
 > "Sometimes, the most productive thing you can do is wait." - Unknown

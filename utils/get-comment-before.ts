@@ -1,6 +1,6 @@
 import type { TSESTree } from '@typescript-eslint/types'
 
-import type { SourceCode } from './eslint-types/SourceCode.js'
+import type { SourceCode } from './eslint-types/SourceCode'
 
 export const getCommentBefore = (
   node: TSESTree.Node,

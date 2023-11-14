@@ -5,7 +5,7 @@ description: Use `++` instead of `+=`
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-no-plusplus.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-no-plusplus';
 </script>
 
 > The less code, the fewer bugs. — Kevlin Henney

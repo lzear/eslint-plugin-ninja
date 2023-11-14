@@ -1,6 +1,6 @@
 'use strict'
 
-import isShorthandPropertyValue from './is-shorthand-property-value.js'
+import isShorthandPropertyValue from './is-shorthand-property-value'
 
 const isShorthandPropertyAssignmentPatternLeft = (identifier: any) =>
   identifier.parent.type === 'AssignmentPattern' &&

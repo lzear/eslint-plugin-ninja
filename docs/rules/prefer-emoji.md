@@ -5,7 +5,7 @@ description: 💩
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer-emoji.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer-emoji';
 </script>
 
 > "A picture is worth a thousand words."

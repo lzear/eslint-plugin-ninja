@@ -1,9 +1,9 @@
 import type { TSESTree } from '@typescript-eslint/types'
 
-import type { RuleContext } from '../utils/eslint-types/Rule.js'
+import type { RuleContext } from '../utils/eslint-types/Rule'
 
-import { createEslintRule } from '../utils/create-eslint-rule.js'
-import { complete } from '../utils/complete.js'
+import { createEslintRule } from '../utils/create-eslint-rule'
+import { complete } from '../utils/complete'
 
 type MESSAGE_ID = 'satisfyRegex'
 

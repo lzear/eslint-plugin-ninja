@@ -1,9 +1,9 @@
 'use strict'
-import { Scope } from '../../utils/eslint-types/Scope.js'
+import { Scope } from '../../utils/eslint-types/Scope'
 
-import getReferences from './get-references.js'
+import getReferences from './get-references'
 
-import resolveVariableName from './resolve-variable-name.js'
+import resolveVariableName from './resolve-variable-name'
 
 import {
   isIdentifierName,

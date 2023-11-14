@@ -5,7 +5,7 @@ description: Randomly pass or fail
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/lottery.js';
+import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/lottery';
 </script>
 
 > "Not only does God play dice, but… he sometimes throws them where they cannot

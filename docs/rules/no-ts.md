@@ -5,7 +5,7 @@ description: Disallow gymnastics needed to please the TS compiler
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-ts.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-ts';
 </script>
 
 > "So farewell, TypeScript. May you bring much rigor and satisfaction to your

@@ -5,7 +5,7 @@ description: No woof!
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-woof.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-woof';
 </script>
 
 > "Woof" — Randalf T.

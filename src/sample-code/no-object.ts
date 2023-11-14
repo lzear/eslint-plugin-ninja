@@ -1,4 +1,4 @@
-import type { PresetConfig } from './presets.js'
+import type { PresetConfig } from './presets'
 
 export const ruleName = 'no-object'
 

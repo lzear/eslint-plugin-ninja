@@ -1,6 +1,6 @@
-import type { RuleFixer } from '../utils/eslint-types/Rule.js'
+import type { RuleFixer } from '../utils/eslint-types/Rule'
 
-import { createEslintRule } from '../utils/create-eslint-rule.js'
+import { createEslintRule } from '../utils/create-eslint-rule'
 
 type MESSAGE_ID = 'replace'
 

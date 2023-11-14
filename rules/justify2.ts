@@ -4,10 +4,10 @@ import type { TSESTree } from '@typescript-eslint/types'
 import { generateDifferences } from 'prettier-linter-helpers'
 import _ from 'lodash'
 
-import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule.js'
+import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule'
 
-import { createEslintRule } from '../utils/create-eslint-rule.js'
-import { reportDifference } from '../utils/report-difference.js'
+import { createEslintRule } from '../utils/create-eslint-rule'
+import { reportDifference } from '../utils/report-difference'
 type MESSAGE_ID = 'delete' | 'insert' | 'replace'
 
 type Options = [unknown]

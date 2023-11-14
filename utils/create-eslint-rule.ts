@@ -1,7 +1,7 @@
 /* eslint-disable */
 import * as uuu from '@typescript-eslint/utils'
-import { RuleWithMetaAndName } from './eslint-types/RuleCreator.js'
-import { RuleListener, RuleModule } from './eslint-types/Rule.js'
+import { RuleWithMetaAndName } from './eslint-types/RuleCreator'
+import { RuleListener, RuleModule } from './eslint-types/Rule'
 
 // @ts-expect-error ...
 export let createEslintRule: <

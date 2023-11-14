@@ -1,6 +1,6 @@
 'use strict'
 
-import { Scope } from '../../utils/eslint-types/Scope.js'
+import { Scope } from '../../utils/eslint-types/Scope'
 
 /**
 Finds a variable named `name` in the scope `scope` (or it's parents).

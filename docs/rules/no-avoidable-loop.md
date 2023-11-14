@@ -5,7 +5,7 @@ description: Use repeated statements over loops
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-avoidable-loop.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-avoidable-loop';
 </script>
 
 > "Sometimes clarity trumps brevity. Write for humans first, machines second."

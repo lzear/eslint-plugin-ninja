@@ -5,7 +5,7 @@ description: Just fails
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/no.js';
+import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-code/no';
 </script>
 
 > The point is there ain't no point. — Cormac McCarthy

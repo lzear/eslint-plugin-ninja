@@ -8,19 +8,19 @@ import type {
   ReportDescriptor,
   RuleContext,
   RuleListener,
-} from '../utils/eslint-types/Rule.js'
-import type { JSONSchema4 } from '../utils/eslint-types/json-schema.js'
-import type { Scope } from '../utils/eslint-types/Scope.js'
+} from '../utils/eslint-types/Rule'
+import type { JSONSchema4 } from '../utils/eslint-types/json-schema'
+import type { Scope } from '../utils/eslint-types/Scope'
 
-import isShorthandPropertyValue from './utils/is-shorthand-property-value.js'
-import isShorthandImportLocal from './utils/is-shorthand-import-local.js'
-import getVariableIdentifiers from './utils/get-variable-identifiers.js'
-import { createEslintRule } from '../utils/create-eslint-rule.js'
-import renameVariable from './fix/rename-variable.js'
-import avoidCapture from './utils/avoid-capture.js'
-import { complete } from '../utils/complete.js'
-import { emojis } from '../utils/emoji-list.js'
-import getScopes from './utils/get-scopes.js'
+import isShorthandPropertyValue from './utils/is-shorthand-property-value'
+import isShorthandImportLocal from './utils/is-shorthand-import-local'
+import getVariableIdentifiers from './utils/get-variable-identifiers'
+import { createEslintRule } from '../utils/create-eslint-rule'
+import renameVariable from './fix/rename-variable'
+import avoidCapture from './utils/avoid-capture'
+import { complete } from '../utils/complete'
+import { emojis } from '../utils/emoji-list'
+import getScopes from './utils/get-scopes'
 
 const MESSAGE_ID_REPLACE = 'replace'
 const MESSAGE_ID_SUGGESTION = 'suggestion'

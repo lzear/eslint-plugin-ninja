@@ -5,8 +5,8 @@ import type { TSESTree } from '@typescript-eslint/types'
 
 import _ from 'lodash'
 
-import { isCallExpression } from './call-or-new-expression.js'
-import isMemberExpression from './is-member-expression.js'
+import { isCallExpression } from './call-or-new-expression'
+import isMemberExpression from './is-member-expression'
 
 const { pick } = _
 

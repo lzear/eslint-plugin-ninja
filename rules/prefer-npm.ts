@@ -1,7 +1,7 @@
-import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule.js'
+import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule'
 
-import { createEslintRule } from '../utils/create-eslint-rule.js'
-import { isMethodCall } from './ast/is-method-call.js'
+import { createEslintRule } from '../utils/create-eslint-rule'
+import { isMethodCall } from './ast/is-method-call'
 
 type Options = []
 

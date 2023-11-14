@@ -1,4 +1,4 @@
-import mod from '../index.js'
+import mod from '../index'
 
 export default {
   plugins: {

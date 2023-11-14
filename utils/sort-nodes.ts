@@ -1,6 +1,6 @@
-import type { SortingNode, SortOrder, SortType } from '../typings/index.js'
+import type { SortingNode, SortOrder, SortType } from '../typings/index'
 
-import { compare } from './compare.js'
+import { compare } from './compare'
 
 export const sortNodes = <T extends SortingNode>(
   nodes: T[],

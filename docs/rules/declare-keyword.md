@@ -5,7 +5,7 @@ description: Indicate the type of a variable in its name
 
 <script setup lang="ts">
 import CodeEditor from '../../.vitepress/theme/components/code-editor.vue';
-import {ruleName, presetConfigs, initialText} from '../../src/sample-code/declare-keyword.js';
+import {ruleName, presetConfigs, initialText} from '../../src/sample-code/declare-keyword';
 </script>
 
 > Good code is its own best documentation. — Steve McConnell

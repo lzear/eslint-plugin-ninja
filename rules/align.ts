@@ -4,11 +4,11 @@ import { generateDifferences } from 'prettier-linter-helpers'
 import { builtinRules } from 'eslint/use-at-your-own-risk'
 import { Linter } from 'eslint'
 
-import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule.js'
+import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule'
 
-import { createEslintRule } from '../utils/create-eslint-rule.js'
-import { reportDifference } from '../utils/report-difference.js'
-import { complete } from '../utils/complete.js'
+import { createEslintRule } from '../utils/create-eslint-rule'
+import { reportDifference } from '../utils/report-difference'
+import { complete } from '../utils/complete'
 
 type MESSAGE_ID = 'delete' | 'insert' | 'replace'
 
