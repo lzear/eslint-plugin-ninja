@@ -33,7 +33,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
   },
   defaultOptions: [],
   create: (context: Context): RuleListener => {
-    const { sourceCode } = context
+    const sourceCode = context.getSourceCode()
     const lines = new Set<number>()
     const explainNode = (node: TSESTree.Node) => {
       if (lines.has(node.loc.start.line)) return

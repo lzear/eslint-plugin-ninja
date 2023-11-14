@@ -65,7 +65,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
       }
     }
 
-    const { sourceCode } = context
+    const sourceCode = context.getSourceCode()
     return {
       Program: () => {
         const comments = sourceCode.getAllComments()

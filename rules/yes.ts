@@ -1,6 +1,3 @@
-// @ts-expect-error - required for node-noop
-import noop from 'node-noop'
-
 import type { RuleListener } from '../utils/eslint-types/Rule.js'
 
 import { createEslintRule } from '../utils/create-eslint-rule.js'
@@ -29,7 +26,6 @@ export default createEslintRule<Options, MESSAGE_ID>({
   },
   defaultOptions: [],
   create: (): RuleListener => {
-    noop()
     return {}
   },
 })

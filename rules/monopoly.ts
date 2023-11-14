@@ -29,7 +29,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
   },
   defaultOptions: [{}],
   create: (context: Context): RuleListener => {
-    const { sourceCode } = context
+    const sourceCode = context.getSourceCode()
     const regex = /eslint-plugin-(?!ninja\b)[\dA-Za-z]+/g
     return {
       Program: () => {

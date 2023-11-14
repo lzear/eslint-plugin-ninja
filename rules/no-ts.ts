@@ -38,12 +38,13 @@ export default createEslintRule<Options, MESSAGE_ID>({
   defaultOptions: [{}],
   create: (context: Context): RuleListener => {
     const filenameWithExtension = context.physicalFilename
+    const sourceCode = context.getSourceCode()
     const report = (node: TSESTree.Node | TSESTree.Token) => {
       context.report({
         node,
         messageId: 'code',
         fix: fixer => fixer.replaceText(node, ''),
-        data: { code: context.sourceCode.getText(node) },
+        data: { code: sourceCode.getText(node) },
       })
     }
     return {

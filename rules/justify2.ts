@@ -55,8 +55,11 @@ export default createEslintRule<Options, MESSAGE_ID>({
   },
   defaultOptions: [{}],
   create: (context: Context): RuleListener => {
-    const { sourceCode } = context
-    const { text, lines, tokensAndComments } = sourceCode
+    const sourceCode = context.getSourceCode()
+
+    const text = sourceCode?.text || ''
+    const lines = sourceCode?.lines || []
+    const tokensAndComments = sourceCode?.tokensAndComments || []
 
     const reportDiffs = (ugly: string, pretty: string) => {
       if (ugly !== pretty) {

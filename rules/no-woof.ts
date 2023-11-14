@@ -29,7 +29,7 @@ export default createEslintRule<Options, MESSAGE_ID>({
   },
   defaultOptions: [{}],
   create: (context: Context): RuleListener => {
-    const { sourceCode } = context
+    const sourceCode = context.getSourceCode()
     const regex = /w[0o]{2}f/gi
     return {
       Program: () => {
