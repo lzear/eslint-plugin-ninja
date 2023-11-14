@@ -21,15 +21,16 @@ export default createEslintRule<Options, MESSAGE_ID>({
   },
   defaultOptions: [],
   create: context => {
-    const { sourceCode } = context
+    const sourceCode = context.getSourceCode()
     return {
       Program: () => {
-        const { lines } = sourceCode
+        const lines = sourceCode.lines || []
         let maxLength = 0
         for (const line of lines)
           maxLength = Math.max(maxLength, line.trim().length)
 
-        const { text, tokensAndComments } = sourceCode
+        const text = sourceCode.text || ''
+        const tokensAndComments = sourceCode.tokensAndComments || []
         for (const [leftIndex, leftToken] of tokensAndComments.entries()) {
           if (leftIndex === tokensAndComments.length - 1) continue
           const rightToken = tokensAndComments[leftIndex + 1]

@@ -76,8 +76,8 @@ export default createEslintRule<Options, MESSAGE_ID>({
     const options = complete(context.options.at(0), {
       side: Side.center,
     })
-    const { sourceCode } = context
-    const { text } = sourceCode
+    const sourceCode = context.getSourceCode()
+    const text = sourceCode?.text || ''
 
     const processLine = (
       line: string,
