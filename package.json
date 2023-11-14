@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-ninja",
   "description": "Optimized ESLint Rules for Elite Coders",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://www.dont.ninja",
   "repository": "https://github.com/lzear/eslint-plugin-ninja",
   "author": "lzear",
