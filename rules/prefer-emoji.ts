@@ -24,7 +24,7 @@ import getScopes from './utils/get-scopes.js'
 
 const MESSAGE_ID_REPLACE = 'replace'
 const MESSAGE_ID_SUGGESTION = 'suggestion'
-const anotherNameMessage = 'A more descriptive name will do too.'
+const anotherNameMessage = 'A more descriptive emoji will do too.'
 const messages = {
   [MESSAGE_ID_REPLACE]: `The {{nameTypeText}} \`{{discouragedName}}\` should be named \`{{replacement}}\`. ${anotherNameMessage}`,
   [MESSAGE_ID_SUGGESTION]: `Please rename the {{nameTypeText}} \`{{discouragedName}}\`. Suggested names are: {{replacementsText}}. ${anotherNameMessage}`,
