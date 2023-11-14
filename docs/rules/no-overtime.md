@@ -13,6 +13,8 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 # Disallow overwork (`no-overtime`)
 
+💼 This rule is enabled in the following [configs](/configs/): 🌐 `all`, ✅ `recommended`.
+
 <!-- end auto-generated rule header -->
 
 ## 📖 Rule details

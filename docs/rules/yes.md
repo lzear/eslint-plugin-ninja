@@ -12,6 +12,8 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 # Enforce nothing (`yes`)
 
+💼 This rule is enabled in the following [configs](/configs/): 🌐 `all`, ✅ `recommended`.
+
 <!-- end auto-generated rule header -->
 
 ## 🔧 Config

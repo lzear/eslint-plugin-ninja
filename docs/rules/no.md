@@ -12,6 +12,8 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 # Disallow everything (`no`)
 
+💼 This rule is enabled in the 🌐 `all` [config](/configs/).
+
 <!-- end auto-generated rule header -->
 
 ## ⚙️ Usage

@@ -12,6 +12,8 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 # Enforce a delay (`no-rush`)
 
+💼⚠️ This rule is enabled in the 🌐 `all` [config](/configs/). This rule _warns_ in the ✅ `recommended` [config](/configs/).
+
 <!-- end auto-generated rule header -->
 
 ## 📖 Rule details

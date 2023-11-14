@@ -14,8 +14,9 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-ts.
 
 # Disallow gymnastics needed to please the TS compiler (`no-ts`)
 
-🔧 This rule is automatically fixable by the
-[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+💼 This rule is enabled in the following [configs](/configs/): 🌐 `all`, ✅ `recommended`.
+
+🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 

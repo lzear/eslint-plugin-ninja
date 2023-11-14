@@ -12,6 +12,8 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 # Disallow running on CI (`no-ci`)
 
+💼 This rule is enabled in the following [configs](/configs/): 🌐 `all`, ✅ `recommended`.
+
 <!-- end auto-generated rule header -->
 
 ## 🔧 Config

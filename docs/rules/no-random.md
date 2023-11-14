@@ -12,8 +12,9 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/no-ran
 
 # Disallow non-deterministic randomness (`no-random`)
 
-🔧 This rule is automatically fixable by the
-[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+💼 This rule is enabled in the 🌐 `all` [config](/configs/).
+
+🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 
