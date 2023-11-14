@@ -3,7 +3,10 @@
   "description": "Optimized ESLint Rules for Elite Coders",
   "version": "0.0.6",
   "homepage": "https://www.dont.ninja",
-  "repository": "https://github.com/lzear/eslint-plugin-ninja",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzear/eslint-plugin-ninja.git"
+  },
   "author": "lzear",
   "license": "MIT",
   "keywords": [

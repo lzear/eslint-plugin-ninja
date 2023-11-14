@@ -206,7 +206,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: repository,
+        link: 'https://github.com/lzear/eslint-plugin-ninja',
       },
     ],
 
