@@ -36,9 +36,18 @@
   ],
   "main": "./dist/index.js",
   "exports": {
-    ".": "./dist/index.mjs",
-    "./configs/recommended": "./dist/configs/recommended.mjs",
-    "./configs/all": "./dist/configs/all.mjs",
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./configs/recommended": {
+      "require": "./dist/configs/recommended.js",
+      "import": "./dist/configs/recommended.mjs"
+    },
+    "./configs/all": {
+      "require": "./dist/configs/all.js",
+      "import": "./dist/configs/all.mjs"
+    },
     "./package.json": "./package.json"
   },
   "packageManager": "yarn@1.22.19",
