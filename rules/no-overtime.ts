@@ -1,8 +1,4 @@
-import type {
-  MESSAGE_ID,
-  NoOvertimeOptions,
-  Weekday,
-} from './no-overtime.impl'
+import type { MESSAGE_ID, NoOvertimeOptions, Weekday } from './no-overtime.impl'
 import type { RuleContext, RuleListener } from '../utils/eslint-types/Rule'
 
 import { createEslintRule } from '../utils/create-eslint-rule'

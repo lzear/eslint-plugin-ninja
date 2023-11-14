@@ -8,8 +8,8 @@ import {
   homepage,
   title,
   image,
-} from './meta'
-import plugin from '../index'
+} from './meta.js'
+import plugin from '../index.js'
 
 let links: { lastmod?: number; url: string }[] = []
 

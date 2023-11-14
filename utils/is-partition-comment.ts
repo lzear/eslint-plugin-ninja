@@ -1,6 +1,7 @@
+import * as minimatchModule from 'minimatch'
+
 import type { PartitionComment } from '../typings'
 
-import * as minimatchModule from 'minimatch'
 const { minimatch } = minimatchModule
 
 export const isPartitionComment = (
