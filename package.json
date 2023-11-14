@@ -67,7 +67,7 @@
   "dependencies": {
     "@typescript-eslint/utils": "^6.9.1",
     "date-fns": "^2.30.0",
-    "has-emoji": "^2.0.0",
+    "has-emoji": "^1.0.0",
     "is-even": "^1.0.0",
     "left-pad": "^1.3.0",
     "minimatch": "^9.0.3",
