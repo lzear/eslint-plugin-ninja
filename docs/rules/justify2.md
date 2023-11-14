@@ -33,10 +33,10 @@ if (a) {
 
 // ✅ Correct
 if      (a)     {
-  b       =       c
-  function foo(d) {
-    e       =       f
-  }
+b       =       c
+function foo(d) {
+e       =       f
+}
 }
 ```
 
