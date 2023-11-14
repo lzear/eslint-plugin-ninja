@@ -1,7 +1,9 @@
+// @ts-ignore
 import type { Theme } from 'vitepress'
 
 import '@fontsource/jetbrains-mono/400.css'
 import '@fontsource/jetbrains-mono/700.css'
+// @ts-ignore
 import DefaultTheme from 'vitepress/theme'
 import '@fontsource/comic-mono/700.css'
 import '@fontsource/comic-mono'

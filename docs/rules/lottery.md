@@ -13,7 +13,8 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 # Require luck (`lottery`)
 
-💼 This rule is enabled in the following [configs](/configs/): 🌐 `all`, ✅ `recommended`.
+💼 This rule is enabled in the following [configs](/configs/): 🌐 `all`, ✅
+`recommended`.
 
 <!-- end auto-generated rule header -->
 

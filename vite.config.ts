@@ -1,5 +1,6 @@
 /* eslint-disable unicorn/prefer-module */
 
+// @ts-ignore
 import { defineConfig } from 'vite'
 import path from 'node:path'
 

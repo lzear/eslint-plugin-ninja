@@ -25,7 +25,5 @@ export default createEslintRule<Options, MESSAGE_ID>({
     },
   },
   defaultOptions: [],
-  create: (): RuleListener => {
-    return {}
-  },
+  create: (): RuleListener => ({}),
 })

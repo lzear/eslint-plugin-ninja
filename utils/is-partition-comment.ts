@@ -1,6 +1,6 @@
-import type { PartitionComment } from '../typings/index.js'
+import type { PartitionComment } from '../typings'
 
-import * as minimatchModule from '../node_modules/minimatch/dist/mjs/index.js'
+import * as minimatchModule from 'minimatch'
 const { minimatch } = minimatchModule
 
 export const isPartitionComment = (

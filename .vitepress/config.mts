@@ -13,7 +13,8 @@ import plugin from '../index.js'
 
 let links: { lastmod?: number; url: string }[] = []
 
-let { configs, rules } = plugin
+// @ts-ignore
+let { rules } = plugin
 
 export default defineConfig({
   srcDir: 'docs',

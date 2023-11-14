@@ -68,21 +68,21 @@ const recommendedRules = [
   yesName,
 ] as const
 
-const all: Record<string, [0|1|2, unknown]> = {}
-const recommended: Record<string, [0|1|2, unknown]> = {}
+const all: Record<string, [0 | 1 | 2, unknown]> = {}
+const recommended: Record<string, [0 | 1 | 2, unknown]> = {}
 
-for (const name of Object.keys(rules)) all[`ninja/${name}`] = [2, {}]
-for (const name of recommendedRules) recommended[`ninja/${name}`] = [2, {}]
+for (const n of Object.keys(rules)) all[`ninja/${n}`] = [2, {}]
+for (const n of recommendedRules) recommended[`ninja/${n}`] = [2, {}]
 
-recommended['ninja/no-rush'] = [1, {delay: 1}]
-recommended['ninja/lottery'] = [2, {probability: 0.9}]
+recommended['ninja/no-rush'] = [1, { delay: 1 }]
+recommended['ninja/lottery'] = [2, { probability: 0.9 }]
 recommended['ninja/prefer-emoji'] = [1, {}]
 
 const config = {
   rules,
   configs: {
     all: { rules: all },
-    recommended: { rules: recommended,},
+    recommended: { rules: recommended },
   },
   name,
 } as const

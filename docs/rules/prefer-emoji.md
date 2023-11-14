@@ -12,9 +12,11 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/prefer
 
 # Require variables and properties to be named using emojis (`prefer-emoji`)
 
-💼⚠️ This rule is enabled in the 🌐 `all` [config](/configs/). This rule _warns_ in the ✅ `recommended` [config](/configs/).
+💼⚠️ This rule is enabled in the 🌐 `all` [config](/configs/). This rule _warns_
+in the ✅ `recommended` [config](/configs/).
 
-🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
+🔧 This rule is automatically fixable by the
+[`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
 <!-- end auto-generated rule header -->
 

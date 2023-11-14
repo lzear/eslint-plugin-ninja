@@ -1,3 +1,3 @@
 module.exports = {
-  reject: ['has-emoji']
+  reject: ['has-emoji'],
 }
