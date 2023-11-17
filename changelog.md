@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.0.8
+
+[compare changes](https://github.com/lzear/eslint-plugin-ninja/compare/v0.0.6...v0.0.8)
+
+### 🚀 Features
+
+- `optimize-string-ternary` ([3847f76](https://github.com/lzear/eslint-plugin-ninja/commit/3847f76))
+
+### 🐞 Bug Fixes
+
+- `npm pkg fix` ([82c38f4](https://github.com/lzear/eslint-plugin-ninja/commit/82c38f4))
+
+### ❤️ Contributors
+
+- Lzear <antoine.clausse@gmail.com>
+
 ## v0.0.6
 
 [compare changes](https://github.com/lzear/eslint-plugin-ninja/compare/v2.3.0...v0.0.6)
