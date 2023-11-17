@@ -10,7 +10,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/declar
 
 > Good code is its own best documentation. — Steve McConnell
 
-# Indicate the type of a variable in its name (`declare-keyword`)
+# Enforce variable names to include their type (`declare-keyword`)
 
 💼 This rule is enabled in the following [configs](/configs/): 🌐 `all`, ✅
 `recommended`.
