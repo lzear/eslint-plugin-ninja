@@ -1,3 +1,4 @@
+import optimiseStringTernary, { RULE_NAME as optimiseStringTernaryName } from './rules/optimize-string-ternary'
 import declareKeyword, { RULE_NAME as declareKeywordName } from './rules/declare-keyword'
 import noUselessFor, { RULE_NAME as noUselessForName } from './rules/no-avoidable-loop'
 import noNoPlusPlus, { RULE_NAME as noNoPlusPlusName } from './rules/no-no-plusplus'
@@ -40,6 +41,7 @@ const rules = {
   [noUselessForName]: noUselessFor,
   [noWoofName]: noWoof,
   [noXkcdName]: noXkcd,
+  [optimiseStringTernaryName]: optimiseStringTernary,
   [preferEmojiName]: preferEmoji,
   [preferNpmName]: preferNpm,
   [preferTabName]: preferTab,
@@ -61,6 +63,7 @@ const recommendedRules = [
   noUselessForName,
   noWoofName,
   noXkcdName,
+  optimiseStringTernaryName,
   preferEmojiName,
   preferNpmName,
   yesName,
