@@ -16,8 +16,6 @@ import {ruleName, presetConfigs, initialText, fakeLint} from '../../src/sample-c
 
 <!-- end auto-generated rule header -->
 
-## ⚙️ Usage
-
 ## 🔧 Config
 
 ```js
