@@ -22,7 +22,7 @@ jobs:
         uses: ./.github/actions/install-dependencies
 
       - name: Test
-        run: pnpm test:css
+        run: yarn run test:css
 
   format:
     name: Format
@@ -39,7 +39,7 @@ jobs:
         uses: ./.github/actions/install-dependencies
 
       - name: Test
-        run: pnpm test:format
+        run: yarn run test:format
 
   js:
     name: JS
@@ -56,7 +56,7 @@ jobs:
         uses: ./.github/actions/install-dependencies
 
       - name: Test
-        run: pnpm test:js
+        run: yarn run test:js
 
   types:
     name: Types
@@ -73,7 +73,7 @@ jobs:
         uses: ./.github/actions/install-dependencies
 
       - name: Test
-        run: pnpm test:types
+        run: yarn run test:types
 
   unit:
     name: Unit
@@ -90,4 +90,4 @@ jobs:
         uses: ./.github/actions/install-dependencies
 
       - name: Test
-        run: pnpm test:unit
+        run: yarn run test:unit

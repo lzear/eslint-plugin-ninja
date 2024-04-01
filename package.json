@@ -22,14 +22,14 @@
     "docs:dev": "vitepress dev",
     "docs:generate": "eslint-doc-generator --rule-list-columns name,description,fixable,hasSuggestions,deprecated --path-rule-list readme.md --url-rule-doc https://www.dont.ninja/rules/{name} --url-configs https://www.dont.ninja/configs && eslint-doc-generator --rule-list-columns name,description,fixable,hasSuggestions,deprecated --rule-doc-title-format name --path-rule-list ./docs/rules/index.md --url-rule-doc /rules/{name} --url-configs /configs/ && prettier --write readme.md ./docs/rules/index.md",
     "docs:build": "vitepress build",
-    "release": "pnpm release:check && pnpm release:version && pnpm release:publish",
-    "release:check": "pnpm test && pnpm run build",
+    "release": "yarn release:check && yarn release:version && yarn release:publish",
+    "release:check": "yarn test && yarn run build",
     "release:publish": "clean-publish",
     "release:version": "changelogen --output changelog.md --release --push",
     "test:format": "prettier --check \"**/*.{js,ts,json,md,yml}\"",
     "test:js": "eslint \"**/*.{js,ts}\"",
     "test:types": "tsc --noEmit --pretty",
-    "test": "pnpm run /^test:/"
+    "test": "yarn run test:format && yarn run test:js && yarn run test:types"
   },
   "publishConfig": {
     "access": "public"
