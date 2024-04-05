@@ -35,6 +35,7 @@ export const getNodeRange = (
     end = bodyClosingParen.range.at(1)!
   }
 
+  // @ts-expect-error
   const comment = getCommentBefore(node, sourceCode)
 
   if (raw.endsWith(';') || raw.endsWith(',')) {

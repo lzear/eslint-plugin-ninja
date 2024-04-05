@@ -12,6 +12,7 @@ export default defineConfig({
         path.resolve(__dirname, 'configs/all.ts'),
         path.resolve(__dirname, 'index.ts'),
       ],
+      // @ts-ignore
       fileName: (format, entryName) => {
         let directory = ''
 
