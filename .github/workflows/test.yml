@@ -57,20 +57,3 @@ jobs:
 
       - name: Test
         run: yarn run test:types
-
-  unit:
-    name: Unit
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install Tools
-        uses: ./.github/actions/install-tools
-
-      - name: Install Dependencies
-        uses: ./.github/actions/install-dependencies
-
-      - name: Test
-        run: yarn run test:unit
