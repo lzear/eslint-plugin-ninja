@@ -77,20 +77,20 @@ onMounted(() => {
 <style scoped>
 .saamples {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  flex-flow: row wrap;
   gap: 35px;
+  place-content: center center;
+  align-items: center;
 }
+
 h2 {
+  margin-block-end: 20px;
+  font-family: var( --vp-font-family-mono);
   font-size: 1.5rem;
   font-weight: 700;
-  font-family: var( --vp-font-family-mono);
   text-align: center;
-  margin-bottom: 20px;
 }
+
 .divider {
   inline-size: 100%;
   max-inline-size: 1152px;

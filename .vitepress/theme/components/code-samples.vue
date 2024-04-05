@@ -55,32 +55,37 @@
 
 <style scoped>
 h2 {
+  margin-block-end: 0.142em;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 0.142em;
 }
+
 p {
   flex-grow: 1;
-  width: 0;
+  inline-size: 0;
 }
+
 .code-examples {
   display: flex;
-  gap: 2em;
   flex-wrap: wrap;
-    max-width: 1152px;
+  gap: 2em;
+    max-inline-size: 1152px;
 }
+
 .code-example {
+  color: #eee;
   background-color: #1c2316;
   border-radius: 2px;
-  color: #eee;
 }
+
 .code-example.bad {
     border: 1px solid #ccc;
 }
+
 .code-example.good {
-  border-radius: 18px;
   background-color: #2a2442;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
 }
 
 .bad, .bad code, .bad pre code {
@@ -103,6 +108,7 @@ p {
 .hljs-title.class_ {
   color: #e06c75;
 }
+
 .hljs-comment {
   color: #6f818c;
 }
@@ -119,7 +125,7 @@ p {
   color: #98c379;
 }
 
-/*bad*/
+/* bad */
 .bad .hljs-keyword {
   color: #c678dd;
 }
@@ -131,6 +137,7 @@ p {
 .bad .hljs-title.class_ {
   color: #e06c75;
 }
+
 .bad .hljs-comment {
   color: #6f818c;
 }
