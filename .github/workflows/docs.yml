@@ -1,4 +1,4 @@
-name: docs
+name: Docs
 
 on:
   push:
@@ -7,30 +7,23 @@ on:
 
 jobs:
   deploy:
+    name: Deploy
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
+      - name: Install Tools
+        uses: ./.github/actions/install-tools
 
-      - name: install node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          cache: pnpm
+      - name: Install Dependencies
+        uses: ./.github/actions/install-dependencies
 
-      - name: install dependencies
-        run: pnpm install --frozen-lockfile --ignore-scripts
-
-      - name: build
+      - name: Build Docs
         run: pnpm run docs:build
 
-      - name: deploy to netlify
+      - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
           publish-dir: './docs/.vitepress/dist'
