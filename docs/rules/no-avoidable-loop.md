@@ -72,6 +72,10 @@ function hasDuplicate(arr: [V, V, V, V]): boolean {
 }
 ```
 
+## 🔗 See also
+
+- [eslint-plugin-unicorn/no-for-loop](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/677af7f/docs/rules/no-for-loop.md)
+
 ## 🔧 Config
 
 ```js
