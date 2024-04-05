@@ -78,64 +78,67 @@ export default {
 
 <style scoped>
 h2 {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 0 auto 5px;
   font-size: 1.3rem;
     font-weight: 700;
     background: var(--vp-c-default-3);
-  display: inline-block;
-  margin: 0 auto 5px;
-  padding: 4px 12px;
 }
+
 .shown {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
+    inset-block: 0 0;
+    inset-inline: 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .shidden {
   visibility: hidden;
 }
+
 .shidden, .shidden .code-example {
-  padding-right: 4rem;
+  padding-inline-end: 4rem;
 }
 
 .shown .content-left {
     position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-  width: 6px;
+    inset-block: 0 0;
+    inset-inline-start: 0;
+  inline-size: 6px;
 }
+
 .shown .content-right {
 
 }
+
 .content-left {
-  opacity: 0.95;
   overflow: hidden;
+  opacity: 95%;
 }
+
 .content-right {
-  left: 0;
+  inset-inline-start: 0;
 }
 
 .slider {
   position: absolute;
-  top: 0;
-  left: 6px;
-  height: 100%;
-  width: 3px;
+  inset-block-start: 0;
+  inset-inline-start: 6px;
+  inline-size: 3px;
+  block-size: 100%;
   background-color: #ffffff33;
 }
 
 .code-example {
+    block-size: 100%;
+    color: #eee;
     background-color: #1c2316;
     border-radius: 2px;
-    color: #eee;
-    height: 100%;
 }
+
 .code-example.bad {
   padding: 8px 5px 8px 25px;
   border: 1px solid #ccc;
@@ -143,9 +146,9 @@ h2 {
 
 .code-example.good {
   padding: 20px 0 20px 25px;
-  border-radius: 18px 0 0 18px;
     background-color: #2a2442;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 18px 0 0 18px;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
 }
 
 .bad, .bad code, .bad pre code {
@@ -170,6 +173,7 @@ h2 {
 .hljs-title.class_ {
     color: #e06c75;
 }
+
 .hljs-comment {
     color: #6f818c;
 }
@@ -186,7 +190,7 @@ h2 {
     color: #98c379;
 }
 
-/*bad*/
+/* bad */
 .bad .hljs-keyword {
     color: #c678dd;
 }
@@ -198,6 +202,7 @@ h2 {
 .bad .hljs-title.class_ {
     color: #e06c75;
 }
+
 .bad .hljs-comment {
     color: #6f818c;
 }

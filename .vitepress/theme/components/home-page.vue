@@ -77,24 +77,24 @@ onMounted(() => {
 <style scoped>
 .saamples {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  flex-flow: row wrap;
   gap: 35px;
+  place-content: center center;
+  align-items: center;
 }
+
 h2 {
+  margin-block-end: 20px;
+  font-family: var( --vp-font-family-mono);
   font-size: 1.5rem;
   font-weight: 700;
-  font-family: var( --vp-font-family-mono);
   text-align: center;
-  margin-bottom: 20px;
 }
+
 .divider {
   inline-size: 100%;
-  block-size: 1px;
   max-inline-size: 1152px;
+  block-size: 1px;
   margin: 48px auto;
   border: 1px solid var(--vp-c-divider);
 }
@@ -133,7 +133,6 @@ h2 {
 
   .code-blocks {
     display: flex;
-    max-block-size: 100%;
   }
 
   .code-wrapper {
@@ -141,10 +140,10 @@ h2 {
     z-index: 1;
     display: block;
     inline-size: calc(50% + 16px);
+    block-size: auto;
     overflow: hidden;
     background: var(--vp-c-bg-soft);
     border-radius: 12px;
-    block-size: auto;
   }
 
   .code-caption {

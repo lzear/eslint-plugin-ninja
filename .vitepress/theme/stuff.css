@@ -15,21 +15,21 @@
 
 .image-bg {
     position: relative !important;
-    border-radius: 15px !important;
-    left: auto !important;
-    top: auto !important;
-    transform: rotate(0deg) !important;
+    inset-block-start: auto !important;
+    inset-inline-start: auto !important;
     background-size: 200% 200%;
+    border-radius: 15px !important;
+    transform: rotate(0deg) !important;
     animation: movingGradient 51s linear infinite, movingContrast 13s cubic-bezier(0.78, 0.01, 0.58, 0.55) infinite;
     animation-direction: alternate;
 }
 
 .image-bg, .image-container, .image-container img {
-
-    color-interpolation-filters: sRGB !important;
-    color-interpolation: sRGB !important;
+    color-interpolation: srgb !important;
+    color-interpolation-filters: srgb !important;
     will-change: filter, transform;
-    /*transform: translateZ(0)*/
+
+    /* transform: translateZ(0) */
 }
 
 @keyframes movingGradient {
@@ -37,30 +37,35 @@
         background-position: 300% 300px;
         rotate: 0;
     }
+
     100% {
         background-position: 0 1000%;
         rotate: 360deg;
     }
 }
+
 @keyframes movingContrast {
     0% {
         filter: saturate(1.5) brightness(1.5) blur(45px) contrast(1.5) opacity(0.5);
     }
+
     100% {
         filter: saturate(1.5) brightness(1.5) blur(60px) contrast(20) opacity(0.2);
     }
 }
 
-@-webkit-keyframes Animation {
+@keyframes Animation {
     0%{background-position:10% 0%}
     50%{background-position:91% 100%}
     100%{background-position:10% 0%}
 }
-@-moz-keyframes Animation {
+
+@keyframes Animation {
     0%{background-position:10% 0%}
     50%{background-position:91% 100%}
     100%{background-position:10% 0%}
 }
+
 @keyframes Animation {
     0%{background-position:10% 0%}
     50%{background-position:91% 100%}
@@ -73,8 +78,8 @@
 }
 
 blockquote {
-    margin-bottom: 4em !important;
-    background: rgba(255, 255, 255, 0.06);
+    margin-block-end: 4em !important;
+    background: rgb(255 255 255 / 6%);
 }
 
 code {
