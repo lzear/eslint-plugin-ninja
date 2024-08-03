@@ -33,6 +33,7 @@ description: ESLint Plugin Ninja list of rules
 | [prefer-emoji](/rules/prefer-emoji)                       | require variables and properties to be named using emojis | 🔧  |
 | [prefer-npm](/rules/prefer-npm)                           | require from npm instead of using JS builtins             | 🔧  |
 | [prefer-tab](/rules/prefer-tab)                           | require word separators to be tabs, not spaces            | 🔧  |
+| [quine](/rules/quine)                                     | enforce quine                                             |     |
 | [yes](/rules/yes)                                         | enforce nothing                                           |     |
 
 <!-- end auto-generated rules list -->

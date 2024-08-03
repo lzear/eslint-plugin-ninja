@@ -15,6 +15,7 @@ import lottery, { RULE_NAME as lotteryName } from './rules/lottery'
 import noRush, { RULE_NAME as noRushName } from './rules/no-rush'
 import noWoof, { RULE_NAME as noWoofName } from './rules/no-woof'
 import noXkcd, { RULE_NAME as noXkcdName } from './rules/no-xkcd'
+import quine, { RULE_NAME as quineName } from './rules/quine'
 import align, { RULE_NAME as alignName } from './rules/align'
 import noCi, { RULE_NAME as noCiName } from './rules/no-ci'
 import noTs, { RULE_NAME as noTsName } from './rules/no-ts'
@@ -45,6 +46,7 @@ const rules = {
   [preferEmojiName]: preferEmoji,
   [preferNpmName]: preferNpm,
   [preferTabName]: preferTab,
+  [quineName]: quine,
   [yesName]: yes,
 } as const
 
@@ -67,13 +69,19 @@ const recommendedRules = [
   preferEmojiName,
   preferNpmName,
   yesName,
-] as const
+] as const satisfies (keyof typeof rules)[]
 
 const all: Record<string, [0 | 1 | 2, unknown]> = {}
 const recommended: Record<string, [0 | 1 | 2, unknown]> = {}
 
-for (const n of Object.keys(rules)) all[`ninja/${n}`] = [2, {}]
-for (const n of recommendedRules) recommended[`ninja/${n}`] = [2, {}]
+const excludedDangerousRules = [quineName]
+
+for (const n of Object.keys(rules) as (keyof typeof rules)[])
+  if (!excludedDangerousRules.includes(n)) all[`ninja/${n}`] = [2, {}]
+
+for (const n of recommendedRules)
+  if (excludedDangerousRules.includes(n)) throw new Error(`Rule ${n} should not be included in recommended rules`)
+  else recommended[`ninja/${n}`] = [2, {}]
 
 recommended['ninja/no-rush'] = [1, { delay: 1 }]
 recommended['ninja/lottery'] = [2, { probability: 0.9 }]

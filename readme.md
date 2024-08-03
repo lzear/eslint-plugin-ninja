@@ -68,6 +68,7 @@ npm i -D eslint-plugin-ninja
 | [prefer-emoji](https://www.dont.ninja/rules/prefer-emoji)                       | require variables and properties to be named using emojis | 🔧  |
 | [prefer-npm](https://www.dont.ninja/rules/prefer-npm)                           | require from npm instead of using JS builtins             | 🔧  |
 | [prefer-tab](https://www.dont.ninja/rules/prefer-tab)                           | require word separators to be tabs, not spaces            | 🔧  |
+| [quine](https://www.dont.ninja/rules/quine)                                     | enforce quine                                             |     |
 | [yes](https://www.dont.ninja/rules/yes)                                         | enforce nothing                                           |     |
 
 <!-- end auto-generated rules list -->

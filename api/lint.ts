@@ -11,6 +11,8 @@ const ruleNames = Object.keys(plugin.rules) as RuleName[]
 const isRuleName = (rule: string): rule is RuleName =>
   ruleNames.includes(rule as RuleName)
 
+const isExcludedRule = (rule: RuleName) => ['quine'].includes(rule)
+
 const lintLocal = <Rule extends RuleName>(
   code: string,
   rule: Rule,
@@ -48,9 +50,12 @@ const lintServerless = async (request: VercelRequest, res: VercelResponse) => {
   // if (!parsed.success) return res.status(400).send({error: 'Invalid payload'})
   const { code, options, rule } = parsed
 
-  if (!isRuleName(rule)) {
+  if (!isRuleName(rule))
     return res.status(400).send({ error: 'invalid rule name' })
-  }
+
+  if (isExcludedRule(rule))
+    return res.status(400).send({ error: 'rule not supported' })
+
   const lintResults = lintLocal(code, rule, options)
   return res.status(200).send(lintResults)
 }

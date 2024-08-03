@@ -1,5 +1,5 @@
 ---
-title: center
+title: align
 description: Align text elegantly
 ---
 
@@ -11,7 +11,7 @@ import {ruleName, presetConfigs, initialText} from '../../src/sample-code/align'
 > "Typography is two-dimensional architecture, based on experience and
 > imagination, and guided by rules and readability." — Hermann Zapf
 
-# Enforce elegant text alignment (`align`)
+# align
 
 💼 This rule is enabled in the following [configs](/configs/): 🌐 `all`, ✅
 `recommended`.
