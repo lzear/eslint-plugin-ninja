@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Host: www.dont.ninja
+Host: eslint-ninja.vercel.app
 
-Sitemap: https://www.dont.ninja/sitemap.xml
+Sitemap: https://eslint-ninja.vercel.app/sitemap.xml

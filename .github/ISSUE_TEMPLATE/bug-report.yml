@@ -54,7 +54,7 @@ body:
       description:
         Before submitting the issue, please make sure you do the following
       options:
-        - label: Read the [docs](https://www.dont.ninja).
+        - label: Read the [docs](https://eslint-ninja.vercel.app).
           required: true
         - label:
             Check that there isn't [already an

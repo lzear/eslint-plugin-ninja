@@ -16,5 +16,5 @@ export let createEslintRule: <
   TOptions,
   RuleListener
 > = uuu.ESLintUtils.RuleCreator(
-  ruleName => `https://www.dont.ninja/rules/${ruleName}`,
+  ruleName => `https://eslint-ninja.vercel.app/rules/${ruleName}`,
 )

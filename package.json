@@ -2,7 +2,7 @@
   "name": "eslint-plugin-ninja",
   "description": "Optimized ESLint Rules for Elite Coders",
   "version": "0.0.9",
-  "homepage": "https://www.dont.ninja",
+  "homepage": "https://eslint-ninja.vercel.app",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lzear/eslint-plugin-ninja.git"
@@ -20,7 +20,7 @@
   "scripts": {
     "build": "vite build",
     "docs:dev": "vitepress dev",
-    "docs:generate": "eslint-doc-generator --rule-list-columns name,description,fixable,hasSuggestions,deprecated --path-rule-list readme.md --url-rule-doc https://www.dont.ninja/rules/{name} --url-configs https://www.dont.ninja/configs && eslint-doc-generator --rule-list-columns name,description,fixable,hasSuggestions,deprecated --rule-doc-title-format name --path-rule-list ./docs/rules/index.md --url-rule-doc /rules/{name} --url-configs /configs/ && prettier --write readme.md ./docs/rules/index.md",
+    "docs:generate": "eslint-doc-generator --rule-list-columns name,description,fixable,hasSuggestions,deprecated --path-rule-list readme.md --url-rule-doc https://eslint-ninja.vercel.app/rules/{name} --url-configs https://eslint-ninja.vercel.app/configs && eslint-doc-generator --rule-list-columns name,description,fixable,hasSuggestions,deprecated --rule-doc-title-format name --path-rule-list ./docs/rules/index.md --url-rule-doc /rules/{name} --url-configs /configs/ && prettier --write readme.md ./docs/rules/index.md",
     "docs:build": "vitepress build",
     "release": "yarn release:check && yarn release:version && yarn release:publish",
     "release:check": "yarn test && yarn run build",

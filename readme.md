@@ -5,7 +5,7 @@
 
 The ultimate ESLint plugin.
 
-### www.dont.ninja
+### eslint-ninja.vercel.app
 
 ```js
      // Make your code look like this!
@@ -45,31 +45,31 @@ npm i -D eslint-plugin-ninja
 🔧 Automatically fixable by the
 [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
 
-| Name                                                                            | Description                                               | 🔧  |
-| :------------------------------------------------------------------------------ | :-------------------------------------------------------- | :-- |
-| [align](https://www.dont.ninja/rules/align)                                     | enforce elegant text alignment                            | 🔧  |
-| [declare-keyword](https://www.dont.ninja/rules/declare-keyword)                 | enforce variable names to include their type              | 🔧  |
-| [justify](https://www.dont.ninja/rules/justify)                                 | enforce comments explaining code                          | 🔧  |
-| [justify2](https://www.dont.ninja/rules/justify2)                               | enforce text to be justified                              | 🔧  |
-| [lottery](https://www.dont.ninja/rules/lottery)                                 | require luck                                              |     |
-| [monopoly](https://www.dont.ninja/rules/monopoly)                               | disallow bad eslint configs                               | 🔧  |
-| [no](https://www.dont.ninja/rules/no)                                           | disallow everything                                       |     |
-| [no-avoidable-loop](https://www.dont.ninja/rules/no-avoidable-loop)             | disallow useless `for` loops                              | 🔧  |
-| [no-ci](https://www.dont.ninja/rules/no-ci)                                     | disallow running on CI lol                                |     |
-| [no-no-plusplus](https://www.dont.ninja/rules/no-no-plusplus)                   | enforce the unary operators ++ and --                     | 🔧  |
-| [no-object](https://www.dont.ninja/rules/no-object)                             | disallow object literals, prefer Map                      | 🔧  |
-| [no-overtime](https://www.dont.ninja/rules/no-overtime)                         | disallow overwork                                         |     |
-| [no-random](https://www.dont.ninja/rules/no-random)                             | disallow non-deterministic randomness                     | 🔧  |
-| [no-rush](https://www.dont.ninja/rules/no-rush)                                 | enforce a delay                                           |     |
-| [no-ts](https://www.dont.ninja/rules/no-ts)                                     | disallow gymnastics needed to please the TS compiler      | 🔧  |
-| [no-woof](https://www.dont.ninja/rules/no-woof)                                 | disallow woof!                                            | 🔧  |
-| [no-xkcd](https://www.dont.ninja/rules/no-xkcd)                                 | disallow xkcd references                                  | 🔧  |
-| [optimize-string-ternary](https://www.dont.ninja/rules/optimize-string-ternary) | disallow repetition when building strings with ternaries  | 🔧  |
-| [prefer-emoji](https://www.dont.ninja/rules/prefer-emoji)                       | require variables and properties to be named using emojis | 🔧  |
-| [prefer-npm](https://www.dont.ninja/rules/prefer-npm)                           | require from npm instead of using JS builtins             | 🔧  |
-| [prefer-tab](https://www.dont.ninja/rules/prefer-tab)                           | require word separators to be tabs, not spaces            | 🔧  |
-| [quine](https://www.dont.ninja/rules/quine)                                     | enforce quine                                             |     |
-| [yes](https://www.dont.ninja/rules/yes)                                         | enforce nothing                                           |     |
+| Name                                                                                     | Description                                               | 🔧 |
+|:-----------------------------------------------------------------------------------------|:----------------------------------------------------------|:---|
+| [align](https://eslint-ninja.vercel.app/rules/align)                                     | enforce elegant text alignment                            | 🔧 |
+| [declare-keyword](https://eslint-ninja.vercel.app/rules/declare-keyword)                 | enforce variable names to include their type              | 🔧 |
+| [justify](https://eslint-ninja.vercel.app/rules/justify)                                 | enforce comments explaining code                          | 🔧 |
+| [justify2](https://eslint-ninja.vercel.app/rules/justify2)                               | enforce text to be justified                              | 🔧 |
+| [lottery](https://eslint-ninja.vercel.app/rules/lottery)                                 | require luck                                              |    |
+| [monopoly](https://eslint-ninja.vercel.app/rules/monopoly)                               | disallow bad eslint configs                               | 🔧 |
+| [no](https://eslint-ninja.vercel.app/rules/no)                                           | disallow everything                                       |    |
+| [no-avoidable-loop](https://eslint-ninja.vercel.app/rules/no-avoidable-loop)             | disallow useless `for` loops                              | 🔧 |
+| [no-ci](https://eslint-ninja.vercel.app/rules/no-ci)                                     | disallow running on CI lol                                |    |
+| [no-no-plusplus](https://eslint-ninja.vercel.app/rules/no-no-plusplus)                   | enforce the unary operators ++ and --                     | 🔧 |
+| [no-object](https://eslint-ninja.vercel.app/rules/no-object)                             | disallow object literals, prefer Map                      | 🔧 |
+| [no-overtime](https://eslint-ninja.vercel.app/rules/no-overtime)                         | disallow overwork                                         |    |
+| [no-random](https://eslint-ninja.vercel.app/rules/no-random)                             | disallow non-deterministic randomness                     | 🔧 |
+| [no-rush](https://eslint-ninja.vercel.app/rules/no-rush)                                 | enforce a delay                                           |    |
+| [no-ts](https://eslint-ninja.vercel.app/rules/no-ts)                                     | disallow gymnastics needed to please the TS compiler      | 🔧 |
+| [no-woof](https://eslint-ninja.vercel.app/rules/no-woof)                                 | disallow woof!                                            | 🔧 |
+| [no-xkcd](https://eslint-ninja.vercel.app/rules/no-xkcd)                                 | disallow xkcd references                                  | 🔧 |
+| [optimize-string-ternary](https://eslint-ninja.vercel.app/rules/optimize-string-ternary) | disallow repetition when building strings with ternaries  | 🔧 |
+| [prefer-emoji](https://eslint-ninja.vercel.app/rules/prefer-emoji)                       | require variables and properties to be named using emojis | 🔧 |
+| [prefer-npm](https://eslint-ninja.vercel.app/rules/prefer-npm)                           | require from npm instead of using JS builtins             | 🔧 |
+| [prefer-tab](https://eslint-ninja.vercel.app/rules/prefer-tab)                           | require word separators to be tabs, not spaces            | 🔧 |
+| [quine](https://eslint-ninja.vercel.app/rules/quine)                                     | enforce quine                                             |    |
+| [yes](https://eslint-ninja.vercel.app/rules/yes)                                         | enforce nothing                                           |    |
 
 <!-- end auto-generated rules list -->
 

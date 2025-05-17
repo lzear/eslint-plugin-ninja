@@ -143,7 +143,7 @@ export default defineConfig({
       {
         async: '',
         src: 'https://plausible.io/js/script',
-        'data-domain': "dont.ninja"
+        'data-domain': 'eslint-ninja.vercel.app',
       },
     ],
   ],
@@ -237,7 +237,7 @@ export default defineConfig({
   },
 
   sitemap: {
-    hostname: 'https://www.dont.ninja/',
+    hostname: 'https://eslint-ninja.vercel.app/',
   },
 
   transformHead({ assets }) {
@@ -252,10 +252,10 @@ export default defineConfig({
             href: myFontFile,
             as: 'font',
             type: 'font/woff2',
-            crossorigin: ''
-          }
-        ]
+            crossorigin: '',
+          },
+        ],
       ]
     }
-  }
+  },
 })

@@ -23,7 +23,7 @@
 
 ### 🚀 Features
 
-- Replace `eslint-plugin-perfectionist.azat.io` by `www.dont.ninja` ([60d4f9c](https://github.com/lzear/eslint-plugin-ninja/commit/60d4f9c))
+- Replace `eslint-plugin-perfectionist.azat.io` by `eslint-ninja.vercel.app` ([60d4f9c](https://github.com/lzear/eslint-plugin-ninja/commit/60d4f9c))
 - Replace `azat-io/eslint-plugin-perfectionist` by `lzear/eslint-plugin-dont` ([f990b8c](https://github.com/lzear/eslint-plugin-ninja/commit/f990b8c))
 - Replace `eslint-plugin-perfectionist` by `eslint-plugin-dont` ([11da481](https://github.com/lzear/eslint-plugin-ninja/commit/11da481))
 - Move .vitepress to root ([fcee5ab](https://github.com/lzear/eslint-plugin-ninja/commit/fcee5ab))
