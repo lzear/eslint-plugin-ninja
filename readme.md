@@ -5,7 +5,7 @@
 
 The ultimate ESLint plugin.
 
-### eslint-ninja.vercel.app
+### [eslint-ninja.vercel.app](https://eslint-ninja.vercel.app)
 
 ```js
      // Make your code look like this!
