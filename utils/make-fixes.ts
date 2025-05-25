@@ -44,10 +44,12 @@ export const makeFixes = (
 
       fixes.push(fixer.replaceTextRange(range, ''))
 
+      // @ts-expect-error: error
       const tokenAfterNode = source.getTokenAfter(node)
 
       fixes.push(
         fixer.insertTextAfter(
+          // @ts-expect-error: error
           tokenAfterNode?.loc.end.line === node.loc.end.line
             ? tokenAfterNode
             : node,

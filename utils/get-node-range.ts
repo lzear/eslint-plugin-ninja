@@ -20,13 +20,16 @@ export const getNodeRange = (
 
   const raw = sourceCode.text.slice(start, end)
 
+  // @ts-expect-error: error
   if (ASTUtils.isParenthesized(node, sourceCode)) {
     const bodyOpeningParen = sourceCode.getTokenBefore(
+      // @ts-expect-error: error
       node,
       ASTUtils.isOpeningParenToken,
     )!
 
     const bodyClosingParen = sourceCode.getTokenAfter(
+      // @ts-expect-error: error
       node,
       ASTUtils.isClosingParenToken,
     )!
@@ -39,6 +42,7 @@ export const getNodeRange = (
   const comment = getCommentBefore(node, sourceCode)
 
   if (raw.endsWith(';') || raw.endsWith(',')) {
+    // @ts-expect-error: error
     const tokensAfter = sourceCode.getTokensAfter(node, {
       includeComments: true,
       count: 2,

@@ -225,6 +225,7 @@ export default defineConfig({
   cleanUrls: true,
 
   vite: {
+    // @ts-expect-error: Type 'Plugin<any>[]' is not assignable to type 'PluginOption'.
     plugins: [lightningcss()],
   },
 
