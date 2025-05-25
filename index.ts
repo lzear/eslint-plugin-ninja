@@ -69,7 +69,7 @@ const recommendedRules = [
   preferEmojiName,
   preferNpmName,
   yesName,
-] as const satisfies (keyof typeof rules)[]
+] as const satisfies readonly (keyof typeof rules)[]
 
 const all: Record<string, [0 | 1 | 2, unknown]> = {}
 const recommended: Record<string, [0 | 1 | 2, unknown]> = {}

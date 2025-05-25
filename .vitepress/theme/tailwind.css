@@ -1,3 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@plugin "daisyui" {
+
+  themes: light --default, dark --prefersdark, cupcake;
+
+}
+
+@source "./docs/**/*.md";
+
+  @tailwind base;
+
+  @tailwind components;
+
+  @tailwind utilities;

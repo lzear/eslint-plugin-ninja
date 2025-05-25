@@ -10,7 +10,7 @@ import '@fontsource/comic-mono'
 import { h } from 'vue'
 
 import HomePage from './components/home-page.vue'
-import './tailwind.postcss'
+import './tailwind.css'
 import './stuff.css'
 import './vars.css'
 

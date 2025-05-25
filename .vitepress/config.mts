@@ -45,6 +45,7 @@ export default defineConfig({
         href: '/favicon.svg',
       },
     ],
+    ['link', { href: '/dist/styles.css', rel: 'stylesheet' }],
     [
       'meta',
       {
