@@ -173,7 +173,7 @@ const debouncedFetch = _.debounce(
 
 const change = (code: string) => {
   loading.value = true
-  debouncedFetch(code)
+  if (typeof window !== 'undefined') debouncedFetch(code)
 }
 change(code.value)
 
